@@ -143,6 +143,37 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🟡 `[2026-02]` [Opsera: AI Coding Impact 2026 Benchmark Report](https://opsera.ai/resources/report/ai-coding-impact-2026-benchmark-report/) - 250K+ developers, 60+ enterprises. AI reduces time-to-PR by 58%, but AI-generated PRs wait 4.6x longer in review. AI code introduces 15-18% more security vulnerabilities.
+
+  <details><summary>Key findings</summary>
+
+  - **250,000+ developers across 60+ enterprise organizations** — one of the largest field studies
+  - Nearly **90% of enterprise teams** now use AI in the dev lifecycle — adoption is universal, no longer differentiating
+  - AI-driven coding reduces **time to pull request by up to 58%**
+  - But AI-generated PRs **wait 4.6x longer in review** without governance frameworks
+  - AI-generated code introduces **15-18% more security vulnerabilities**, increasing risk as autonomy expands
+  - **Senior engineers realize ~5x the productivity gains** of junior engineers — widening the execution gap
+  - **21% of AI licenses remain underutilized**, limiting ROI
+  - Confirms the pattern: speed gains upstream, bottleneck moves downstream
+
+  </details>
+
+- 🟠 `[2026-02]` [Jon Radoff: The State of AI Agents in 2026](https://meditations.metavert.io/p/the-state-of-ai-agents-in-2026) - 200+ slide research deck. AI inference costs dropped 92% in 3 years. METR task horizons doubled to 14.5 hours. Only 6% of orgs report >5% EBIT impact from AI despite $1.5T total spending.
+
+  <details><summary>Key findings</summary>
+
+  - **AI inference costs:** dropped from $30/M tokens (2023) → $0.10-$2.50 (Feb 2026) — a **92% decline**
+  - **METR task horizons:** autonomous work increased from ~4 minutes (early 2024) to **14.5 hours** (Feb 2026) — doubling every 123 days
+  - At current rate: week-long autonomous tasks by late 2026, month-long by mid-2027
+  - **SWE-Bench Verified:** Claude Opus 4.5 hit 80.9% (up from 33% eighteen months ago)
+  - **GPQA Diamond:** Claude Opus 4.6 scored 91.3%, exceeding human experts at 69.7%
+  - **The value gap:** $211B in AI VC (half of all global VC), $1.5T total AI spending — but only 6% of orgs report >5% EBIT impact
+  - **6x output gap** between top-quartile AI users and everyone else
+  - **67% increase** in merged PRs per engineer at Anthropic
+  - *"The bottleneck isn't engineering capacity anymore. It's imagination."*
+
+  </details>
+
 - 🔵 `[2026-02]` [Pragmatic Engineer Summit: 6 Predictions for Future of SE](https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai) - Gergely Orosz hosts Laura Tacho, Thomas Dohmke (ex-GitHub CEO), Rajeev Rajan (Atlassian CTO). Some Atlassian teams write zero hand-written code — all agent-orchestrated, 2-5x output.
 
   <details><summary>Key highlights</summary>
@@ -335,6 +366,34 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *The shift from code-first to spec-first development, where specifications become the highest-leverage artifact.*
 
+- 🔵 `[2026-02]` [McKinsey/QuantumBlack: Agentic Workflows for Software Development](https://medium.com/quantumblack/agentic-workflows-for-software-development-dc8e64f4a79d) - Field-tested two-layer pattern: deterministic orchestration + bounded agent execution. Spec-driven development (SDD) eliminates ad hoc prompts.
+
+  <details><summary>Key architecture pattern</summary>
+
+  - **The problem:** copilots make individual devs faster, but enterprise efficiency improvement from idea to live feature is "less significant" — handoffs are where context dies
+  - **Two-layer model:**
+    - **Orchestration layer:** deterministic, rule-based workflow engine. Enforces phase transitions, manages dependencies, tracks artifact state via frontmatter
+    - **Execution layer:** bounded agent tasks within strict conventions
+  - **Why agents shouldn't orchestrate themselves:** on larger codebases, agents "routinely skipped steps, created circular dependencies, or got stuck in analysis loops"
+  - **Folder structures and naming conventions** create machine-readable workflows — the directory IS the state machine
+  - **Each artifact has a state machine** (draft → in-review → approved → complete) stored in frontmatter
+  - *"AI assistants can accelerate the work within a phase of the SDLC as long as you don't expect them to fix the boundaries between them"*
+
+  </details>
+
+- 🔵 `[2026-02]` [Microsoft: AI-Led SDLC with Azure and GitHub](https://techcommunity.microsoft.com/blog/appsonazureblog/an-ai-led-sdlc-building-an-end-to-end-agentic-software-development-lifecycle-wit/4491896) - End-to-end agentic SDLC using GitHub Spec Kit, Copilot agents, and Azure SRE agents. University-style requirements translation now done by agents in minutes.
+
+  <details><summary>Key insights</summary>
+
+  - **GitHub Spec Kit** (open-source, 2025): places specification at the center of engineering process — specs drive implementation, checklists, and task breakdowns
+  - Manual requirements translation (2-year university module) — now handled by agents generating comprehensive lists, service blueprints, and code scaffolds
+  - **"Breakpoints are dead"** — Azure SRE agents transform debugging from stepping through code to conversational log analysis
+  - **Cognitive load concern:** if AI handles all "donkey work," engineers only deal with the most complex problems — potential for burnout
+  - **Developer skills question:** will developers/architects lose ability to innovate as AI handles more advanced tasks?
+  - **Pragmatic position (early 2026):** "We are on the precipice" of fully agentic SDLCs, but not there yet
+
+  </details>
+
 - 🔵 `[2026-02]` [ThoughtWorks Retreat: EARS Syntax & State Machines for AI Specs](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Structured spec formats (EARS, decision tables) rediscovered as precision input for AI agents.
 
 - 🔵 `[2025-08]` [Attractor: NLSpecs-Only Repo Pattern](https://danshapiro.com/) - Repository containing only natural language specs, no code. Code generated entirely by agents.
@@ -424,6 +483,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🔵 `[2026-02]` [ThoughtWorks: Code Review Is Being Unbundled](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Four functions of code review (mentorship, consistency, correctness, trust) each need a new home.
 - 🟡 `[2026-02]` [Faros AI: PR Review Time +91% at Scale](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - AI-generated PRs are 154% larger on average. Review becomes the new bottleneck.
 
+- 🟢 `[2026-02]` [When AI Teammates Meet Code Review: Collaboration Signals Shaping Agent-Authored PRs](https://arxiv.org/html/2602.19441) - Empirical study of how human reviewers interact with AI-authored pull requests. Identifies collaboration signals and integration patterns for agent-generated code in team workflows.
+
+- 🟢 `[2026-02]` [A Survey of Code Review Benchmarks and Evaluation Practices in Pre-LLM and LLM Era](https://arxiv.org/html/2602.13377v1) - Comprehensive survey of code review benchmarks across SE and AI venues. Maps how evaluation practices evolved from pre-LLM to LLM-assisted code review automation.
+
 ### Refactoring & Migration
 
 *AI-assisted codebase modernization, language migration, and technical debt reduction.*
@@ -468,6 +531,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 ### Pipeline Automation
 
 *AI-assisted CI/CD pipeline generation, optimization, and troubleshooting.*
+
+- 🟢 `[2026-03]` [Sustainable Code Generation Using LLMs: Systematic Literature Review](https://arxiv.org/html/2603.00989) - Examines energy consumption and efficiency of LLM-generated code. Many studies claim efficiency gains but lack empirical energy analysis.
+
+- 🟢 `[2026-02]` [DeCEAT: Decoding Carbon Emissions for AI-driven Software Testing](https://arxiv.org/html/2602.18012v1) - Measures carbon footprint of AI-driven testing across LLMs and SLMs. First systematic analysis of environmental cost of GenAI in testing workflows.
 
 <!-- Entries welcome: pipeline generators, build optimization, flaky test detection -->
 
@@ -522,6 +589,24 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 *AI tools for vulnerability detection, SAST/DAST, and security review.*
 
 <!-- Entries welcome: AI SAST/DAST tools, vulnerability scanners, security copilots -->
+
+### AI-Assisted Security
+
+*AI tools for vulnerability detection, SAST/DAST, and security review.*
+
+- 🟡 `[2026-02]` [Cycode: State of Product Security in the AI Era 2026](https://cycode.com/state-of-product-security-ai-era-2026/) - Survey of 400 CISOs/security leaders. AI-generated code is #1 blind spot for AppSec teams. 100% of orgs expect increased AI security budgets in 2026.
+
+  <details><summary>Key findings</summary>
+
+  - **400 CISOs and security leaders** surveyed on AI-era security
+  - AI-generated code identified as **#1 blind spot** for AppSec/Product Security teams
+  - Majority of organizations **lack full visibility** into how and where AI is used across the SDLC
+  - **100% of organizations** expect increased budget for AI security-related initiatives in 2026
+  - Shadow AI compounds challenge — creating exposure layers that can't be fully seen or governed
+  - *"As AI-generated code becomes the norm, organizations must move from fragmented controls to converged platforms"*
+  - Endorsed by former TikTok CSO, IDC research managers, and OWASP contributors
+
+  </details>
 
 ### Agent Security & Governance
 
@@ -667,6 +752,14 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟢 `[2026-02]` [Microsoft ACM: AI Boost for Seniors, AI Drag for Juniors](https://dl.acm.org/doi/10.1145/3779312) - Azure CTO: "hot topic in all customer engagements — they all say they see it."
 
+- 🟠 `[2026-02]` [CIO: How Agentic AI Will Reshape Engineering Workflows in 2026](https://www.cio.com/article/4134741/how-agentic-ai-will-reshape-engineering-workflows-in-2026.html) - Agentic AI won't just help engineers code — it'll run first drafts of the SDLC, leaving humans to steer, review, and think bigger.
+
+- 🟢 `[2025-11]` [GENIUS Project: The Future of Generative AI in Software Engineering](https://arxiv.org/abs/2511.01348) - Vision paper from 30+ European industrial and academic partners. Maps GenAI potential across all SDLC phases, identifies research challenges in reliability, accountability, security, and data privacy.
+
+- 🟢 `[2026-02]` [Guidelines for Empirical Studies in SE Involving LLMs](https://arxiv.org/abs/2508.15503) - Addresses reproducibility crisis: LLM non-determinism, opaque training data, and rapidly evolving models threaten empirical validity. Proposes methodological standards for SE research with LLMs.
+
+- 🟢 `[2026-03]` [Measuring AI R&D Automation (METR)](https://arxiv.org/html/2603.03992v2) - Framework for measuring AI's ability to automate R&D tasks. Notes Cursor proposing a standard for labelling AI-generated code. Addresses challenge of tracking human vs AI contributions.
+
 - 🔵 `[2026-02]` [Thomas Dohmke (ex-GitHub CEO): AI Native Is the New Cloud Native](https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai) - Building AI-native startup Entire.io. Agents as "sparring partners" that make remote work advantageous again.
 
 ### Enterprise & On-Prem Delivery
@@ -699,6 +792,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟢 `[2026-01]` [Vibe Coding Kills Open Source](https://arxiv.org/abs/2601.15494) - AI agents homogenize library selection, weaken maintainer engagement, threaten OSS sustainability.
 
 - 🟠 `[2026-02]` [SWE-bench: Claude 1.96% → 74.2% Issue Resolution (2024→2026)](https://www.swebench.com) - Rapid capability improvement crossing usability thresholds.
+
+- 🟢 `[2026-02]` [What's in a Benchmark? The Case of SWE-Bench in Automated Program Repair](https://arxiv.org/abs/2602.04449) - Critical analysis of SWE-Bench methodology. Examines whether benchmark scores reflect real-world repair capability or benchmark-specific optimization.
+
+- 🟢 `[2026-02]` [SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale](https://arxiv.org/html/2602.23866) - Extends SWE-Bench beyond Python to multiple languages. Addresses single-language bias in evaluating coding agents.
+
+- 🟢 `[2026-03]` [Scale AI: SWE-Bench Pro](https://scale.com/leaderboard/swe_bench_pro_public) - Complex, long-horizon benchmark requiring edits across multiple files and repositories. Raises the bar beyond single-file fixes.
 
 - 🟡 `[2026-02]` [Synopsys OSSRA 2026: +30% OSS Components Per App](https://devops.com/ai-fueled-development-pushes-open-source-risk-to-extremes-report/) - AI agents expand dependency graphs. OSS in 98% of audited applications.
 
@@ -936,6 +1035,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Junior dev benefit | **Near zero** | CSH, Microsoft ACM |
 | Junior hiring | **Declining** | Harvard, Bloomberg |
 | Onboarding time | **-50%** | DX |
+| AI-generated security vulnerabilities | **+15-18%** | Opsera |
+| AI PR review wait time | **4.6x longer** (without governance) | Opsera |
+| AI inference cost decline (3yr) | **-92%** | Radoff/METR |
+| METR autonomous task horizon | **14.5 hours** (doubling every 123 days) | METR/Radoff |
 | Org with weak foundations | **2x more incidents** | DX |
 | Experienced devs on familiar codebases | **-19% (slower)** → likely reversed | METR 2025 → METR 2026 |
 
@@ -977,6 +1080,12 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-02 | Stripe launches x402 agent payments on Base | Agent commerce infrastructure arrives |
 | 2026-02 | Jerry Murdock (Insight Partners): "Agents will buy software" | $90B VC signals SaaS paradigm shift |
 | 2026-02 | Salesforce: 180 orgs replace legacy ITSM with Agentforce | Enterprise agent adoption accelerates |
+| 2026-02 | Opsera: 250K devs — AI PRs wait 4.6x longer in review | Governance gap quantified at scale |
+| 2026-02 | McKinsey/QuantumBlack: Spec-driven development pattern | Enterprise SDD architecture validated |
+| 2026-02 | SWE-Bench Pro launched (Scale AI) | Multi-file, long-horizon benchmark raises the bar |
+| 2026-02 | METR task horizons reach 14.5 hours | Week-long autonomy projected by late 2026 |
+| 2026-02 | Cycode: 100% of orgs increasing AI security budgets | Security spend catches up to adoption |
+| 2026-03 | METR: Measuring AI R&D Automation framework | Standards for tracking AI vs human contributions |
 
 ---
 
