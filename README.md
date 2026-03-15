@@ -1080,6 +1080,12 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-02 | Stripe launches x402 agent payments on Base | Agent commerce infrastructure arrives |
 | 2026-02 | Jerry Murdock (Insight Partners): "Agents will buy software" | $90B VC signals SaaS paradigm shift |
 | 2026-02 | Salesforce: 180 orgs replace legacy ITSM with Agentforce | Enterprise agent adoption accelerates |
+| 2026-03-04 | Cursor Automations launched | Event-driven AI agents, shift to "background automation layer" |
+| 2026-03-05 | OpenAI GPT-5.4 released | 1M token context window, native computer-use capabilities |
+| 2026-03-06 | OpenAI Codex Security enters preview | Context-aware vulnerability scanner |
+| 2026-03-11 | Gartner 2026 Predictions released | Forecasts through 2030: AI proficiency in 75% of hiring by 2027 |
+| 2026-03-XX | SWE-CI benchmark published | Evaluates long-term codebase maintenance, not just isolated fixes |
+| 2026-03-XX | 70% developer AI adoption milestone | Ryz Labs survey marks mainstream adoption |
 | 2026-02 | Opsera: 250K devs — AI PRs wait 4.6x longer in review | Governance gap quantified at scale |
 | 2026-02 | McKinsey/QuantumBlack: Spec-driven development pattern | Enterprise SDD architecture validated |
 | 2026-02 | SWE-Bench Pro launched (Scale AI) | Multi-file, long-horizon benchmark raises the bar |
