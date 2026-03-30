@@ -195,6 +195,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-03]` [GitHub Copilot Opt-Out Policy Change](https://github.blog/changelog/2026-03-27-copilot-training-data-opt-out-change) - Starting April 24, 2026, GitHub defaulting Copilot Free/Pro/Pro+ users into AI training pipeline (opt-out, not opt-in). Individual devs' code/prompts/interactions used for model training unless manually disabled. Enterprise/Business customers exempt. Community backlash significant (117 thumbs-down on announcement).
 
+- 🟡 `[2026-03]` [Ryz Labs: 70% Developer AI Adoption Milestone](https://learn.ryzlabs.com/ai-coding-assistants/github-copilot-vs-aider-which-ai-coding-assistant-reigns-in-2026) - Survey finds nearly 70% of developers now rely on AI-assisted coding to enhance productivity and reduce debugging time. Marks mainstream adoption threshold crossed.
+
 - 🟡 `[2026-03]` [Jellyfish Benchmark: AI Coding Boom Doubles Output, Quality Holds](https://www.businessinsider.com/ai-coding-boom-more-software-shipped-no-hit-quality-2026-3) - 700 companies, 200K engineers, 20M PRs. High-adoption teams merge 2.2 PRs/engineer/week (2x low-adoption). 63% of companies use AI for most coding. Revert rates barely move (0.61% → 0.65%). "Claude Christmas" coined for the Dec 2025 inflection point.
 
   <details><summary>Key findings</summary>
