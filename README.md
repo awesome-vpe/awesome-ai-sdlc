@@ -189,6 +189,28 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🟡 `[2026-03]` [2026 AI Coding Statistics (Panto)](https://panto.io/ai-coding-statistics) - Comprehensive meta-analysis: 84% developer adoption, 51% daily usage among pros, ~3.6 hrs/week saved average. **Critical finding: AI-coauthored PRs show ~1.7× more issues than human-only PRs** (CodeRabbit analysis). 22% of merged code now AI-authored. Daily AI users merge ~60% more PRs.
+
+- 🔵 `[2026-03]` [Google Agent Smith Internal Launch](https://www.businessinsider.com) - Google deploying autonomous coding agent "Agent Smith" internally, driven by Sergey Brin's agent-first push. Limited details on productivity/quality metrics.
+
+- 🔵 `[2026-03]` [GitHub Copilot Opt-Out Policy Change](https://github.blog/changelog/2026-03-27-copilot-training-data-opt-out-change) - Starting April 24, 2026, GitHub defaulting Copilot Free/Pro/Pro+ users into AI training pipeline (opt-out, not opt-in). Individual devs' code/prompts/interactions used for model training unless manually disabled. Enterprise/Business customers exempt. Community backlash significant (117 thumbs-down on announcement).
+
+- 🟡 `[2026-03]` [Jellyfish Benchmark: AI Coding Boom Doubles Output, Quality Holds](https://www.businessinsider.com/ai-coding-boom-more-software-shipped-no-hit-quality-2026-3) - 700 companies, 200K engineers, 20M PRs. High-adoption teams merge 2.2 PRs/engineer/week (2x low-adoption). 63% of companies use AI for most coding. Revert rates barely move (0.61% → 0.65%). "Claude Christmas" coined for the Dec 2025 inflection point.
+
+  <details><summary>Key findings</summary>
+
+  - **Jellyfish engineering intelligence platform** — largest recent field study of AI coding tool adoption
+  - Median AI tool adoption: **63%** across companies in dataset
+  - **64% of companies** now generate majority of code with AI assistance
+  - High-adoption companies (75-100% of engineers using AI 3+ days/week): **2.2 PRs/engineer/week**
+  - Low-adoption companies: **1.12 PRs/engineer/week** — nearly half
+  - Revert rates (code rolled back): **0.61% (low adoption) → 0.65% (high adoption)** — minimal quality degradation
+  - **"Claude Christmas"** — head of research stopped writing code himself in fall 2025; named the Dec 2025 moment when AI coding tools crossed the usability threshold
+  - Autonomous agent PRs (opened/committed by AI agents) still small share but climbing rapidly among top adopters
+  - *"Lots of folks are accepting that AI helps you code faster and are starting to think about all of the follow-on problems"*
+
+  </details>
+
 ### Productivity Paradoxes & Measurement
 
 - 🟢 `[2025-07]` [METR: Experienced OSS Devs 19% Slower with AI](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) - RCT finding experienced developers were slower. Influential but now being revised.
@@ -250,6 +272,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2025-10]` [Logilica: The Shifting Bottleneck](https://www.logilica.com/) - 77% of merges still require human decision-making.
 
+- 🟡 `[2026-03]` [Multitudes: The Struggle to Prove AI Productivity Gains](https://leaddev.com/ai/the-struggle-to-prove-ai-productivity-gains) - 700+ engineering professionals: 75% struggle to measure AI's impact. 60% cite productivity as expected outcome. 40% feel board-level pressure to adopt, 39% to demonstrate improvement. Traditional metrics break down with AI.
+
 - 🟡 `[2026-02]` [Faros AI Field Study: 91% PR Review Time Increase](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - 10K+ devs, 1,255 teams: +21% tasks, +98% PRs merged, but +91% review time, +9% bugs/dev, +154% PR size. Bottleneck moved downstream.
 
   <details><summary>Key findings & CTO experience report</summary>
@@ -265,6 +289,22 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
     - Non-serializable cognitive commits (AI reasoning vanishes when session ends)
   - Quote: *"Your team can be confidently, productively wrong — and the feedback loop is long enough that nobody notices until a client does"*
   - METR devs estimated they were 20% faster when they were actually 19% slower — same overconfidence pattern
+
+  </details>
+
+- 🟢 `[2026-03]` [Harvard/HBS: The GenAI Wall Effect](https://www.library.hbs.edu/working-knowledge/gen-ai-boosts-productivity-but-cant-turn-novices-into-experts) - AI helps adjacent professionals perform unfamiliar tasks but hits a wall with distant outsiders. Marketing specialists matched web analysts with AI help; software developers lagged 13%. "Knowledge distance" determines AI benefit — AI is a skill amplifier, not a skill equalizer.
+
+  <details><summary>Key findings</summary>
+
+  - **Harvard Business School** (Bojinov, McFowland) + Stanford — experiment at IG Group (derivatives trader)
+  - 78 workers across 3 groups: web analysts (insiders), marketing specialists (adjacent), technology specialists (distant)
+  - All groups used AI to write investing articles for IG's website
+  - Marketing specialists with AI scored **3.92/5** — matching web analysts at **3.96/5**
+  - Technology specialists with AI scored only **3.42/5** — **13% below** despite identical AI access
+  - AI helped equally with ideation/organization; the gap emerged in execution quality
+  - **"Knowledge distance" is key:** adjacent skills transfer well with AI; distant skills hit a wall
+  - Confirms the expertise paradox: *"AI makes you feel like you can do anything. But can you do it as well as people whose job it is?"*
+  - Implications for job design: AI enables horizontal movement for adjacent roles, not universal skill transfer
 
   </details>
 
@@ -432,6 +472,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - [Windsurf](https://windsurf.com/) - IDE optimized for agent-developer collaboration.
 - [Plandex](https://github.com/plandex-ai/plandex) - Multi-file task engine with version control.
 - [Kiro](https://kiro.dev/) - IDE for spec-driven development with AI agents.
+- 🔵 `[2026-03]` [JetBrains Central: Open System for Agentic Software Development](https://blog.jetbrains.com/blog/2026/03/24/introducing-jetbrains-central-an-open-system-for-agentic-software-development/) - Control and execution plane for agent-driven software production. Connects JetBrains IDEs, third-party IDEs, Claude Agent, Codex, Gemini CLI. Provides governance, cost attribution, and shared semantic context across repos. JetBrains AI Pulse survey: 90% of 11K devs use AI at work, 22% use coding agents, 66% of companies plan adoption within 12 months — but only 13% use AI across the full SDLC.
 - 🔵 `[2026-02]` [Anthropic: Building a C Compiler with Vibe Coding](https://www.anthropic.com/engineering/building-c-compiler) - Case study of AI agent building a working C compiler.
 - 🟠 `[2026-02]` [Steve Yegge: Welcome to Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) - When appgen engines run circles around dev squads, what's left?
 
@@ -482,6 +523,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - [Pixee](https://pixee.ai) - Finds security and quality issues, opens merge-ready PRs.
 - 🔵 `[2026-02]` [ThoughtWorks: Code Review Is Being Unbundled](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Four functions of code review (mentorship, consistency, correctness, trust) each need a new home.
 - 🟡 `[2026-02]` [Faros AI: PR Review Time +91% at Scale](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - AI-generated PRs are 154% larger on average. Review becomes the new bottleneck.
+- 🟡 `[2026-03]` [GitKraken AI Impact Metrics Platform](https://www.gitkraken.com/ai-impact-metrics) - New platform tracks 8 metrics to measure GenAI tool effects: code duplication, rework %, post-PR fixes, prompt/tab acceptance rates. Specifically addresses concern that AI assistants "duplicate code rather than abstract or reuse it," leading to higher maintenance costs if unchecked.
 
 - 🟢 `[2026-02]` [When AI Teammates Meet Code Review: Collaboration Signals Shaping Agent-Authored PRs](https://arxiv.org/html/2602.19441) - Empirical study of how human reviewers interact with AI-authored pull requests. Identifies collaboration signals and integration patterns for agent-generated code in team workflows.
 
@@ -502,6 +544,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 *AI tools for generating unit tests, integration tests, and test data.*
 
 - [Diffblue Cover](https://www.diffblue.com/) - AI-powered Java unit test generation.
+- 🟢 `[2026-03]` [Diffblue Testing Agent Benchmark](https://www.diffblue.com/resources/benchmark-2026) - Autonomous test generator achieved **81% line coverage** vs. only **32% from senior developer using AI coding agent alone** (2.5x advantage) across 8 real-world Java projects. Highlights gap between AI experiments and production-ready engineering workflows; diminishing returns make manual iteration beyond 50% coverage difficult without orchestration layer.
 - [CodiumAI](https://www.codium.ai/) - Analyzes code and generates meaningful tests.
 - [Tusk](https://usetusk.ai/) - AI-generated tests for pull requests.
 
@@ -1040,6 +1083,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI inference cost decline (3yr) | **-92%** | Radoff/METR |
 | METR autonomous task horizon | **14.5 hours** (doubling every 123 days) | METR/Radoff |
 | Org with weak foundations | **2x more incidents** | DX |
+| AI adoption (companies using for most coding) | **63%** | Jellyfish |
+| High-adoption PR throughput vs low | **2x** (2.2 vs 1.12/week) | Jellyfish |
+| Revert rate increase with AI | **Minimal** (0.61% → 0.65%) | Jellyfish |
+| Can't measure AI impact | **75%** of eng professionals | Multitudes |
+| AI skill transfer (adjacent roles) | **Works** (within 1% of experts) | Harvard/HBS |
+| AI skill transfer (distant roles) | **Fails** (13% below experts) | Harvard/HBS |
 | Experienced devs on familiar codebases | **-19% (slower)** → likely reversed | METR 2025 → METR 2026 |
 
 **The emerging pattern:**
@@ -1092,6 +1141,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-02 | METR task horizons reach 14.5 hours | Week-long autonomy projected by late 2026 |
 | 2026-02 | Cycode: 100% of orgs increasing AI security budgets | Security spend catches up to adoption |
 | 2026-03 | METR: Measuring AI R&D Automation framework | Standards for tracking AI vs human contributions |
+| 2026-03-16 | Harvard: GenAI Wall Effect — AI can't turn novices into experts | Knowledge distance determines AI benefit |
+| 2026-03-17 | Jellyfish: AI doubles code output, quality holds | 700 companies, 200K engineers — high-adoption teams merge 2x PRs |
+| 2026-03-24 | JetBrains Central announced | Open system for agentic software development; 90% of devs use AI |
+| 2026-03-25 | Multitudes: 75% can't measure AI productivity impact | Board pressure growing, metrics still missing |
+| 2026-03-27 | GitHub Copilot opt-out policy change | Defaulting users into AI training pipeline; backlash |
 
 ---
 
