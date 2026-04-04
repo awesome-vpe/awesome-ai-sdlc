@@ -213,6 +213,38 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🟢 `[2026-04]` [An Empirical Study of Generative AI Adoption in Software Engineering](https://arxiv.org/html/2512.23327) - 204 respondents, 37 countries. GenAI deeply integrated into implementation, V&V, maintenance. 80% regular use. Critical gap: most teams lack objective productivity/quality metrics. Top concerns: skill erosion, over-reliance, IP/ethical issues.
+
+  <details><summary>Key findings</summary>
+
+  - **Eindhoven, Izmir, PUC-Rio, Blekinge, fortiss collaboration** — international survey of SE practitioners
+  - **80% use GenAI regularly**, daily or near-daily usage common
+  - Top use cases: **implementation** (coding, completion), **verification & validation**, **personal assistance**, **maintenance**
+  - Reported benefits: **reduced cycle time**, enhanced knowledge work, perceived quality and productivity gains
+  - **Measurement gap:** most teams don't use objective metrics for productivity/quality impact — opportunity to standardize measurement
+  - Key challenges: **accuracy/reliability**, prompt engineering, validation overhead, **security/privacy concerns**
+  - **Organizational readiness varies:** many provide tool access; fewer invest in training, clear policies, or governance
+  - Practitioners expect GenAI to **redefine roles, not replace them** — moderate concern about job market contraction
+  - *"Adoption must move beyond ad-hoc towards systematic, sustainable, and responsible integration"*
+
+  </details>
+
+- 🔵 `[2026-03]` [Cursor's Crossroads: $30B AI Startup's Rapid Rise](https://fortune.com/2026/03/21/cursor-ceo-michael-truell-ai-coding-claude-anthropic-venture-capital/) - Fortune deep-dive on Cursor. Used by 67% of Fortune 500, generating 150M lines of enterprise code daily. *"Coding is the first real place AI productivity gains have been quantifiable and undeniable."* $29.3B valuation.
+
+  <details><summary>Key highlights</summary>
+
+  - **Fortune feature interview** with CEO Michael Truell (25 years old, MIT background)
+  - Cursor now at **$29.3 billion valuation** (as of March 2026)
+  - **67% of Fortune 500 companies** actively using Cursor platform
+  - Platform generates **150 million lines of enterprise code daily**
+  - Backed by Andreessen Horowitz, Thrive, Accel (billions raised in 4 years)
+  - *"Coding has been the first real place the productivity gains [from AI] have been quantifiable and undeniable"*
+  - Market positioning: AI-native coding versus GitHub's incremental AI features
+  - **Rapid speed as existential risk:** "slow down for even a week, and you might get left behind"
+  - Irony noted: CEO admires Robert Caro (decades-long biographer) while running hyper-speed AI startup
+
+  </details>
+
 ### Productivity Paradoxes & Measurement
 
 - 🟢 `[2025-07]` [METR: Experienced OSS Devs 19% Slower with AI](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) - RCT finding experienced developers were slower. Influential but now being revised.
@@ -472,6 +504,21 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - [OpenAI Codex](https://openai.com/index/codex/) - Cloud-based coding agent with sandbox.
 - [Aider](https://aider.chat) - Terminal-based pair programming with git integration.
 - [Windsurf](https://windsurf.com/) - IDE optimized for agent-developer collaboration.
+- 🔵 `[2026-03]` [AI Agent Tools Study: 177K Tools, Software Development Dominates](https://www.coffeefranchisehub.com/archives/47192) - Analysis of Model Context Protocol repositories (Nov 2024–Feb 2026). Software development = **67% of all AI agent tools**, **90% of downloads**. Action tools (file/system modification) surged from 27% → 65%. Shift from passive data gathering to active environment manipulation.
+
+  <details><summary>Key findings</summary>
+
+  - Analyzed **177,000+ AI agent tools** created between November 2024 and February 2026
+  - Data source: **Model Context Protocol repositories** tracking how AI agents interact with external tools
+  - **Software development tools: 67% of all AI agent tools, 90% of total downloads** — massively dominant category
+  - **Action tools** (directly modifying files, systems, emails, platforms) grew from **27% → 65%** share over 16 months
+  - Shift from passive AI (perception/data gathering) → **active AI** (environment manipulation)
+  - Most action tools classified as **medium-risk operations**; some involve high-risk activities (financial transactions)
+  - Tool categories: **perception** (data gathering), **reasoning** (analysis), **action** (modification)
+  - Underscores AI agents' crucial role in software development workflows
+
+  </details>
+
 - [Plandex](https://github.com/plandex-ai/plandex) - Multi-file task engine with version control.
 - [Kiro](https://kiro.dev/) - IDE for spec-driven development with AI agents.
 - 🔵 `[2026-03]` [JetBrains Central: Open System for Agentic Software Development](https://blog.jetbrains.com/blog/2026/03/24/introducing-jetbrains-central-an-open-system-for-agentic-software-development/) - Control and execution plane for agent-driven software production. Connects JetBrains IDEs, third-party IDEs, Claude Agent, Codex, Gemini CLI. Provides governance, cost attribution, and shared semantic context across repos. JetBrains AI Pulse survey: 90% of 11K devs use AI at work, 22% use coding agents, 66% of companies plan adoption within 12 months — but only 13% use AI across the full SDLC.
@@ -1148,6 +1195,9 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-03-24 | JetBrains Central announced | Open system for agentic software development; 90% of devs use AI |
 | 2026-03-25 | Multitudes: 75% can't measure AI productivity impact | Board pressure growing, metrics still missing |
 | 2026-03-27 | GitHub Copilot opt-out policy change | Defaulting users into AI training pipeline; backlash |
+| 2026-04-02 | arXiv: GenAI adoption in SE — 204 respondents, 37 countries | 80% regular use; critical gap: most lack objective productivity metrics |
+| 2026-03-21 | Fortune: Cursor reaches $30B valuation | 67% of Fortune 500 using Cursor, 150M lines of code daily |
+| 2026-03-XX | MCP AI Agent Tools Study: 177K tools analyzed | Software dev = 67% of agent tools, 90% of downloads; action tools surge |
 
 ---
 
