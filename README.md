@@ -92,6 +92,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🟡 `[2026-04]` [NYT: The Big Bang — A.I. Has Created a Code Overload](https://www.nytimes.com/2026/04/06/technology/ai-code-overload.html) - Financial services firm went from 25K to 250K lines/month with Cursor, creating 1M-line review backlog. Code overload forcing companies to rethink velocity vs. absorption capacity.
+
+- 🟡 `[2026-04]` [BCG: AI Will Reshape More Jobs Than It Replaces](https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces) - Engineers shift toward system-level thinking, orchestration, and product design. AI helps engineers do jobs more effectively rather than replacing them, making direct displacement unlikely.
+
 - 🟡 `[2026-02]` [DX Research: 93% of Devs Use AI, Productivity Still +10%](https://lauratacho.com/research) - 121K developers, 450+ companies. Productivity plateaued at ~10%. Onboarding time halved.
 
   <details><summary>Key findings</summary>
@@ -289,6 +293,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🟢 `[2026-04]` [arXiv: AI Assistance Reduces Persistence and Hurts Independent Performance](https://arxiv.org/abs/2604.04721) - Empirical study (Liu et al.) finds developers using AI chatbots give up faster on hard problems and underperform on follow-up independent tasks. Adds to evidence of AI-induced cognitive dependency.
+
 - 🟢 `[2026-02]` [FORGE '26: GenAI Impact on Agile Teams (13-month longitudinal)](https://arxiv.org/html/2602.13766v1) - Performance ↑ and Efficiency ↑ while Activity stays flat. AI increases value density, not volume.
 
   <details><summary>Key findings</summary>
@@ -363,6 +369,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   </details>
 
 ### Organizational Impact
+
+- 🟡 `[2026-04]` [CNN: The Demise of Software Engineering Jobs Has Been Greatly Exaggerated](https://www.cnn.com/2026/04/08/tech/ai-software-developer-jobs) - Engineers doing less routine coding, more oversight of AI agent swarms. Time shifts to architecture, design, and orchestration. Reframes the narrative from displacement to transformation.
+
+- 🟡 `[2026-04]` [Gartner: Only 28% of AI Infrastructure Projects Fully Pay Off](https://www.gartner.com/en/newsroom/press-releases/2026-04-07-gartner-says-artificial-intelligence-projects-in-infrastructure-and-operations-stall-ahead-of-meaningful-roi-returns) - Survey of 782 I&O managers: 20% failure rate, 57% experienced at least one AI project failure. Skill gaps (38%) and poor data quality (38%) are top causes. GenAI succeeds mainly in ITSM and cloud ops (53% success).
 
 - 🟠 `[2026-02]` [Bloomberg: The Great Productivity Panic of 2026](https://www.bloomberg.com/news/articles/2026-02-26/ai-coding-agents-like-claude-code-are-fueling-a-productivity-panic-in-tech) - AI coding agents fueling anxiety across tech. 16% decline in junior SWE job postings.
 
@@ -519,6 +529,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🔵 `[2026-04]` [InfoQ: Birgitta Böckeler — State of Play: AI Coding Assistants](https://www.infoq.com/presentations/ai-coding-assistants/) - QCon talk covering the evolution from autocomplete to agents. Key themes: context engineering maturation (rules → skills → subagents), progressive context loading, and "harness engineering" as a new senior developer competency.
+
+- 🔵 `[2026-04]` [Shopify VP Engineering: AI-First Engineering Playbook](https://newsletter.pragmaticengineer.com/p/shopifys-ai-first-engineering-playbook) - Farhan Thawar reports ~20% productivity gain. Key insight: standardize infrastructure (LLM proxy), not tools. Cultural adoption via "make it look easy" beats top-down mandates. Non-engineers (sales, finance) creating custom software.
+
 - [Plandex](https://github.com/plandex-ai/plandex) - Multi-file task engine with version control.
 - [Kiro](https://kiro.dev/) - IDE for spec-driven development with AI agents.
 - 🔵 `[2026-03]` [JetBrains Central: Open System for Agentic Software Development](https://blog.jetbrains.com/blog/2026/03/24/introducing-jetbrains-central-an-open-system-for-agentic-software-development/) - Control and execution plane for agent-driven software production. Connects JetBrains IDEs, third-party IDEs, Claude Agent, Codex, Gemini CLI. Provides governance, cost attribution, and shared semantic context across repos. JetBrains AI Pulse survey: 90% of 11K devs use AI at work, 22% use coding agents, 66% of companies plan adoption within 12 months — but only 13% use AI across the full SDLC.
@@ -571,6 +585,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
 - [Pixee](https://pixee.ai) - Finds security and quality issues, opens merge-ready PRs.
 - 🔵 `[2026-02]` [ThoughtWorks: Code Review Is Being Unbundled](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Four functions of code review (mentorship, consistency, correctness, trust) each need a new home.
+- 🔵 `[2026-04]` [InfoWorld: How Agile Practices Ensure Quality in GenAI-Assisted Development](https://www.infoworld.com/article/4155901/how-agile-practices-ensure-quality-in-genai-assisted-development.html) - Practitioner framework: TDD, BDD, ATDD, pair programming and CI as guardrails for GenAI code. Cites Stanford finding that AI assistants increase security vulnerabilities; McKinsey confirms rethinking practices is required.
+
+- 🟡 `[2026-04]` [CircleCI: 2026 State of Software Delivery](https://circleci.com/resources/2026-state-of-software-delivery/) - Analysis of 28M CI workflows. Average throughput +59%, but top 5% doubled while median rose just 4%. AI creating code faster than teams can review, test, and ship. Less code reaching production despite higher volume.
+
 - 🟡 `[2026-02]` [Faros AI: PR Review Time +91% at Scale](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - AI-generated PRs are 154% larger on average. Review becomes the new bottleneck.
 - 🟡 `[2026-03]` [GitKraken AI Impact Metrics Platform](https://www.gitkraken.com/ai-impact-metrics) - New platform tracks 8 metrics to measure GenAI tool effects: code duplication, rework %, post-PR fixes, prompt/tab acceptance rates. Specifically addresses concern that AI assistants "duplicate code rather than abstract or reuse it," leading to higher maintenance costs if unchecked.
 
@@ -831,6 +849,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   </details>
 
 - 🔵 `[2026-02]` [Karpathy: "Agentic Engineering"](https://x.com/karpathy/status/2026731645169185220) - Proposed term for supervisory engineering with AI agents. "Deep technical expertise is even more of a multiplier."
+
+- 🔵 `[2026-04]` [From Vibe to Agentic: The 2026 Maturation of AI-Driven Development](https://medium.com/technologai/from-vibe-to-agentic-the-2026-maturation-of-ai-driven-development-1bfb0844b5a6) - Traces the evolution from Karpathy's "vibe coding" (Feb 2025) to "agentic engineering" (Feb 2026). Gartner: 40% of enterprise apps to include task-specific agents by end of 2026 (up from <5% in 2025). Claude Opus 4.6 leads SWE-Bench at 80.8%. Anthropic: engineers use AI for ~60% of work but fully delegate only 0-20%.
 
 ### Roles & Career Evolution
 
@@ -1111,7 +1131,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ---
 
-## Emerging Consensus (Feb 2026)
+## Emerging Consensus (Apr 2026)
 
 *What the data actually says, synthesized across all sources.*
 
@@ -1139,12 +1159,15 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI skill transfer (adjacent roles) | **Works** (within 1% of experts) | Harvard/HBS |
 | AI skill transfer (distant roles) | **Fails** (13% below experts) | Harvard/HBS |
 | Experienced devs on familiar codebases | **-19% (slower)** → likely reversed | METR 2025 → METR 2026 |
+| CI throughput (average) | **+59%** (top 5%: +100%, median: +4%) | CircleCI 2026 |
+| AI I&O project full ROI | **28%** (20% fail outright) | Gartner Apr 2026 |
+| Code volume explosion | **10x** (25K → 250K lines/month) | NYT/Cursor case study |
 
 **The emerging pattern:**
 1. **AI makes coding faster but doesn't ship more features** — the bottleneck was never coding
 2. **Seniors benefit, juniors don't** — AI is a skill amplifier, not equalizer
 3. **Weak orgs get worse, strong orgs get stronger** — it's a management problem
-4. **The bottleneck moved, not disappeared** — from coding to review, integration, architecture
+4. **The bottleneck moved, not disappeared** — from coding to review, integration, architecture (CircleCI confirms at scale)
 5. **Stability is declining** — larger batches, faster changes, same governance = more incidents
 6. **Novel failure modes emerge** — parallel sessions, architectural drift, context collapse
 7. **Skills pipeline at risk** — AI delegation impairs learning; preceptor models needed
@@ -1198,6 +1221,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-04-02 | arXiv: GenAI adoption in SE — 204 respondents, 37 countries | 80% regular use; critical gap: most lack objective productivity metrics |
 | 2026-03-21 | Fortune: Cursor reaches $30B valuation | 67% of Fortune 500 using Cursor, 150M lines of code daily |
 | 2026-03-XX | MCP AI Agent Tools Study: 177K tools analyzed | Software dev = 67% of agent tools, 90% of downloads; action tools surge |
+| 2026-04-06 | NYT: "Code Overload" — 10x code volume, 1M-line review backlog | Velocity-absorption gap becomes mainstream narrative |
+| 2026-04-07 | Gartner: only 28% of AI I&O projects fully pay off | ROI reality check; 20% outright failure rate |
+| 2026-04-08 | arXiv: AI assistance reduces persistence & independent performance | Cognitive dependency empirically validated |
+| 2026-04-08 | CNN: SE jobs "demise greatly exaggerated" | Role evolution framing: orchestration > coding |
+| 2026-04-10 | CircleCI: 28M workflows — code up, delivery stalling | DevOps bottleneck quantified at scale |
 
 ---
 
