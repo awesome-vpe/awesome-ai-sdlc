@@ -94,7 +94,24 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-04]` [NYT: The Big Bang — A.I. Has Created a Code Overload](https://www.nytimes.com/2026/04/06/technology/ai-code-overload.html) - Financial services firm went from 25K to 250K lines/month with Cursor, creating 1M-line review backlog. Code overload forcing companies to rethink velocity vs. absorption capacity.
 
+  <details><summary>Key findings</summary>
+
+  - Financial services team jumped from **25K to 250K lines/month** after rolling out Cursor
+  - Review capacity did **not** scale with generation capacity, creating a **1M-line backlog**
+  - The bottleneck moved from writing code to **absorbing, reviewing, and validating** it
+  - Strong illustration of the new failure mode: local developer speed up, system throughput flat or worse
+
+  </details>
+
 - 🟡 `[2026-04]` [BCG: AI Will Reshape More Jobs Than It Replaces](https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces) - Engineers shift toward system-level thinking, orchestration, and product design. AI helps engineers do jobs more effectively rather than replacing them, making direct displacement unlikely.
+
+  <details><summary>Key findings</summary>
+
+  - Work shifts upward from raw implementation toward **system thinking, orchestration, and design**
+  - The more durable change is **job redesign**, not headcount elimination
+  - Reinforces the emerging pattern that AI changes the mix of engineering work faster than it removes engineering roles
+
+  </details>
 
 - 🟡 `[2026-02]` [DX Research: 93% of Devs Use AI, Productivity Still +10%](https://lauratacho.com/research) - 121K developers, 450+ companies. Productivity plateaued at ~10%. Onboarding time halved.
 
@@ -374,6 +391,15 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-04]` [Gartner: Only 28% of AI Infrastructure Projects Fully Pay Off](https://www.gartner.com/en/newsroom/press-releases/2026-04-07-gartner-says-artificial-intelligence-projects-in-infrastructure-and-operations-stall-ahead-of-meaningful-roi-returns) - Survey of 782 I&O managers: 20% failure rate, 57% experienced at least one AI project failure. Skill gaps (38%) and poor data quality (38%) are top causes. GenAI succeeds mainly in ITSM and cloud ops (53% success).
 
+  <details><summary>Key findings</summary>
+
+  - Only **28%** of AI infrastructure and operations projects delivered full expected returns
+  - **20%** failed outright, and **57%** of leaders saw at least one project fail
+  - Top blockers: **skill gaps** and **poor data quality** (both 38%)
+  - Best-performing use cases were mature operational domains like **ITSM** and **cloud ops**
+
+  </details>
+
 - 🟠 `[2026-02]` [Bloomberg: The Great Productivity Panic of 2026](https://www.bloomberg.com/news/articles/2026-02-26/ai-coding-agents-like-claude-code-are-fueling-a-productivity-panic-in-tech) - AI coding agents fueling anxiety across tech. 16% decline in junior SWE job postings.
 
   <details><summary>Key findings</summary>
@@ -531,7 +557,24 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-04]` [InfoQ: Birgitta Böckeler — State of Play: AI Coding Assistants](https://www.infoq.com/presentations/ai-coding-assistants/) - QCon talk covering the evolution from autocomplete to agents. Key themes: context engineering maturation (rules → skills → subagents), progressive context loading, and "harness engineering" as a new senior developer competency.
 
+  <details><summary>Key insights</summary>
+
+  - The frontier moved from **autocomplete** to **agent supervision**
+  - Context engineering is maturing from static prompts to **skills, subagents, and staged context loading**
+  - "**Harness engineering**" becomes a distinct competency: shaping the environment around the model, not just prompting it
+
+  </details>
+
 - 🔵 `[2026-04]` [Shopify VP Engineering: AI-First Engineering Playbook](https://newsletter.pragmaticengineer.com/p/shopifys-ai-first-engineering-playbook) - Farhan Thawar reports ~20% productivity gain. Key insight: standardize infrastructure (LLM proxy), not tools. Cultural adoption via "make it look easy" beats top-down mandates. Non-engineers (sales, finance) creating custom software.
+
+  <details><summary>Key insights</summary>
+
+  - Reported productivity gain around **20%**, but the bigger story is operating model change
+  - Shopify standardized the **infrastructure layer** (proxy, shared plumbing), while letting teams choose surface tools
+  - Adoption spread through visible practitioner wins, not only mandates
+  - AI software creation expanded beyond engineering into **sales and finance** workflows
+
+  </details>
 
 - [Plandex](https://github.com/plandex-ai/plandex) - Multi-file task engine with version control.
 - [Kiro](https://kiro.dev/) - IDE for spec-driven development with AI agents.
@@ -587,7 +630,24 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🔵 `[2026-02]` [ThoughtWorks: Code Review Is Being Unbundled](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Four functions of code review (mentorship, consistency, correctness, trust) each need a new home.
 - 🔵 `[2026-04]` [InfoWorld: How Agile Practices Ensure Quality in GenAI-Assisted Development](https://www.infoworld.com/article/4155901/how-agile-practices-ensure-quality-in-genai-assisted-development.html) - Practitioner framework: TDD, BDD, ATDD, pair programming and CI as guardrails for GenAI code. Cites Stanford finding that AI assistants increase security vulnerabilities; McKinsey confirms rethinking practices is required.
 
+  <details><summary>Key findings</summary>
+
+  - Classic agile quality practices become **more important**, not less, with AI coding
+  - TDD, BDD, ATDD, pairing, and CI act as **guardrails** against fast low-quality generation
+  - Core argument: the more code generation accelerates, the more teams need disciplined validation loops
+
+  </details>
+
 - 🟡 `[2026-04]` [CircleCI: 2026 State of Software Delivery](https://circleci.com/resources/2026-state-of-software-delivery/) - Analysis of 28M CI workflows. Average throughput +59%, but top 5% doubled while median rose just 4%. AI creating code faster than teams can review, test, and ship. Less code reaching production despite higher volume.
+
+  <details><summary>Key findings</summary>
+
+  - Based on **28M CI workflows**, giving this unusual scale
+  - Average throughput rose **59%**, but the **median improved only 4%**
+  - Top 5% of teams pulled away, suggesting AI amplifies already-strong systems
+  - Quantifies the same pattern seen elsewhere: code volume up faster than review, test, and release capacity
+
+  </details>
 
 - 🟡 `[2026-02]` [Faros AI: PR Review Time +91% at Scale](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - AI-generated PRs are 154% larger on average. Review becomes the new bottleneck.
 - 🟡 `[2026-03]` [GitKraken AI Impact Metrics Platform](https://www.gitkraken.com/ai-impact-metrics) - New platform tracks 8 metrics to measure GenAI tool effects: code duplication, rework %, post-PR fixes, prompt/tab acceptance rates. Specifically addresses concern that AI assistants "duplicate code rather than abstract or reuse it," leading to higher maintenance costs if unchecked.
@@ -721,6 +781,17 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 ### Agent Security & Governance
 
 *Securing AI agents themselves — permissions, sandboxing, audit trails.*
+
+- 🔵 `[2026-04]` [Linux Kernel: Official Policy for AI-Assisted Code Contributions](https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst) - The kernel allows AI-assisted code, but contributors own every line, must review everything manually, and cannot treat AI output as a substitute for understanding. High-signal governance pattern for serious engineering organizations.
+
+  <details><summary>Why this matters</summary>
+
+  - One of the clearest real-world governance patterns from a high-rigor engineering project
+  - Policy is **pragmatic, not prohibitionist**: AI is allowed, but accountability stays with the human contributor
+  - Explicitly frames AI like any other external aid: useful, but **not an excuse** for poor review or lack of understanding
+  - Strong template for enterprise policy: allow use, require ownership, keep review standards human
+
+  </details>
 
 - 🔵 `[2026-02]` [ThoughtWorks: Security Is Dangerously Behind](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Email access alone enables full account takeover. Platform engineering must enforce secure defaults.
 - 🟠 `[2026-02]` [Goldman Sachs: AI Coding Tool Market Valued at $45B](https://www.bloomberg.com/news/articles/2026-02-26/ai-coding-agents-like-claude-code-are-fueling-a-productivity-panic-in-tech) - Market valuation with thin track record on autonomous code safety.
