@@ -142,6 +142,21 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-04]` [Amazon Mandates 3× Release Velocity via AI-Native Practices](https://www.businessinsider.com/amazon-tracks-ai-use-engineers-internal-friction-2026-4) - Internal doc shows 2,100+ retail engineering teams tracked on AI tool adoption. A subset of 25 teams targets 10× output. S-Team monitors progress; internal friction growing as some engineers push back against top-down mandates.
 
+
+- 🔵 `[2026-04]` [AI Dev 26 SF Conference: 3,000+ Devs Debate AI-First Engineering](https://www.theregister.com/2026/04/28/software_development_ai_dev25xsf/) - Andrew Ng argued frontier teams are trending toward 100% AI-generated code; reviewing code makes humans the bottleneck. AWS VP Marc Brooker countered: "The opportunity for agents is limited by the defect rate" — reducing errors matters more than pushing frontiers. Oracle predicted dev roles blur into agent orchestration + product management.
+
+  <details><summary>Key takeaways</summary>
+
+  - **Andrew Ng (DeepLearning.AI):** frontier teams trending toward **100% AI-generated code**; human review is the bottleneck
+  - **Marc Brooker (AWS VP):** *"The opportunity for agents is limited by the defect rate"* — error reduction > speed
+  - **Richmond Alake (Oracle):** developer roles blurring into **agent orchestration + product management**
+  - **Spec-driven development** produces better AI results — echoes McKinsey/QuantumBlack SDD pattern
+  - Highlighted tools: Hydro (Rust distributed protocols), Cedar (authorization language), Strata (automated reasoning)
+  - 3,000+ developers gathered; signals AI-first engineering now mainstream conference topic
+
+  </details>
+
+- 🟡 `[2026-05]` [Preuve.ai: AI Coding Tool Adoption at 84%](https://preuve.ai/blog/ai-coding-models-statistics-2026) - Compilation of 50+ stats: Stack Overflow 2025 survey pegged adoption at 84% (up from 76% prior year), with 80% of professional devs now having AI in their workflow.
 - 🟡 `[2026-04]` [Lightrun 2026: State of AI-Powered Engineering](https://lightrun.com/ebooks/state-of-ai-powered-engineering-2026/) - Survey of 200 SRE/DevOps leaders: 43% of AI-generated code changes still need manual debugging in production after QA + staging. 0% can validate an AI fix in a single redeploy; 88% need 2–3 cycles. Amazon's March 2026 outages (6.3M lost orders) traced to AI-assisted code.
 
   <details><summary>Key findings — the "trust wall"</summary>
@@ -353,7 +368,22 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-04]` [PanDev: Cursor Users Log 65% More Coding Hours Than VS Code Users](https://dev.to/arthur_pandev/the-ai-copilot-effect-how-ai-assistants-changed-coding-time-in-2026-4427) - Analysis of 100+ B2B companies shows Cursor users average 50.5h vs VS Code's 30.6h per person. Caution: likely self-selection bias (early adopters), but longer sessions suggest AI reduces micro-interruptions and sustains flow state.
 
-- 🟡 `[2026-04]` [DORA: ROI of AI-Assisted Software Development (Updated Apr 2026)](https://dora.dev/ai/roi/report/) - Practical framework + ROI calculator for measuring AI adoption ROI in the SDLC. Addresses the "initial productivity dip" during rollout and provides budget-defense calculations.
+- 🟡 `[2026-04]` [DORA: ROI of AI-Assisted Software Development (Updated Apr 2026)](https://dora.dev/ai/roi/report/) - Practical framework + ROI calculator for measuring AI adoption ROI in the SDLC. Addresses the "initial productivity dip" during rollout. Companion Faros analysis (22K devs, 4K teams, 2 years of telemetry) reveals sharp quality tradeoffs.
+
+  <details><summary>Key findings — DORA + Faros companion telemetry</summary>
+
+  - **DORA ROI Calculator:** interactive financial framework for eng leaders to model AI tooling business case
+  - **Faros companion analysis** (22K devs, 4K teams, 2 years of telemetry):
+    - Task throughput per dev: **+33.7%**
+    - Code-related tasks per team: **+210%**
+    - But incidents per PR: **+242.7%**
+    - Bugs per dev: **+54%**
+  - Both reports agree on a **"verification tax"** on senior engineers
+  - Sources: [DORA Report](https://dora.dev/ai/roi/report/) · [Faros Analysis](https://www.faros.ai/blog/dora-ai-roi-calculator-telemetry-inputs)
+
+  </details>
+
+- 🔵 `[2026-04]` [QASource: DORA Metrics Are Now Insufficient for AI-Era Engineering](https://www.qasource.com/blog/software-engineering-metrics-beyond-dora) - AI-generated code pushes throughput up 30–40%, doubles code churn, but drops delivery stability by 7.2%. DORA captures none of the new failure modes. Proposes supplementary metrics: AI code quality ratio, developer experience (DX), context-switching overhead (devs lose 6+ hrs/week to tool fragmentation).
 
 - 🟡 `[2026-04]` [Pragmatic Engineer AI Survey: 3 Developer Archetypes (900+ Respondents)](https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026) - "Builders" spend more time debugging AI slop, "Shippers" move fast but accumulate tech debt, "Coasters" uplevel quickly but generate low-quality code. Companies spending ~$200/mo per dev on AI tools. ~30% of engineers hit tool usage limits.
 
@@ -634,6 +664,19 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   </details>
 
 - 🔵 `[2026-02]` [ThoughtWorks Retreat: EARS Syntax & State Machines for AI Specs](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Structured spec formats (EARS, decision tables) rediscovered as precision input for AI agents.
+
+- 🔵 `[2026-04]` [Martin Fowler / Thoughtworks: Structured Prompt-Driven Development (SPDD)](https://martinfowler.com/articles/structured-prompt-driven/) - Introduces SPDD, treating prompts as first-class delivery artifacts with the REASONS Canvas (Requirements, Entities, Approach, Structure, Operations, Norms, Safeguards). Key insight: individual speed improves with AI but doesn't automatically translate to system-level throughput.
+
+  <details><summary>Key concepts — the REASONS Canvas</summary>
+
+  - **SPDD** treats prompts as **first-class delivery artifacts**, not throwaway instructions
+  - **REASONS Canvas** — structured framework for prompt engineering at team scale:
+    - **R**equirements, **E**ntities, **A**pproach, **S**tructure, **O**perations, **N**orms, **S**afeguards
+  - Key insight: individual speed improves with AI but doesn't automatically translate to system-level throughput
+  - Analogy: *"like buying a Ferrari on muddy roads"* — org-level friction dominates tool-level speed
+  - Complements McKinsey/QuantumBlack SDD pattern with a more practitioner-friendly framework
+
+  </details>
 
 - 🔵 `[2025-08]` [Attractor: NLSpecs-Only Repo Pattern](https://danshapiro.com/) - Repository containing only natural language specs, no code. Code generated entirely by agents.
 
@@ -972,6 +1015,20 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 
 - 🟡 `[2026-04]` [Gartner: 25% of Enterprise GenAI Apps Will Face ≥5 Security Incidents/Year by 2028](https://www.gartner.com/en/newsroom/press-releases/2026-04-09-gartner-predicts-25-percent-of-all-enterprise-gen-ai-applications-will-experience-at-least-five-minor-security-incidents-per-year-by-2028) - Gartner survey of 782 I&O leaders predicts rising security incident frequency as GenAI apps proliferate across enterprises.
+
+- 🟠 `[2026-05]` [ACM TechBrief: "AI-Assisted Software Development (Vibe Coding) — Benefits and Risks"](https://bioengineer.org/new-report-explores-the-impact-of-ai-on-software-development/) - ACM's Technology Policy Council warns that AI-generated code frequently bypasses critical engineering disciplines (testing, security review, maintainability). Agentic coding assistants that autonomously execute code expand the attack surface. Recommends treating AI output as untrusted by default.
+
+  <details><summary>Key recommendations</summary>
+
+  - AI-generated code frequently **bypasses critical engineering disciplines** (testing, security review, maintainability)
+  - Agentic coding assistants that **autonomously execute code** expand the attack surface
+  - Recommends treating **AI output as untrusted by default**
+  - Published by ACM's Technology Policy Council — carries weight as a professional society position
+  - Sources: [bioengineer.org](https://bioengineer.org/new-report-explores-the-impact-of-ai-on-software-development/) · [techxplore.com](https://techxplore.com/news/2026-04/ai-impacting-software.html)
+
+  </details>
+
+- 🔵 `[2026-05]` [CIO.com: "From Copilot to Control Plane" — AI Governance for Engineering](https://www.cio.com/article/4165609/from-copilot-to-control-plane-where-serious-ai-governance-starts.html) - Argues AI governance in engineering has moved beyond "which copilot to approve" to identity, permissions, model access, prompt retention, and audit trails. Software dev is where the governance problem surfaces first; the real issue is the enterprise-wide AI control plane.
 - 🔵 `[2026-04]` [Linux Kernel: Official Policy for AI-Assisted Code Contributions](https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst) - The kernel allows AI-assisted code, but contributors own every line, must review everything manually, and cannot treat AI output as a substitute for understanding. High-signal governance pattern for serious engineering organizations.
 
   <details><summary>Why this matters</summary>
@@ -1461,6 +1518,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Teams shipping 19% slower despite faster devs | **Confirmed** | Wawandco/DORA |
 | Cursor users coding hours vs VS Code | **65% more** (50.5h vs 30.6h) | PanDev |
 | AI code fails on system context | **~70% report** debugging "almost correct" | SD Times |
+| Incidents per PR (AI adoption) | **+242.7%** | DORA/Faros 2026 |
+| Bugs per dev (AI adoption) | **+54%** | DORA/Faros 2026 |
+| Task throughput per dev | **+33.7%** | DORA/Faros 2026 |
+| Code-related tasks per team | **+210%** | DORA/Faros 2026 |
 
 **The emerging pattern:**
 1. **AI makes coding faster but doesn't ship more features** — the bottleneck was never coding
@@ -1548,6 +1609,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-04-27 | Oracle lays off ~30K, partly AI-driven | Broader tech layoff wave accelerated by AI |
 | 2026-04-28 | Cloudflare: 93% R&D AI adoption + 7-agent code review | 241B tokens/month; 5,169 repos reviewed by specialized AI agents |
 | 2026-04-29 | AI Velocity Paradox: faster devs, slower teams | Code churn 3.1%→5.7%; review times +91% |
+| 2026-04-30 | DORA ROI Calculator + Faros telemetry: +210% tasks, +242.7% incidents | Verification tax quantified at 22K-dev scale |
+| 2026-04-30 | Martin Fowler: Structured Prompt-Driven Development (SPDD) | REASONS Canvas for team-scale prompt engineering |
+| 2026-04-30 | AI Dev 26 SF: Ng "100% AI code" vs Brooker "defect rate limits agents" | AI-first engineering debate goes mainstream |
+| 2026-05-01 | ACM TechBrief: Vibe Coding benefits and risks | Professional society warns AI output should be "untrusted by default" |
+| 2026-05-01 | CIO.com: AI governance moves from copilot approval to control plane | Enterprise governance maturation signal |
 
 ---
 
