@@ -142,7 +142,6 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-04]` [Amazon Mandates 3× Release Velocity via AI-Native Practices](https://www.businessinsider.com/amazon-tracks-ai-use-engineers-internal-friction-2026-4) - Internal doc shows 2,100+ retail engineering teams tracked on AI tool adoption. A subset of 25 teams targets 10× output. S-Team monitors progress; internal friction growing as some engineers push back against top-down mandates.
 
-
 - 🔵 `[2026-04]` [AI Dev 26 SF Conference: 3,000+ Devs Debate AI-First Engineering](https://www.theregister.com/2026/04/28/software_development_ai_dev25xsf/) - Andrew Ng argued frontier teams are trending toward 100% AI-generated code; reviewing code makes humans the bottleneck. AWS VP Marc Brooker countered: "The opportunity for agents is limited by the defect rate" — reducing errors matters more than pushing frontiers. Oracle predicted dev roles blur into agent orchestration + product management.
 
   <details><summary>Key takeaways</summary>
@@ -157,6 +156,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   </details>
 
 - 🟡 `[2026-05]` [Preuve.ai: AI Coding Tool Adoption at 84%](https://preuve.ai/blog/ai-coding-models-statistics-2026) - Compilation of 50+ stats: Stack Overflow 2025 survey pegged adoption at 84% (up from 76% prior year), with 80% of professional devs now having AI in their workflow.
+
 - 🟡 `[2026-04]` [Lightrun 2026: State of AI-Powered Engineering](https://lightrun.com/ebooks/state-of-ai-powered-engineering-2026/) - Survey of 200 SRE/DevOps leaders: 43% of AI-generated code changes still need manual debugging in production after QA + staging. 0% can validate an AI fix in a single redeploy; 88% need 2–3 cycles. Amazon's March 2026 outages (6.3M lost orders) traced to AI-assisted code.
 
   <details><summary>Key findings — the "trust wall"</summary>
@@ -179,6 +179,20 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   - Review capacity did **not** scale with generation capacity, creating a **1M-line backlog**
   - The bottleneck moved from writing code to **absorbing, reviewing, and validating** it
   - Strong illustration of the new failure mode: local developer speed up, system throughput flat or worse
+
+  </details>
+
+- 🟡 `[2026-04]` [Fortune/NBER: "Solow's Paradox" Repeating for AI](https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study/) - Study of 6,000 executives (US, UK, Germany, Australia): ~90% of firms report no measurable impact from AI on employment or productivity over past 3 years. Average AI usage among adopters: just 1.5 hrs/week. Apollo's chief economist: "AI is everywhere except in the incoming macroeconomic data."
+
+  <details><summary>Key findings — the macro-micro paradox</summary>
+
+  - **6,000 executives** surveyed across US, UK, Germany, Australia
+  - **~90% of firms** report no measurable AI impact on employment or productivity over past 3 years
+  - Average AI usage among adopters: **just 1.5 hrs/week**
+  - Executives still forecast +1.4% productivity and +0.8% output gains over the next 3 years
+  - Fed Reserve St. Louis: only **1.9% cumulative excess productivity growth** since ChatGPT's late-2022 introduction — measurable but far below hype
+  - Apollo's chief economist: *"AI is everywhere except in the incoming macroeconomic data"*
+  - **Key tension:** micro-level studies show 25–55% developer productivity gains; macro-level data shows almost nothing
 
   </details>
 
@@ -385,6 +399,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-04]` [QASource: DORA Metrics Are Now Insufficient for AI-Era Engineering](https://www.qasource.com/blog/software-engineering-metrics-beyond-dora) - AI-generated code pushes throughput up 30–40%, doubles code churn, but drops delivery stability by 7.2%. DORA captures none of the new failure modes. Proposes supplementary metrics: AI code quality ratio, developer experience (DX), context-switching overhead (devs lose 6+ hrs/week to tool fragmentation).
 
+- 🟡 `[2026-04]` [DORA: ROI of AI-Assisted Software Development (Updated Apr 2026)](https://dora.dev/ai/roi/report/) - Practical framework + ROI calculator for measuring AI adoption ROI in the SDLC. Addresses the "initial productivity dip" during rollout and provides budget-defense calculations.
+
 - 🟡 `[2026-04]` [Pragmatic Engineer AI Survey: 3 Developer Archetypes (900+ Respondents)](https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026) - "Builders" spend more time debugging AI slop, "Shippers" move fast but accumulate tech debt, "Coasters" uplevel quickly but generate low-quality code. Companies spending ~$200/mo per dev on AI tools. ~30% of engineers hit tool usage limits.
 
   <details><summary>Key findings</summary>
@@ -399,7 +415,25 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🟡 `[2026-04]` [Faros.ai: 2 Years of AI Coding Agent Telemetry (22K Devs)](https://www.faros.ai/blog/best-ai-coding-agents-2026) - Analysis of AI coding agents' real impact across 22,000 developers. Highlights the "productivity paradox" — more code output doesn't always mean better outcomes. Confirms verification overhead as primary limiting factor.
+
 - 🟡 `[2026-04]` [StartEdge: "30% AI-Generated Code" Metric Is Misleading](https://startedgeservices.com/how-ai-and-software-development-are-changing/) - Argues vanity metrics like % AI-generated code provide zero insight into actual productivity. Real measurement requires DORA-style metrics: cycle time, deployment frequency, change failure rate, and business value delivered.
+
+- 🔵 `[2026-04]` [DORA Metrics 2026: AI Expansion Meets Visibility Crisis](https://byteiota.com/dora-metrics-2026-ai-expansion-meets-visibility-crisis/) - DORA grew from 4 to 20+ metrics including AI-specific KPIs (GenAI tool ROI, AI coding productivity). Key finding: "AI doesn't fix teams, it amplifies what's already there." 90% use AI tools, 80% believe they boost productivity, but 30% don't trust AI-generated code. AI improves throughput but increases change failure rate.
+
+- 🟡 `[2026-04]` [Pragmatic Engineer AI Survey: 3 Developer Archetypes (900+ Respondents)](https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026) - "Builders" debug AI slop, "Shippers" accumulate tech debt, "Coasters" generate low-quality code. EM and IC roles converging. Companies spending ~$200/mo per dev on AI tools, with some CTOs admitting budgets are unsustainable.
+
+  <details><summary>Key findings — three archetypes</summary>
+
+  - **900+ respondents** in latest Pragmatic Engineer survey
+  - **"Builders"** spend more time debugging AI slop
+  - **"Shippers"** move fast but accumulate tech debt faster
+  - **"Coasters"** uplevel quickly but generate low-quality code
+  - Engineer and EM roles converging as orchestration replaces hands-on coding
+  - Companies spending **~$200/mo per dev** on AI tools; some CTOs admit budgets are unsustainable
+  - ~30% of engineers hit AI tool usage limits regularly
+
+  </details>
 
 - 🟢 `[2025-07]` [METR: Experienced OSS Devs 19% Slower with AI](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) - RCT finding experienced developers were slower. Influential but now being revised.
 
@@ -523,6 +557,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2026-04]` [CNN: The Demise of Software Engineering Jobs Has Been Greatly Exaggerated](https://www.cnn.com/2026/04/08/tech/ai-software-developer-jobs) - Engineers doing less routine coding, more oversight of AI agent swarms. Time shifts to architecture, design, and orchestration. Reframes the narrative from displacement to transformation.
 
 - 🟡 `[2026-04]` [Gartner: Only 28% of AI Infrastructure Projects Fully Pay Off](https://www.gartner.com/en/newsroom/press-releases/2026-04-07-gartner-says-artificial-intelligence-projects-in-infrastructure-and-operations-stall-ahead-of-meaningful-roi-returns) - Survey of 782 I&O managers: 20% failure rate, 57% experienced at least one AI project failure. Skill gaps (38%) and poor data quality (38%) are top causes. GenAI succeeds mainly in ITSM and cloud ops (53% success).
+
+- 🟡 `[2026-04]` [Gartner: Successful AI Orgs Invest 4x More in Foundations](https://techedgeai.com/gartner-says-organizations-with-successful-ai-initiatives-invest-up-to-four-times-more-in-data-and-analytics-foundations/) - The differentiator isn't the AI model — it's the foundational investment. Organizations with successful AI initiatives invest up to 4x more in data quality, governance, and change management.
 
   <details><summary>Key findings</summary>
 
@@ -778,7 +814,16 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-04]` [OpenAI Agentic Engineering Case Study: Codex App in Weeks](https://www.techbyjohan.com/tech-insights-2026-week-17/) - OpenAI rebuilt their desktop app as unified React/TypeScript codebase. Full feature parity in ~2 months for 3M users using agentic coding workflows. Makes the case for consolidating multi-platform codebases as AI makes unified stacks dramatically more efficient.
 
+- 🔵 `[2026-04]` [OpenAI Agentic Engineering Case Study: Codex App Rebuilt in Weeks](https://www.techbyjohan.com/tech-insights-2026-week-17/) - OpenAI rebuilt their desktop app in React/TypeScript as a unified codebase using agentic coding workflows. Full feature parity for 3M users achieved in ~2 months. Makes the case for consolidating multi-platform codebases as AI makes unified stacks dramatically more efficient.
+
+- 🟡 `[2026-04]` [GitLab + AWS: Agentic DevSecOps via BYOM](https://www.stocktitan.net/news/GTLB/git-lab-collaborates-with-aws-to-bring-agentic-dev-sec-ops-to-n87kz4d9bnjq.html) - GitLab Duo Agent Platform now routes inference through Amazon Bedrock — no new vendor onboarding. Source code and inference stay in customer AWS environments. Key signal: AI agents generating enough code/MRs/pipeline activity that governance tooling is now a requirement.
+
+- 🟡 `[2026-04]` [InfoWorld: Best Practices for Agentic Systems in Software Engineering](https://www.infoworld.com/article/4154570/best-practices-for-building-agentic-systems.html) - Anthropic data: ~50% of AI agent deployments are in software engineering. Less than half of orgs report measurable ROI from agentic AI experiments. Multi-agent "factories" for complex knowledge work expected to emerge in 2026.
+
+- 🟡 `[2026-04]` [PanDev Metrics: Cursor Users Log 65% More Coding Hours](https://dev.to/arthur_pandev/the-ai-copilot-effect-how-ai-assistants-changed-coding-time-in-2026-4427) - Analysis of 100+ B2B companies: Cursor users average 50.5h vs VS Code's 30.6h per person. Attributed to AI-assisted "flow state," fewer context switches, and self-selection bias. Cursor's 72% acceptance rate post-Supermaven acquisition notable.
+
 - 🔵 `[2026-02]` [Anthropic: Building a C Compiler with Vibe Coding](https://www.anthropic.com/engineering/building-c-compiler) - Case study of AI agent building a working C compiler.
+
 - 🟠 `[2026-02]` [Steve Yegge: Welcome to Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) - When appgen engines run circles around dev squads, what's left?
 
 ### Agentic Coding Failure Modes
@@ -880,6 +925,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🔵 `[2026-04]` [Gitar Launches with $9M: AI-Generated Code Outpaces Validation Capacity](https://www.prnewswire.com/news-releases/gitar-launches-from-stealth-with-9m-as-ai-generated-code-outpaces-teams-ability-to-validate-and-ship-software-safely-302743190.html) - Startup addresses the gap between AI code generation speed and teams' ability to validate/ship safely. Tracks CI failures, agent decisions, and validation outcomes. Signals verification as the new industry bottleneck.
 
 - 🔵 `[2026-04]` [SD Times: AI Code Looks Clean But Hides Contextual Bugs](https://sdtimes.com/ai/rethinking-code-review-in-the-era-of-ai/) - AI-generated code passes surface-level review but fails on system context: missing edge cases, wrong API assumptions, generic security. ~70% of devs report productivity gains, but top frustration is debugging "almost correct" AI output.
+
+- 🔵 `[2026-04]` ["Tokenmaxxing" Is Hurting Developer Productivity](https://www.progressiverobot.com/2026/04/18/tokenmaxxing-developer-productivity-guide/) - Practitioner analysis argues reflexively dumping maximum context into AI prompts is counterproductive. Cites "Lost in the Middle" research: models degrade on buried relevant info. Deliberate context selection > brute-force context.
+
+- 🔵 `[2026-04]` [Gitar Launches with $9M: AI-Generated Code Outpaces Validation](https://www.prnewswire.com/news-releases/gitar-launches-from-stealth-with-9m-as-ai-generated-code-outpaces-teams-ability-to-validate-and-ship-software-safely-302743190.html) - New startup addresses the gap between AI code generation speed and validation capacity. Tracks CI failures, agent decisions, and validation outcomes. Signals the industry bottleneck is shifting from "writing code" to "verifying code."
+
+- 🔵 `[2026-04]` [GitHub Ships Stacked PRs for AI-Driven Code Velocity](https://www.infoworld.com/article/4158575/github-adds-stacked-prs-to-speed-complex-code-reviews.html) - GitHub shipped Stacked PRs to handle increased volume from AI-assisted coding. Traditional linear review can't keep up with AI-accelerated generation. Structural tooling adapting to the new pace.
 
 - 🟡 `[2026-03]` [GitKraken AI Impact Metrics Platform](https://www.gitkraken.com/ai-impact-metrics) - New platform tracks 8 metrics to measure GenAI tool effects: code duplication, rework %, post-PR fixes, prompt/tab acceptance rates. Specifically addresses concern that AI assistants "duplicate code rather than abstract or reuse it," leading to higher maintenance costs if unchecked.
 
@@ -1106,6 +1157,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-02]` [ThoughtWorks: Reframe as "Agent Experience"](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Wallets open faster for agent experience. Overlap with developer experience is nearly complete.
 
+- 🟡 `[2026-04]` [DORA 2026: Elite Teams + Platform Engineering See 40% Fewer Failures](https://www.ai-infra-link.com/how-platform-engineering-cuts-downtime-by-40-in-2026/) - Platform engineering + AI-assisted DevOps continues to separate elite performers. Elite teams using platform engineering see 40% fewer environment-related failures.
+
 ### Skill Formation & Learning
 
 - 🟢 `[2026-01]` [Anthropic: How AI Impacts Skill Formation](https://arxiv.org/abs/2601.20245) - AI assistance reduces comprehension by 17%. Delegation hurts; conceptual questioning preserves learning.
@@ -1142,6 +1195,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟢 `[2026-04]` [ICSE 2026 Mining Challenge: AI-Authored PRs in Open Source](https://conf.researchr.org/track/icse-2026/icse-2026-research-track) - Dataset of thousands of AI-authored pull requests in open-source projects, with 62 published papers analyzing long-term impact. First large-scale academic mining of AI code in the wild.
 
 - 🟡 `[2026-04]` [Scaler India: Only 19% of Engineers Are "AI-Ready"](https://www.tribuneindia.com/news/advertorial-disclaimer/scaler-becomes-indias-first-fully-ai-native-tech-career-platform-finds-only-19-of-engineers-are-truly-ai-ready) - AI talent demand projected to nearly double by 2027 (Deloitte-NASSCOM), yet only 16% of IT professionals are currently AI-skilled. AI skills now the single hardest capability to source globally.
+
+- 🔵 `[2026-04]` [Univ. Innsbruck "Software Engineering Live" Workshop](https://www.uibk.ac.at/en/newsroom/2026/software-development-in-the-ai-transformation/) - ~50 experts from academia/industry concluded: AI code generation is gaining performance but cannot fully automate SW dev. Architecture decisions, requirements, testing, and QA remain human tasks. Developer roles shifting from coding → orchestrating, evaluating, and controlling AI systems.
+
+- 🔵 `[2026-04]` [AI Infra Link: Developer Enablement vs Dependency](https://www.ai-infra-link.com/developer-enablement-vs-dependency-key-differences-for-2026-teams/) - Gartner finding: 65% of teams using unsupervised AI code generation spent >30% of time fixing AI-generated code. Recommends mandatory AI output audits, architecture review boards, and treating AI tech debt as first-class backlog item. Spotify's "Tech Health" model (20% sprint allocation to debt) highlighted as best practice.
 
 - 🟢 `[2026-02]` [Russinovich & Hanselman: Preceptor-Based Organizations (ACM)](https://dl.acm.org/doi/10.1145/3779312) - Senior engineers must explicitly mentor juniors to preserve skills pipeline. Universities need classes where AI use is "cheating."
 
@@ -1240,6 +1297,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟢 `[2026-01]` [Vibe Coding Kills Open Source](https://arxiv.org/abs/2601.15494) - AI agents homogenize library selection, weaken maintainer engagement, threaten OSS sustainability.
 
 - 🟠 `[2026-02]` [SWE-bench: Claude 1.96% → 74.2% Issue Resolution (2024→2026)](https://www.swebench.com) - Rapid capability improvement crossing usability thresholds.
+
+- 🟢 `[2026-04]` [IBM Research @ ICSE 2026: Enterprise AI Coding Assistants](https://research.ibm.com/publications/usage-effects-and-requirements-for-ai-coding-assistants-in-the-enterprise-an-empirical-study) - Survey of 57 enterprise developers + meta-analysis of 35 existing user surveys. CodeLLMs are "becoming ubiquitous" but questions readiness for real-world enterprise use. Critical gap: enterprise-specific requirements (security, compliance, domain context) remain underserved.
+
+- 🟢 `[2026-04]` [ICSE 2026 Mining Challenge: AI-Authored PRs in OSS](https://conf.researchr.org/track/icse-2026/icse-2026-research-track) - Mining challenge dataset of thousands of AI-authored pull requests in open-source projects, with 62 published papers analyzing long-term impact. First large-scale academic mining of AI code in the wild.
 
 - 🟢 `[2026-02]` [What's in a Benchmark? The Case of SWE-Bench in Automated Program Repair](https://arxiv.org/abs/2602.04449) - Critical analysis of SWE-Bench methodology. Examines whether benchmark scores reflect real-world repair capability or benchmark-specific optimization.
 
@@ -1522,6 +1583,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Bugs per dev (AI adoption) | **+54%** | DORA/Faros 2026 |
 | Task throughput per dev | **+33.7%** | DORA/Faros 2026 |
 | Code-related tasks per team | **+210%** | DORA/Faros 2026 |
+| Macro AI productivity signal | **1.9% cumulative** since ChatGPT launch | Fed Reserve St. Louis |
+| Firms reporting measurable AI impact | **~10%** (90% report none) | Fortune/NBER (6,000 execs) |
+| Agents solve real-world computer tasks | **66%** (up from 12% a year prior) | Stanford HAI 2026 |
+| Cursor vs VS Code coding hours | **65% more** (50.5h vs 30.6h) | PanDev Metrics |
+| Unsupervised AI code → rework | **>30%** of time spent fixing | Gartner via AI Infra Link |
+| Platform eng. environment failures | **-40%** for elite teams | DORA 2026 |
 
 **The emerging pattern:**
 1. **AI makes coding faster but doesn't ship more features** — the bottleneck was never coding
@@ -1614,6 +1681,18 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-04-30 | AI Dev 26 SF: Ng "100% AI code" vs Brooker "defect rate limits agents" | AI-first engineering debate goes mainstream |
 | 2026-05-01 | ACM TechBrief: Vibe Coding benefits and risks | Professional society warns AI output should be "untrusted by default" |
 | 2026-05-01 | CIO.com: AI governance moves from copilot approval to control plane | Enterprise governance maturation signal |
+| 2026-04-18 | Pragmatic Engineer AI Survey: 3 dev archetypes | Builders/Shippers/Coasters; EM-IC role convergence |
+| 2026-04-18 | "Tokenmaxxing" anti-pattern identified | Brute-force context hurts productivity; deliberate selection wins |
+| 2026-04-19 | IBM @ ICSE 2026: Enterprise AI coding study | Enterprise-specific requirements (security, compliance) underserved |
+| 2026-04-19 | ICSE 2026 Mining Challenge: AI-authored PRs | 62 papers analyzing AI code in open-source at scale |
+| 2026-04-20 | DORA Metrics 2026: AI visibility crisis | 20+ metrics now; 30% don't trust AI code despite 90% adoption |
+| 2026-04-20 | Gitar launches ($9M): validation gap startup | Industry bottleneck shifts from writing to verifying code |
+| 2026-04-20 | GitHub ships Stacked PRs | Structural tooling adapts to AI-accelerated code volume |
+| 2026-04-21 | Fortune/NBER: Solow's Paradox repeats for AI | 90% of firms: no measurable AI productivity impact; macro-micro gap persists |
+| 2026-04-21 | Innsbruck workshop: AI is "no fairy dust" | Architecture, requirements, QA remain human; roles shift to orchestration |
+| 2026-04-22 | PanDev: Cursor users log 65% more coding hours | AI IDE self-selection + flow-state effects quantified |
+| 2026-04-22 | GitLab + AWS: Agentic DevSecOps via BYOM | Agent governance tooling becomes enterprise requirement |
+| 2026-04-22 | Gartner: successful AI orgs invest 4x in foundations | Data quality + governance > model choice |
 
 ---
 
