@@ -106,6 +106,26 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-05]` [Anthropic: 2026 Agentic Coding Trends Report](https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf) - First systematic Anthropic report on how coding agents are reshaping the SDLC — covers adoption, autonomy levels, governance gaps, and the gap between "AI-assisted" and "AI-led" workflows. Companion to the Claude Code field data.
 
+- 🟡 `[2026-05]` [Harness: State of Engineering Excellence 2026](https://www.prnewswire.com/news-releases/harness-report-reveals-ai-has-outpaced-how-engineering-organizations-measure-developer-productivity-302770521.html) - Survey of **700 eng practitioners/managers** across US/UK/IN/FR/DE. **89% of leaders say AI lifted productivity, yet 94% admit current metrics miss tech debt, validation time, and burnout.** Developers spend ~1/3 of day on AI-invisible work. Headline thesis: measurement frameworks have not caught up to the AI shift.
+
+  <details><summary>Key findings</summary>
+
+  - **89%** of engineering leaders report AI-driven productivity gains
+  - **94%** acknowledge current metrics miss tech debt, validation time, and burnout
+  - Developers spend **~1/3 of the working day** on AI-invisible work (review, validation, context recovery)
+  - Companion Harness blog: ["We're measuring the gains and missing the costs"](https://www.harness.io/blog/we-re-measuring-the-gains-and-missing-the-costs) — proposes adding code quality, validation time, cognitive load, and burnout to velocity/cycle-time frameworks
+  - Reinforces emerging "harness/governance layer" thesis: productivity ↑, trust in the number ↓
+
+  </details>
+
+- 🔵 `[2026-05]` [TechTimes: "Harness Engineering" as the Fourth Paradigm of AI Engineering](https://www.techtimes.com/articles/316587/20260513/harness-engineering-emerges-fourth-paradigm-ai-engineering.htm) - Argues AI-era SDLC needs a governance layer ("harness") around agents — a distinct paradigm following waterfall, agile, and DevOps. Frames the next two years as a race to build org-wide guardrails for autonomous coding agents. (Parallel framing to Fowler's "Harness Engineering" memo, at the org-paradigm level rather than the codebase level.)
+
+- 🟡 `[2026-05]` [Cortex: Engineering in the Age of AI — 2026 Benchmark](https://www.cortex.io/post/ai-is-making-engineering-faster-but-not-better-state-of-ai-benchmark-2026) - **Faster ≠ better.** AI accelerates output but service ownership, reliability, and standards drift. Orgs without internal developer platforms see the widest quality gap — IDPs become a prerequisite for sustainable AI-assisted engineering, not a nice-to-have.
+
+- 🟡 `[2026-05]` [Gartner / GitHub Market Data: AI-Assisted Dev in 78% of Fortune 500](https://www.getpanto.ai/blog/ai-coding-assistant-statistics) - Executive-level adoption round-up: **78% of Fortune 500 have AI-assisted dev in production** (vs 42% in 2024). AI now writes **46% of GitHub code, projected 60% by end-2026**. **~3.6 hrs/week saved per dev**; daily AI users merge **~60% more PRs**. Single citation for high-level adoption metrics.
+
+- 🔵 `[2026-05]` [Rob Bowley: "AI Won't Save You from Your Engineering Culture"](https://blog.robbowley.net/2025/11/05/findings-from-dxs-2025-report-ai-wont-save-you-from-your-engineering-culture/) - Reading of DX's 2025 report: tooling can't compensate for weak review, deployment, or learning practices. AI is a multiplier on existing culture — strong orgs amplify, weak orgs regress. Aphoristic framing now circulating widely in May 2026 measurement debate.
+
 - 🟡 `[2026-04]` [NYT: The Big Bang — A.I. Has Created a Code Overload](https://www.nytimes.com/2026/04/06/technology/ai-code-overload.html) - Financial services firm went from 25K to 250K lines/month with Cursor, creating 1M-line review backlog. Code overload forcing companies to rethink velocity vs. absorption capacity.
 
 - 🟢 `[2026-04]` [Stanford HAI 2026 AI Index Report](https://hai.stanford.edu/ai-index/2026-ai-index-report) - 400+ page annual report. AI boosts SW dev productivity 26%, but entry-level hiring declining. SWE-bench Verified jumped from ~60% (2024) to nearly 100% (2025). AI adopted faster than any previous technology wave. GenAI tools valued at $172B/year for US consumers.
@@ -424,6 +444,22 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2026-05]` [Deloitte 2026 Software Industry Outlook](https://www.index.dev/blog/developer-productivity-statistics-with-ai-tools) - Projects **30–35% productivity gains across the SDLC**, but cautions that low-maturity orgs see **quality regressions** that erode the gain. Adds to the "AI amplifies what's already there" pattern.
 
 - 🟡 `[2026-05]` [TFiR: AI Code Quality 2026 — The Year of Guardrails](https://tfir.io/ai-code-quality-2026-guardrails/) - Industry pivot from raw productivity to governance: **AI-assisted code shows ~1.7× issue density** and **48% of AI snippets contain security findings without guardrails**. 2026 framed as the year guardrails — not throughput — become the dominant procurement criterion.
+
+- 🟢 `[2026-05]` [Comprehension Debt in GenAI-Assisted SE (arXiv 2604.13277)](https://arxiv.org/abs/2604.13277) - Identifies **4 debt accumulation patterns** in AI-assisted codebases: black-box acceptance, context-mismatch, dependency-induced atrophy, and verification-bypass. Warning for teams shipping AI-generated code without review discipline — extends the "AI tech debt" literature beyond code-level metrics into team comprehension.
+
+  <details><summary>The four patterns</summary>
+
+  - **Black-box acceptance** — merging AI output without understanding the rationale
+  - **Context-mismatch** — AI applies generic patterns to local invariants, leaving silent footguns
+  - **Dependency-induced atrophy** — devs lose familiarity with libraries the AI is "handling"
+  - **Verification-bypass** — coverage exists on paper but reviewers stop reading carefully
+  - Counter-pattern: pair AI-generated PRs with explicit *comprehension checks* before merge
+
+  </details>
+
+- 🔵 `[2026-05]` [Kent Beck: "The Genie Tarpit" (Pragmatic Engineer with Fowler)](https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent) - Beck argues current AI tools aren't producing software with the **internal quality** needed for sustainable futures — long-term maintainability is being mortgaged for short-term throughput. Connects to TDD/feedback-loop discussion with Fowler at Pragmatic Summit 2026; "Genies" framing positions LLMs as collaborators that push teams back toward XP-style small, customer-proximate practice.
+
+- 🔵 `[2026-05]` [Martin Fowler: Fragments (May 5, 2026)](https://martinfowler.com/fragments/2026-05-05.html) - Distills the practitioner thesis to two levers: **accelerating feedback loops + managing context**. Open question Fowler raises: does "**one dev + many agents**" really beat "**two devs pairing with agents**"? Echoes Beck's small-team / XP pull and challenges the lone-orchestrator narrative.
 
 - 🟢 `[2026-04]` [GitHub + Accenture: 55% Faster Task Completion (4,800 Devs)](https://firstlinesoftware.com/blog/ai-software-development-2026-2035/) - Large-scale empirical study across 4,800 developers finds 55% faster task completion. McKinsey separately reports 30% lower time-to-market. Early-stage builds see up to 80% cost reduction.
 
@@ -1747,6 +1783,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI snippet issue density vs human | **~1.7×** | TFiR Guardrails 2026 |
 | AI snippets w/ security findings (no guardrails) | **48%** | TFiR Guardrails 2026 |
 | BLS projected SWE growth (through 2034) | **+15%** (vs −6% "programmer") | US BLS |
+| Eng leaders reporting AI productivity gains | **89%** | Harness 2026 |
+| Leaders saying metrics miss tech debt / burnout | **94%** | Harness 2026 |
+| Dev day spent on AI-invisible work | **~1/3** | Harness 2026 |
+| Fortune 500 with AI-assisted dev in production | **78%** (vs 42% in 2024) | Gartner / GitHub via Panto |
+| AI share of GitHub code (projected EoY 2026) | **46% → 60%** | GitHub via Panto AI |
+| Per-dev time saved with AI | **~3.6 hrs/week** | GitHub via Panto AI |
 
 **The emerging pattern:**
 1. **AI makes coding faster but doesn't ship more features** — the bottleneck was never coding
@@ -1760,6 +1802,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 9. **Agentic economics shifting** — flat-rate billing can't absorb agentic consumption (GitHub AI Credits); autonomous agents producing at industrial scale (Delivery Hero ~130-engineer equivalent)
 10. **Trust is now the gate, not capability** — 39% of heavy GenAI users still don't trust outputs (DORA); 84% adoption with 29% trust (LoopStudio); guardrails replacing throughput as procurement criterion (TFiR)
 11. **Macro diffusion is unprecedented** — 17.8% of working-age population using GenAI in Q1 2026; git pushes +78% YoY globally (Microsoft) — fastest-diffusing tech wave on record
+12. **Measurement is the new bottleneck** — 89% of leaders see AI gains but 94% admit their metrics miss the costs (Harness); "harness engineering" emerging as the governance paradigm around autonomous agents (TechTimes, Fowler)
+13. **Comprehension debt is the new tech debt** — black-box acceptance, context-mismatch, dependency atrophy, and verification-bypass accumulate silently in AI-assisted codebases (arXiv 2604.13277); Kent Beck warns internal quality is being mortgaged for short-term throughput
 
 ---
 
@@ -1879,6 +1923,13 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-05-13 | Pragmatic Engineer: Fowler & Beck on Cycles of Disruption | "Genies" framing — AI pushes teams back to XP-style practice |
 | 2026-05-13 | Martin Fowler: Guides & Sensors / Feedback Flywheel | Architectural primitives for reliable agents; team-wide learning loops |
 | 2026-05-13 | TFiR: 2026 Year of Guardrails | Governance becomes the dominant procurement criterion |
+| 2026-05-14 | Harness: State of Engineering Excellence 2026 | 89% see AI gains, 94% admit metrics miss the costs |
+| 2026-05-14 | TechTimes: "Harness Engineering" as the 4th paradigm | Governance layer around agents becomes a distinct paradigm |
+| 2026-05-14 | Cortex: Engineering in the Age of AI Benchmark | IDPs become prerequisite for sustainable AI-assisted engineering |
+| 2026-05-15 | Comprehension Debt in GenAI-Assisted SE (arXiv 2604.13277) | 4 debt patterns: black-box accept, context-mismatch, atrophy, verification-bypass |
+| 2026-05-15 | Kent Beck: "The Genie Tarpit" (with Fowler) | Internal quality being mortgaged for short-term throughput |
+| 2026-05-15 | Martin Fowler: Fragments (May 5) | "1 dev + many agents" vs "2 devs pairing with agents" — open question |
+| 2026-05-15 | Gartner/GitHub market data: 78% of Fortune 500 in production | 46% of GitHub code AI-generated, projected 60% by EoY 2026 |
 
 ---
 
