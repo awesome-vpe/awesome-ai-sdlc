@@ -437,6 +437,19 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-04]` [DORA Metrics 2026: AI Expansion Meets Visibility Crisis](https://byteiota.com/dora-metrics-2026-ai-expansion-meets-visibility-crisis/) - DORA grew from 4 to 20+ metrics including AI-specific KPIs (GenAI tool ROI, AI coding productivity). Key finding: "AI doesn't fix teams, it amplifies what's already there." 90% use AI tools, 80% believe they boost productivity, but 30% don't trust AI-generated code. AI improves throughput but increases change failure rate.
 
+- 🟢 `[2026-05]` [Meta-Analysis: GenAI Coding Assistants Show Moderate Productivity Gains (g=0.33), No Learning Effect](https://arxiv.org/abs/2605.04779) - Rigorous meta-analysis of 23 studies (27 effect sizes) finds statistically significant but moderate positive effect on developer productivity (Hedges' g = 0.33). Gains larger in controlled experiments than real-world contexts. Crucially, no significant effect on learning outcomes (g = 0.14).
+
+  <details><summary>Key findings</summary>
+
+  - **23 studies, 27 effect sizes** — most rigorous meta-analysis of GenAI coding tools to date
+  - Productivity effect: **Hedges' g = 0.33** — statistically significant but moderate
+  - Gains **larger in lab settings**, smaller in real-world OSS/enterprise contexts
+  - **No significant effect on learning** (g = 0.14) — raises concerns about long-term skill development
+  - Confirms the pattern: AI helps speed, but the effect is more modest than vendor claims suggest
+  - Complements Anthropic's skill formation study showing 17% comprehension reduction
+
+  </details>
+
 - 🟡 `[2026-04]` [Pragmatic Engineer AI Survey: 3 Developer Archetypes (900+ Respondents)](https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026) - "Builders" debug AI slop, "Shippers" accumulate tech debt, "Coasters" generate low-quality code. EM and IC roles converging. Companies spending ~$200/mo per dev on AI tools, with some CTOs admitting budgets are unsustainable.
 
   <details><summary>Key findings — three archetypes</summary>
@@ -756,7 +769,17 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *AI-assisted architecture decisions, design review, and system modeling.*
 
-<!-- Entries welcome: AI architecture assistants, design doc generators, ADR tools -->
+- 🟢 `[2026-05]` [Architectural Constraint Alignment for AI-Assisted Development (CAiSE'26)](https://arxiv.org/abs/2605.04973) - RAG + agentic clarification loops enforce architectural constraints, infrastructure dependencies, and org standards during AI code generation. Results show improved consistency and deployability vs general-purpose codegen.
+
+  <details><summary>Key findings</summary>
+
+  - Addresses AI tools' **lack of awareness** of architectural constraints, infrastructure dependencies, and org standards during rapid prototyping
+  - Proposes **retrieval-augmented scaffolding** combining platform-based code generation with agentic clarification loops
+  - Results: improved **consistency and deployability** vs general-purpose AI codegen
+  - To appear at **CAiSE'26** — signals growing academic attention to architecture-aware AI coding
+  - Practical implication: AI coding tools need architectural context, not just code context
+
+  </details>
 
 ---
 
@@ -882,6 +905,36 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-04]` [OpenAI Agentic Engineering Case Study: Codex App Rebuilt in Weeks](https://www.techbyjohan.com/tech-insights-2026-week-17/) - OpenAI rebuilt their desktop app in React/TypeScript as a unified codebase using agentic coding workflows. Full feature parity for 3M users achieved in ~2 months. Makes the case for consolidating multi-platform codebases as AI makes unified stacks dramatically more efficient.
 
+- 🔵 `[2026-05]` [Simon Willison: Vibe Coding and Agentic Engineering Are Converging](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) - Even experienced engineers are no longer reviewing every line of AI-generated code, blurring the line between "vibe coding" and responsible agentic engineering. Argues the key question is trust calibration — treating AI output like code from another team. 650+ HN points, 725 comments.
+
+  <details><summary>Key insights</summary>
+
+  - Even **disciplined practitioners** admit they're lowering code review intensity on AI output
+  - The boundary between "vibe coding" (no review) and "agentic engineering" (supervised) is **collapsing in practice**
+  - Key question: **trust calibration** — treat AI output like code from a capable but fallible teammate
+  - 650+ HN points with 725 comments — struck a nerve across the industry
+  - Makes the accountability and quality assurance questions **increasingly urgent**
+
+  </details>
+
+- 🟢 `[2026-05]` [SWE-WebDevBench: Benchmarking Vibe Coding Platforms as Virtual Software Agencies](https://arxiv.org/abs/2605.04637) - 68-metric benchmark evaluating 6 AI app-builder platforms reveals: specification bottleneck compresses business requirements, polished UIs mask broken backends, no platform scores >60% on engineering quality, security scores max at 65% vs 90% target.
+
+  <details><summary>Key findings</summary>
+
+  - **35-page benchmark** evaluating 6 AI app-builder platforms across **68 metrics**
+  - **Specification bottleneck:** business requirements get compressed through natural language
+  - **Polished UIs mask broken backends** — demo-quality ≠ production-quality
+  - **No platform scores >60%** on engineering quality
+  - **Security scores max at 65%** vs 90% target; concurrency handling as low as **6%**
+  - Tests the gap between demo-quality output and **production-grade software**
+  - Sobering data for anyone betting on "vibe coding" replacing engineering discipline
+
+  </details>
+
+- 🔵 `[2026-05]` [Cloudflare: Agents Can Now Autonomously Create Accounts, Buy Domains, and Deploy](https://blog.cloudflare.com/agents-stripe-projects/) - AI agents can perform full end-to-end deployment workflows — from account creation to domain purchase to deployment — raising questions about expanding autonomy of coding agents in production infrastructure.
+
+- 🔵 `[2026-05]` [Tilde.run: Agent Sandbox with Transactional, Versioned Filesystem](https://tilde.run/) - Sandboxed environment for coding agents featuring transactional filesystem semantics, enabling rollback and version control of agent-produced artifacts. 178 HN points on launch.
+
 - 🟡 `[2026-04]` [GitLab + AWS: Agentic DevSecOps via BYOM](https://www.stocktitan.net/news/GTLB/git-lab-collaborates-with-aws-to-bring-agentic-dev-sec-ops-to-n87kz4d9bnjq.html) - GitLab Duo Agent Platform now routes inference through Amazon Bedrock — no new vendor onboarding. Source code and inference stay in customer AWS environments. Key signal: AI agents generating enough code/MRs/pipeline activity that governance tooling is now a requirement.
 
 - 🟡 `[2026-04]` [InfoWorld: Best Practices for Agentic Systems in Software Engineering](https://www.infoworld.com/article/4154570/best-practices-for-building-agentic-systems.html) - Anthropic data: ~50% of AI agent deployments are in software engineering. Less than half of orgs report measurable ROI from agentic AI experiments. Multi-agent "factories" for complex knowledge work expected to emerge in 2026.
@@ -918,6 +971,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-04]` [HN Discussion: "Technical, Cognitive, and Intent Debt"](https://news.ycombinator.com/item?id=47865661) - Active debate on how AI-generated code introduces new forms of technical debt — "cognitive debt" (code no one fully understands) and "intent debt" (code that works but doesn't reflect actual design intent). Deep domain knowledge increasingly valuable as differentiator.
 
+- 🔵 `[2026-05]` ["The Bottleneck Was Never the Code"](https://www.thetypicalset.com/blog/thoughts-on-coding-agents) - Essay arguing AI coding agents shift the bottleneck from implementation to specification and organizational coordination. Invokes Brooks' Mythical Man-Month: code is the "residue" of human negotiation, and making the residue cheaper doesn't make the negotiation faster. 561 HN points.
 - 🟢 `[2026-05]` [IACDM: Verification-First Framework for AI-Assisted Development](https://arxiv.org/abs/2604.16399) - Addresses the "verification gap": experienced devs using frontier AI models were measurably slower in objective evaluations despite *believing* they were faster. 10.3% of AI-generated apps in a production showcase had critical security flaws. Proposes 8-phase adversarial verification methodology. Tool-agnostic, tested across 20+ projects.
 
 - 🔵 `[2026-02]` [Context Window Collapse](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - In long sessions, specs from early exchanges become effectively invisible. Idempotency requirements forgotten by completion time.
@@ -972,6 +1026,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🔵 `[2026-04]` [code-review-graph: 49x Token Reduction for AI Code Reviews](https://github.com/tirth8205/code-review-graph) - Open-source tool builds a local knowledge graph of codebases so AI reads only relevant context. Claims 6.8x fewer tokens on reviews, up to 49x on daily coding. Practical approach to cost-effective AI coding at scale.
 
 - 🟢 `[2026-04]` [arXiv: Brevity Constraints Improve LLM Accuracy by 26pp](https://www.innovatrixinfotech.com/blog/code-review-graph-claude-code-token-usage-reduction) - March 2026 paper (arXiv:2604.00025) tested 31 LLM models on 1,485 problems. Large models improved accuracy by 26 percentage points with brevity constraints — counterintuitive finding with implications for AI-assisted code review.
+
+- 🟢 `[2026-05]` [Developers Mostly Accept LLM Refactoring Suggestions Without Changes (PROMISE'26)](https://arxiv.org/abs/2605.04835) - Study of 169 GitHub commits linked to ChatGPT conversations finds developers overwhelmingly apply LLM-generated refactoring suggestions as-is. When modifications are made, they tend to be major and follow 5 distinct patterns.
 
 - 🔵 `[2026-04]` [endjin: AI-Assisted Coding Is Four Decisions, Not One](https://endjin.com/blog/ai-assisted-coding-is-four-decisions-not-one) - 4-layer mental model: Harness → Capabilities → Model → Provider. Key insight: harness choice (system prompts, agentic workflows, memory) often matters more than model choice for productivity.
 
@@ -1160,6 +1216,18 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   - Policy is **pragmatic, not prohibitionist**: AI is allowed, but accountability stays with the human contributor
   - Explicitly frames AI like any other external aid: useful, but **not an excuse** for poor review or lack of understanding
   - Strong template for enterprise policy: allow use, require ownership, keep review standards human
+
+  </details>
+
+- 🟠 `[2026-05]` [Accountability Gap in AI Coding Agents (AIware'26)](https://arxiv.org/abs/2605.04532) - Analysis of Terms of Service for major AI coding tools reveals consistent pattern of shifting responsibility for correctness, safety, and legal compliance onto users. Presents a research roadmap for accountable agents in SE.
+
+  <details><summary>Key findings</summary>
+
+  - Analyzed **ToS for major AI coding tools** — significant gaps in ownership, liability, and responsibility allocation
+  - Consistent pattern: **responsibility shifted to developers** when agents generate or modify code
+  - No clear framework for when agent-generated code causes harm or legal issues
+  - Presents **research roadmap** for accountable AI agents in software engineering
+  - Accepted at **AIware 2026** — signals growing academic attention to governance gaps
 
   </details>
 
@@ -1661,6 +1729,11 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Cursor vs VS Code coding hours | **65% more** (50.5h vs 30.6h) | PanDev Metrics |
 | Unsupervised AI code → rework | **>30%** of time spent fixing | Gartner via AI Infra Link |
 | Platform eng. environment failures | **-40%** for elite teams | DORA 2026 |
+| Meta-analysis productivity effect | **g=0.33** (moderate, significant) | arXiv meta-analysis (23 studies) |
+| AI coding effect on learning | **g=0.14** (not significant) | arXiv meta-analysis (23 studies) |
+| Vibe coding platform engineering quality | **<60%** (no platform passes) | SWE-WebDevBench |
+| Vibe coding platform security scores | **Max 65%** vs 90% target | SWE-WebDevBench |
+| LLM refactoring suggestions accepted as-is | **Majority** (169 commits) | PROMISE'26 |
 | SWE-bench Verified (30-month trajectory) | **1.96% → 78.4%** | Bhati survey (May 2026) |
 | OpenAI internal AI code share | **20% → 80%** in one month (Dec) | Brockman/Sequoia |
 | Delivery Hero autonomous agent output | **~130 senior engineer equivalent** | Herogen case study |
@@ -1676,6 +1749,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 5. **Stability is declining** — larger batches, faster changes, same governance = more incidents
 6. **Novel failure modes emerge** — parallel sessions, architectural drift, context collapse
 7. **Skills pipeline at risk** — AI delegation impairs learning; preceptor models needed
+8. **Meta-analysis confirms moderate gains** — g=0.33 across 23 studies; larger in labs than real-world
+9. **"Vibe coding" platforms fail production readiness** — no platform exceeds 60% engineering quality; polished UIs mask broken backends
 8. **Verification is the new frontier** — devs believe they're faster but objective evaluation shows otherwise (IACDM); benchmarks saturated on short tasks, senior-level work remains unsolved (Triadic Data)
 9. **Agentic economics shifting** — flat-rate billing can't absorb agentic consumption (GitHub AI Credits); autonomous agents producing at industrial scale (Delivery Hero ~130-engineer equivalent)
 
@@ -1773,6 +1848,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-04-22 | PanDev: Cursor users log 65% more coding hours | AI IDE self-selection + flow-state effects quantified |
 | 2026-04-22 | GitLab + AWS: Agentic DevSecOps via BYOM | Agent governance tooling becomes enterprise requirement |
 | 2026-04-22 | Gartner: successful AI orgs invest 4x in foundations | Data quality + governance > model choice |
+| 2026-05-06 | Simon Willison: vibe coding and agentic engineering converging | Even disciplined practitioners lowering review intensity |
+| 2026-05-07 | Meta-analysis: AI coding productivity g=0.33, no learning effect | Most rigorous multi-study synthesis; moderate gains confirmed |
+| 2026-05-07 | SWE-WebDevBench: vibe coding platforms fail production readiness | No platform >60% engineering quality; security max 65% |
+| 2026-05-07 | Accountability gap in AI coding agent ToS | Responsibility consistently shifted to developers |
+| 2026-05-07 | Cloudflare: agents autonomously create accounts and deploy | Agent autonomy expanding into production infrastructure |
 | 2026-05-02 | Brockman: AI coding 20%→80% in one month (December) | Agentic coding velocity milestone |
 | 2026-05-02 | Karpathy: "Software 3.0" — context/prompts replace code | Hasn't typed code since December |
 | 2026-05-02 | Delivery Hero Herogen: autonomous agent = ~130 senior engineers | 85% PR acceptance, 100+ merges/day |
