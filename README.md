@@ -1750,7 +1750,13 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ## Frameworks & Maturity Models
 
-*Models for assessing organizational AI-SDLC maturity.*
+*Frameworks and models for transforming SDLC with AI agents.*
+
+### End-to-End SDLC Frameworks
+
+- 🔵 `[2026-06]` [sdlc-ai-workflow](https://github.com/saitarrun/sdlc-ai-workflow) - Complete multi-agent SDLC orchestration plugin for Claude Code. 26 specialized agents mapped to 6 phases (Planning, Design, Development, Testing, Deployment, Operations). Features grill-me interview (32 relentless questions), real-time dashboard, 43+ reusable skills, INVEST-compliant requirements, STRIDE threat modeling, and built-in code-review-graph integration. Install via npm: `npm install -g sdlc-ai-workflow`.
+
+### Maturity Models
 
 - 🟡 `[2025-12]` [DORA AI Capabilities Model](https://services.google.com/fh/files/misc/2025_dora_ai_capabilities_model.pdf) - 7 capabilities, 10 outcomes. Value stream mapping recommended.
 
