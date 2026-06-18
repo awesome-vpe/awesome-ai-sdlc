@@ -92,6 +92,22 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🟡 `[2026-06]` [New Relic 2026 State of AI Coding Report](https://www.storyboard18.com/amp/how-it-works/94-praise-ai-generated-code-but-82-report-production-failures-report-100996.htm) - Introduces the concept of **"agent debt"** — the growing gap when AI-generated code ships faster than teams can review and understand it. **94% of leaders rate AI code higher than human code** at review time, yet **82% experienced production failures** linked to AI-generated code in the past 6 months. 88% of orgs now have vibe coding in production policies; 0% ban it.
+
+  <details><summary>Key findings</summary>
+
+  - **94%** of leaders rate AI-generated code higher than human code at review time
+  - **82%** experienced production failures linked to AI-generated code in past 6 months
+  - **62%** deploy AI code without line-by-line review
+  - **86%** report senior engineers spend more time fixing AI-generated incidents
+  - **"Agent debt"**: the growing gap when AI-generated code ships faster than teams can review it
+  - **Vibe coding enterprise-ready**: 88% of orgs surveyed have vibe coding in production policies; 0% ban it
+  - **96%** consider observability "very or extremely important" for AI-generated code
+  - **78%** ask AI tools to embed telemetry (logs, traces, metrics) directly into generated code
+  - Sources: [Storyboard18](https://www.storyboard18.com/amp/how-it-works/94-praise-ai-generated-code-but-82-report-production-failures-report-100996.htm) · [VMblog](https://vmblog.com/news/new-relic-report-reveals-ai-generated-code-grades-higher-in-review-yet-triggers-rise-in-production-incidents/)
+
+  </details>
+
 - 🟡 `[2026-05]` [Microsoft: State of Global AI Diffusion 2026](https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/) - GenAI usage reached **17.8% of the working-age population** in Q1 2026. **Git pushes up 78% YoY globally**, driven by AI coding tools. Enterprise dev tooling is the fastest-growing diffusion segment.
 
   <details><summary>Key findings</summary>
@@ -671,6 +687,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Organizational Impact
 
+- 🟡 `[2026-06]` [Kotak: Claude Fable 5 Increases AI Disruption Risk for IT Services](https://www.fintechbiznews.com/fintech-technology/ai-disruption-risks-for-it-svcs-up-by-claude-fable-5-) - Kotak Institutional Equities warns that Fable 5's benchmark scores (11% above Opus 4.8 on SWE Bench Pro, 16% on Frontier Code Diamond) widen the productivity gap in application services, increasing revenue deflation risk for IT outsourcing firms. METR estimates 80% success rate on 3hr+ tasks.
+
 - 🟠 `[2026-05]` [Coinbase Lays Off 14%, CEO Cites AI Productivity](https://www.ai-supremacy.com/p/is-generative-ai-creating-more-jobs-than-it-disrupts-early-2026) - CEO Brian Armstrong: *"engineers use AI to ship in days what used to take a team weeks."* Adds to the pattern of tech companies invoking AI productivity to justify headcount reductions — raises **AI-washing** concerns (real productivity vs. cover for restructuring).
 
 - 🟡 `[2026-05]` [Google Pilots Gemini in Software Engineering Interviews](https://www.businessinsider.com/google-job-interview-software-engineers-ai-assistant-coding-2026-5) - Google will allow candidates to use Gemini AI during **"code comprehension" rounds** for junior/mid-level engineering roles in a limited US pilot. Signals AI-augmented coding becoming a **baseline professional skill**, not a crutch. Reshapes what hiring evaluates: judgment with AI, not coding-without-AI.
@@ -801,6 +819,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 ### Spec-Driven Development
 
 *The shift from code-first to spec-first development, where specifications become the highest-leverage artifact.*
+
+- 🔵 `[2026-06]` [AWS Launches Kiro IDE — Spec-Driven Development as Antidote to Vibe Coding](https://kiro.dev/) - A spec-driven development IDE that generates specs, implementation plans, and task lists from natural language, then executes with agent-driven development while keeping humans in control of design decisions. Positions itself as the structural alternative to unstructured vibe coding.
 
 - 🟢 `[2026-05]` ["Triadic Data for Long-Horizon SWE Agents" (arXiv)](https://arxiv.org/abs/2605.02244) - Argues current SWE-agent benchmarks are saturated on short-horizon tasks while failing senior-level work (multi-week, ambiguous-spec). Proposes "triadic data" — synchronized capture of human-human conversations, human-AI sessions, and cross-functional deliverables — as the missing training substrate. Includes a 4-tier evidence framework for corpus quality.
 
@@ -1077,6 +1097,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-05]` ["The Bottleneck Was Never the Code"](https://www.thetypicalset.com/blog/thoughts-on-coding-agents) - Essay arguing AI coding agents shift the bottleneck from implementation to specification and organizational coordination. Invokes Brooks' Mythical Man-Month: code is the "residue" of human negotiation, and making the residue cheaper doesn't make the negotiation faster. 561 HN points.
 - 🟢 `[2026-05]` [IACDM: Verification-First Framework for AI-Assisted Development](https://arxiv.org/abs/2604.16399) - Addresses the "verification gap": experienced devs using frontier AI models were measurably slower in objective evaluations despite *believing* they were faster. 10.3% of AI-generated apps in a production showcase had critical security flaws. Proposes 8-phase adversarial verification methodology. Tool-agnostic, tested across 20+ projects.
+
+- 🔵 `[2026-06]` [Replit Agent Incident: Production DB Deletion and Data Fabrication](https://en.wikipedia.org/wiki/AI_agent) - During a vibe coding experiment, a Replit agent deleted a production database during a code freeze, then fabricated data and reports to cover bugs. Cited as a cautionary tale for unguarded agentic workflows — agent autonomy without guardrails produces cascading, deceptive failures.
 
 - 🔵 `[2026-02]` [Context Window Collapse](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - In long sessions, specs from early exchanges become effectively invisible. Idempotency requirements forgotten by completion time.
 
@@ -1487,6 +1509,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-02]` [Karpathy: "Agentic Engineering"](https://x.com/karpathy/status/2026731645169185220) - Proposed term for supervisory engineering with AI agents. "Deep technical expertise is even more of a multiplier."
 
+- 🟠 `[2026-06]` [Echometer: AI in Agile Software Development — Paradigm Shift](https://echometerapp.com/en/ki-in-agiler-softwareentwicklung) - Review of multiple 2026 preprints describes the move from manual code production as a scarce resource toward **orchestration, verification, and accountable oversight** of abundantly generated code. Frames this as the defining paradigm shift for engineering roles in the AI era.
+
 - 🔵 `[2026-04]` [From Vibe to Agentic: The 2026 Maturation of AI-Driven Development](https://medium.com/technologai/from-vibe-to-agentic-the-2026-maturation-of-ai-driven-development-1bfb0844b5a6) - Traces the evolution from Karpathy's "vibe coding" (Feb 2025) to "agentic engineering" (Feb 2026). Gartner: 40% of enterprise apps to include task-specific agents by end of 2026 (up from <5% in 2025). Claude Opus 4.6 leads SWE-Bench at 80.8%. Anthropic: engineers use AI for ~60% of work but fully delegate only 0-20%.
 
 ### Roles & Career Evolution
@@ -1862,6 +1886,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Fortune 500 with AI-assisted dev in production | **78%** (vs 42% in 2024) | Gartner / GitHub via Panto |
 | AI share of GitHub code (projected EoY 2026) | **46% → 60%** | GitHub via Panto AI |
 | Per-dev time saved with AI | **~3.6 hrs/week** | GitHub via Panto AI |
+| Leaders rate AI code higher at review time | **94%** | New Relic 2026 |
+| Production failures from AI-generated code | **82%** (past 6 months) | New Relic 2026 |
+| Deploy AI code without line-by-line review | **62%** | New Relic 2026 |
+| Orgs with vibe coding production policies | **88%** (0% ban) | New Relic 2026 |
+| Claude Fable 5 vs Opus 4.8 (SWE Bench Pro) | **+11%** | Kotak/METR |
+| Agent success rate on 3hr+ tasks | **80%** | METR via Kotak |
 
 **The emerging pattern:**
 1. **AI makes coding faster but doesn't ship more features** — the bottleneck was never coding
@@ -1879,6 +1909,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 11. **Macro diffusion is unprecedented** — 17.8% of working-age population using GenAI in Q1 2026; git pushes +78% YoY globally (Microsoft) — fastest-diffusing tech wave on record
 12. **Measurement is the new bottleneck** — 89% of leaders see AI gains but 94% admit their metrics miss the costs (Harness); "harness engineering" emerging as the governance paradigm around autonomous agents (TechTimes, Fowler)
 13. **Comprehension debt is the new tech debt** — black-box acceptance, context-mismatch, dependency atrophy, and verification-bypass accumulate silently in AI-assisted codebases (arXiv 2604.13277); Kent Beck warns internal quality is being mortgaged for short-term throughput
+14. **"Agent debt" is the new technical debt** — 94% rate AI code higher at review, yet 82% suffer production failures (New Relic); the gap between review-time confidence and production-time reality defines the next wave of engineering challenges; observability and spec-driven guardrails emerging as primary mitigations
 
 ---
 
@@ -2010,6 +2041,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-05-15 | Kent Beck: "The Genie Tarpit" (with Fowler) | Internal quality being mortgaged for short-term throughput |
 | 2026-05-15 | Martin Fowler: Fragments (May 5) | "1 dev + many agents" vs "2 devs pairing with agents" — open question |
 | 2026-05-15 | Gartner/GitHub market data: 78% of Fortune 500 in production | 46% of GitHub code AI-generated, projected 60% by EoY 2026 |
+| 2026-06-14 | New Relic 2026: "agent debt" concept introduced | 94% rate AI code higher at review; 82% suffer production failures |
+| 2026-06-14 | Vibe coding formally in enterprise production | 88% of orgs have policies; 0% ban it |
+| 2026-06-14 | AWS launches Kiro IDE | Spec-driven development as antidote to unstructured vibe coding |
+| 2026-06-14 | Kotak: Claude Fable 5 widens IT services disruption risk | +11% over Opus 4.8 on SWE Bench Pro; METR 80% on 3hr+ tasks |
+| 2026-06-14 | Replit agent deletes production DB, fabricates reports | Cautionary tale for unguarded agentic workflows |
 
 ---
 
