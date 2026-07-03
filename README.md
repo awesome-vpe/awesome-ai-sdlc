@@ -154,6 +154,64 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🔵 `[2026-05]` [Rob Bowley: "AI Won't Save You from Your Engineering Culture"](https://blog.robbowley.net/2025/11/05/findings-from-dxs-2025-report-ai-wont-save-you-from-your-engineering-culture/) - Reading of DX's 2025 report: tooling can't compensate for weak review, deployment, or learning practices. AI is a multiplier on existing culture — strong orgs amplify, weak orgs regress. Aphoristic framing now circulating widely in May 2026 measurement debate.
 
+- 🟢 `[2026-05]` [DORA: ROI of AI-Assisted Software Development (May 2026 release)](https://cloud.google.com/resources/content/dora-roi-of-ai-assisted-software-development) - Formal release introducing a **J-Curve model** of AI value realization: orgs dip before they climb, and headcount reduction during the dip kills the curve. Frames AI as an **amplifier** — strong eng foundations (platforms, workflow clarity, alignment) compound returns; weak orgs see AI expose weaknesses. Companion [InfoQ writeup](https://www.infoq.com/news/2026/05/dora-roi-ai-assisted-dev-report/) and [DORA balancing tensions](https://dora.dev/insights/balancing-ai-tensions/).
+
+  <details><summary>Key findings</summary>
+
+  - **J-Curve of AI value:** productivity dips during platform/process retooling before climbing — orgs that cut headcount in the dip never reach the upside
+  - Strong foundations (platforms, workflow clarity, leadership alignment) **compound** AI returns; weak orgs see AI **expose** weaknesses
+  - DORA's framing converges with Harness/DX: **AI is an amplifier, not a multiplier** — outcomes track the org's pre-AI engineering maturity
+  - Companion data (DORA 2025): individual output jumps (+21% tasks, +98% PRs merged) but org delivery metrics stay flat — the "Acceleration Whiplash" pattern
+  - Discourages naive seat-elimination ROI; advocates platform & review-capacity investment as the gating constraint
+
+  </details>
+
+- 🟢 `[2026-05]` [Stanford SE Productivity Program — Greenfield vs Legacy AI Gap](https://makemeacto.substack.com/p/what-should-one-think-of-the-2026) - Cited inside the DORA 2026 ROI report: AI yields **35–40% gains on simple greenfield work** but **≤10% on complex legacy code** — and the gap is **widening, not closing**. Concrete quantification of the codebase-complexity ceiling that bounds AI productivity claims.
+
+- 🟡 `[2026-05]` [LinearB 2026 Software Engineering Benchmarks (8.1M PRs, 4,800 Teams)](https://linearb.io/resources/software-engineering-benchmarks-report) - Largest-ever public benchmark of AI vs human PRs. AI PRs **wait 4.6× longer pre-review** but are **reviewed 2× faster**; acceptance rate is **32.7% vs 84.4%** for manual. Cycle-time gains appear in open→merge, but review time and rework rise in tandem — team health metrics diverge from velocity.
+
+- 🟡 `[2026-05]` [Gartner Q1 2026 Survey — Adoption ≠ Proficiency](https://www.gartner.com/en/newsroom/press-releases/2026-05-13-gartner-predicts-by-2027-50-percent-of-enterprises-without-a-people-centric-ai-strategy-will-lose-their-top-ai-talent) - **19% of employees report *zero* time saved by AI.** Proficient multi-use-case users are **2.3× more likely to deliver high-quality work** and **3.2× more likely to drive process improvement**. The new differentiator isn't adoption — it's proficiency, governance, and people-centric strategy. Predicts 50% of enterprises without a people-centric AI strategy will lose top AI talent by 2027.
+
+- 🟡 `[2026-05]` [McKinsey: 62% of Orgs Experimenting with AI Agents, 23% Scaling](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/where-ai-will-create-value-and-where-it-wont) - Latest McKinsey datapoint: agentic adoption crossing from pilot to scale. **Software engineering remains the top function for AI value capture.** Reinforces the broader thesis that agentic systems are now the operational frontier, with SE leading the way.
+
+- 🟡 `[2026-05]` [Microsoft Work Trend Index 2026 — AI Productivity Is Not Enough (Forbes / Moor Insights)](https://www.forbes.com/sites/moorinsights/2026/05/19/microsoft-work-trend-index-2026-shows-ai-productivity-is-not-enough/) - Trillions of M365 telemetry signals + 20K-worker global survey: **AI productivity gains plateau without org-level redesign of work**. "AI fluency" — proficient, multi-context use — now the dominant differentiator over raw adoption. Reinforces the Gartner Q1 2026 proficiency-vs-adoption thesis at Microsoft scale.
+
+  <details><summary>Key findings</summary>
+
+  - Adoption alone produces a one-time speed bump; sustained gains require **process redesign**, not just tool rollout
+  - **"AI fluency"** (multi-use-case, proficient, embedded in workflows) is the new productivity differentiator
+  - Reinforces the recurring 2026 pattern: org maturity dominates individual tooling
+  - Echoes Fowler/Morris "on-the-loop" framing — fluency = orchestration skill
+
+  </details>
+
+- 🔵 `[2026-05]` ["DORA Metrics Are Lying to You (and AI Is Making It Worse)" (Patrick Koss, May 2026)](https://medium.com/@patrickkoss/dora-metrics-are-lying-to-you-and-ai-is-making-it-worse-f60a1bead044) - Argues classic DORA metrics are easily **gamed by AI-padded PR throughput** — more PRs, larger diffs, no quality signal. Proposes **rework-rate + cognitive-load instrumentation** as corrective. Sits next to Harness 2026 ("94% of leaders say metrics miss the costs") as the practitioner case for next-gen DX measurement.
+
+- 🟡 `[2026-05]` [Google DORA Research Recap — Devs Use AI Heavily, DORA Metrics Don't Auto-Improve (Android Experto, May 17)](https://androidexperto.com/google-dora-research-software-developers-use-ai-heavily/) - Aggregates Google DORA team findings: AI is now ubiquitous in coding, but **delivery performance still gated by CI/CD maturity, testing discipline, architecture, and team coordination**. AI does not automatically lift DORA metrics — the foundations have to be there first. Strongly reinforces the "AI amplifies what's already there" thesis.
+
+- 🟢 `[2026-05]` [Characterizing Faults in Agentic AI — Empirical Taxonomy from 375 GitHub Issues](https://github.com/ai-boost/awesome-harness-engineering) - First grounded taxonomy of **agent-specific fault modes** mined from 375 issues across AutoGen, CrewAI, OpenAI Agents SDK, LangChain, CAMEL, and DB-GPT. Categories: initialization failures, role deviation, memory/state deficiencies, orchestration failures, and tool-integration errors. Anchors the "harness engineering" literature with empirical evidence on where agents actually break.
+
+  <details><summary>The fault taxonomy</summary>
+
+  - **Initialization failures** — agent setup, config, and capability declaration go wrong before any reasoning happens
+  - **Role deviation** — agents drift from assigned role/persona, producing out-of-scope outputs
+  - **Memory & state deficiencies** — context loss, stale state, cross-turn contradictions
+  - **Orchestration failures** — multi-agent handoffs, planning loops, deadlocks
+  - **Tool-integration errors** — bad arguments, mishandled errors, unsafe side effects
+  - Maps directly onto Fowler's "guides + sensors" + harness engineering remediation patterns
+
+  </details>
+
+- 🔵 `[2026-05]` [Daniel Sögl: "Beyond Copilot — How AI Coding Tools Change Productivity, Quality and the Developer Role" (BCN Data Nights, May 14)](https://speakerdeck.com/danielsogl/beyond-copilot-how-ai-coding-tools-change-productivity-quality-and-the-developer-role-bcn-data-nights-at-appodeal) - Practitioner synthesis of arXiv 2603.28592 + DORA 2026: the **instability tax is real but offset by ROI**, and the developer role shifts toward **reviewer / architect / agent-supervisor**. Useful as a digest deck for engineering leaders pitching AI strategy internally.
+
+- 🔵 `[2026-05]` ["We Have Been Measuring Developer Productivity Wrong for Forty Years" (Java Code Geeks, May 2026)](https://www.javacodegeeks.com/2026/05/we-have-been-measuring-developer-productivity-wrong-for-forty-years-and-the-metrics-we-replaced-the-bad-ones-with-are-also-wrong.html) - Critiques both the old (LOC, story points) and new (DORA) measurement orthodoxies in light of AI. Argues for **outcome-oriented + rework-aware measurement** as the next generation. Companion to Patrick Koss's "DORA Lying" critique.
+
+- 🟡 `[2026-05]` [MIT Sloan: Generative AI Changes How Employees Spend Their Time](https://mitsloan.mit.edu/ideas-made-to-matter/generative-ai-changes-how-employees-spend-their-time) - GitHub Copilot users shifted **+12.4% of their time toward core coding** and **−24.9% on project management**. **Composition change > raw speedup**: AI doesn't just make you faster, it redistributes what you spend time on. Empirical grounding for the "role redesign" thesis surfacing across Fowler, EPAM, and Microsoft Work Trend Index.
+
+- 🟡 `[2026-05]` [EPAM: From Traditional SDLC to Native AI SDLC](https://www.epam.com/about/newsroom/in-the-news/2026/from-traditional-software-to-a-native-ai-sdlc-how-genai-is-redefining-engineering) - Industry framing: **native-AI SDLC requires re-architecting CI/CD, review gates, and ownership models** — bolt-on adoption is why org-level metrics stagnate while individual gains are real. Names the architectural shift required to translate AI gains into business outcomes; pairs with DORA's J-Curve and Fowler's harness-engineering work.
+
+- 🟢 `[2026-05]` [SWE-Bench Pro Leaderboard Snapshot (May 13, 2026)](https://labs.scale.com/leaderboard/swe_bench_pro_public) - Frontier models still struggle on contamination-resistant SE: **Claude Mythos Preview 77.8%, Claude Opus 4.7 (Adaptive) 64.3%, GPT-5.5 58.6%.** The gap vs SWE-Verified (where frontier models approach 100%) quantifies the **benchmark-vs-reality divide** for real engineering work. Companion [BenchLM tracker](https://benchlm.ai/benchmarks/swePro).
+
 - 🟡 `[2026-04]` [NYT: The Big Bang — A.I. Has Created a Code Overload](https://www.nytimes.com/2026/04/06/technology/ai-code-overload.html) - Financial services firm went from 25K to 250K lines/month with Cursor, creating 1M-line review backlog. Code overload forcing companies to rethink velocity vs. absorption capacity.
 
 - 🟢 `[2026-04]` [Stanford HAI 2026 AI Index Report](https://hai.stanford.edu/ai-index/2026-ai-index-report) - 400+ page annual report. AI boosts SW dev productivity 26%, but entry-level hiring declining. SWE-bench Verified jumped from ~60% (2024) to nearly 100% (2025). AI adopted faster than any previous technology wave. GenAI tools valued at $172B/year for US consumers.
@@ -490,6 +548,14 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   - Counter-pattern: pair AI-generated PRs with explicit *comprehension checks* before merge
 
   </details>
+
+- 🟢 `[2026-05]` [From Gains to Strains: Modeling Developer Burnout with GenAI Adoption (arXiv 2510.07435)](https://arxiv.org/pdf/2510.07435) - First formal model linking heavy GenAI use to **burnout risk via redistributed effort toward verification**. Argues the perceived speed gains create new cognitive failure modes — devs spend less time writing code but more time *checking* code they didn't write. Complements "Fast and Spurious" with a wellbeing angle on the productivity paradox.
+
+- 🔵 `[2026-05]` [Margaret-Anne Storey: "Cognitive Debt" (Feb 2026)](https://margaretstorey.com/blog/2026/02/09/cognitive-debt/) - Shifts the lens from technical debt to ***cognitive* debt** — what accumulates when devs over-delegate to agents and lose situated knowledge of their own systems. Pairs with arXiv 2604.13277 (Comprehension Debt) as the practitioner-readable framing for the same phenomenon.
+
+- 🟡 `[2026-05]` [Faros AI: "Acceleration Whiplash" (22K-Dev Dataset)](https://www.faros.ai/research/ai-acceleration-whiplash) - Throughput jumps **66%** while **incident rate rises faster** — the quality/volume gap widens. Telemetry from 22K developers shows the productivity paradox is not a measurement artifact: AI accelerates outputs but degrades stability without proportional governance investment.
+
+- 🟡 `[2026-05]` [CodeRabbit Dec 2025 Report (2026 syntheses)](https://www.faros.ai/blog/key-takeaways-from-the-dora-report-2025) - Synthesized stats now widely cited: AI-coauthored PRs show **~1.7× more issues**, **48% of AI-generated code contains security vulnerabilities**, **median PR review time +441% YoY**, and **31% more PRs merged with zero review**. Anchors the "review is the new bottleneck" thesis with cross-corpus numbers.
 
 - 🔵 `[2026-05]` [Kent Beck: "The Genie Tarpit" (Pragmatic Engineer with Fowler)](https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent) - Beck argues current AI tools aren't producing software with the **internal quality** needed for sustainable futures — long-term maintainability is being mortgaged for short-term throughput. Connects to TDD/feedback-loop discussion with Fowler at Pragmatic Summit 2026; "Genies" framing positions LLMs as collaborators that push teams back toward XP-style small, customer-proximate practice.
 
@@ -949,6 +1015,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - [OpenAI Codex](https://openai.com/index/codex/) - Cloud-based coding agent with sandbox.
 - [Aider](https://aider.chat) - Terminal-based pair programming with git integration.
 - [Windsurf](https://windsurf.com/) - IDE optimized for agent-developer collaboration.
+- 🔵 `[2026-05]` [Martin Fowler / Kief Morris: "Humans and Agents in Software Engineering Loops"](https://www.martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) - Reframes the developer's role: shifting from **"in the loop"** (writing every line) to **"on the loop"** (designing specs, tests, feedback mechanisms that guide agents). Pairs with InfoQ's [Where Do Humans Fit in AI-Assisted SW Dev?](https://www.infoq.com/news/2026/03/mf-aiassisted-dev/) — warns that mid-career engineers are at the highest risk of being left behind as the orchestration model matures.
+
 - 🔵 `[2026-03]` [AI Agent Tools Study: 177K Tools, Software Development Dominates](https://www.coffeefranchisehub.com/archives/47192) - Analysis of Model Context Protocol repositories (Nov 2024–Feb 2026). Software development = **67% of all AI agent tools**, **90% of downloads**. Action tools (file/system modification) surged from 27% → 65%. Shift from passive data gathering to active environment manipulation.
 
   <details><summary>Key findings</summary>
@@ -1352,6 +1420,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 
 - 🟡 `[2026-04]` [Gartner: 25% of Enterprise GenAI Apps Will Face ≥5 Security Incidents/Year by 2028](https://www.gartner.com/en/newsroom/press-releases/2026-04-09-gartner-predicts-25-percent-of-all-enterprise-gen-ai-applications-will-experience-at-least-five-minor-security-incidents-per-year-by-2028) - Gartner survey of 782 I&O leaders predicts rising security incident frequency as GenAI apps proliferate across enterprises.
+
+- 🟠 `[2026-05]` [Gartner: "Prompt-to-App" Could Increase Software Defects 2500× by 2028](https://www.armorcode.com/report/gartner-predicts-2026-ai-potential-and-risks-emerge-in-software-engineering-technologies) - Forecast warning that citizen-developer "prompt-to-app" patterns — non-engineers generating production code via natural language — could **increase software defects 2500×**, triggering a quality/reliability crisis by 2028. Positions the governance/harness layer as **mandatory infrastructure**, not optional tooling.
 
 - 🟠 `[2026-05]` [ACM TechBrief: "AI-Assisted Software Development (Vibe Coding) — Benefits and Risks"](https://bioengineer.org/new-report-explores-the-impact-of-ai-on-software-development/) - ACM's Technology Policy Council warns that AI-generated code frequently bypasses critical engineering disciplines (testing, security review, maintainability). Agentic coding assistants that autonomously execute code expand the attack surface. Recommends treating AI output as untrusted by default.
 
@@ -1945,6 +2015,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 14. **AI coding costs are hitting a wall** — Uber exhausted its 2026 AI coding budget by April; Microsoft restricted Claude Code access; flat-rate economics breaking across enterprise (StartupFortune, GitHub AI Credits)
 15. **"Acceleration whiplash" is the new failure mode** — faster code → larger blast radius → review/testing/incident surface grows disproportionately (Faros); "invisible burden" of cognitive load unmeasured by existing dashboards (SD Times)
 16. **Decision fatigue replaces coding fatigue** — the bottleneck shifts from production to judgment; 7× code output overwhelms peer review (Stack Overflow); individual AI variation matters more than tool selection (Pragmatic Engineer)
+14. **AI value follows a J-Curve, not a step-function** — DORA 2026 ROI report formalizes that orgs dip before they climb; headcount cuts during the dip kill the upside, and the legacy-code ceiling (Stanford SE: ≤10% gain vs 35–40% on greenfield) is widening, not closing
+15. **Proficiency, not adoption, is the new differentiator** — Gartner Q1 2026: 19% of employees report zero time saved; proficient multi-use-case users are 2.3× more likely to deliver high-quality work. The role shift from "in the loop" to "on the loop" (Fowler/Morris) makes orchestration skill the durable competitive edge
 
 ---
 
@@ -2088,6 +2160,25 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-05-25 | Pragmatic Engineer: individual AI variation is dominant signal | Tool selection matters less than individual workflow fit |
 | 2026-05-23 | arXiv: "Code as Agent Harness" (2605.18747) | Code as operational substrate for agent reasoning |
 | 2026-05-26 | "Harness Engineering" repos trending on GitHub | 60% of 70 agent projects adopt Agent Loop pattern |
+| 2026-05-16 | DORA: ROI of AI-Assisted SW Dev (J-Curve release) | Formal J-Curve model; headcount cuts in dip kill the upside |
+| 2026-05-16 | Stanford SE Productivity Program (in DORA) | 35–40% gains on greenfield vs ≤10% on legacy — gap widening |
+| 2026-05-16 | SWE-Bench Pro May 13 snapshot | Mythos 77.8%, Opus 4.7 64.3%, GPT-5.5 58.6% — benchmark-reality divide |
+| 2026-05-17 | Margaret-Anne Storey: "Cognitive Debt" | Practitioner framing for over-delegation knowledge loss |
+| 2026-05-17 | Fowler/Kief Morris: "Humans and Agents in SE Loops" | Role shift from "in the loop" to "on the loop" |
+| 2026-05-18 | LinearB 2026 Benchmarks (8.1M PRs, 4,800 teams) | AI PRs wait 4.6× longer, accepted 32.7% vs 84.4% manual |
+| 2026-05-18 | Gartner Q1 2026 survey: adoption ≠ proficiency | 19% report zero time saved; proficient users 2.3× quality |
+| 2026-05-18 | Gartner forecast: 2500× defects from "prompt-to-app" | Governance layer becomes mandatory by 2028 |
+| 2026-05-19 | Faros AI: "Acceleration Whiplash" (22K devs) | 66% throughput gains, incidents rising faster — quality/volume gap |
+| 2026-05-19 | "From Gains to Strains" (arXiv 2510.07435) | Formal model linking heavy GenAI use to burnout via verification load |
+| 2026-05-20 | McKinsey: 62% experimenting agents, 23% scaling | SE remains top function for AI value capture |
+| 2026-05-21 | Microsoft Work Trend Index 2026 | "AI fluency" replaces raw adoption as the productivity differentiator |
+| 2026-05-21 | Patrick Koss: "DORA metrics are lying to you" | AI-padded throughput breaks classic DORA; rework-rate + cognitive load proposed |
+| 2026-05-21 | Characterizing Faults in Agentic AI | First grounded fault taxonomy from 375 issues across AutoGen/CrewAI/LangChain/etc. |
+| 2026-05-21 | Java Code Geeks: 40 years of wrong dev productivity metrics | Outcome + rework-aware measurement as the next generation |
+| 2026-05-21 | Daniel Sögl: "Beyond Copilot" (BCN Data Nights) | Instability tax real but offset by ROI; dev role shifts to reviewer/architect |
+| 2026-05-22 | MIT Sloan: GenAI changes how employees spend their time | Composition change > raw speedup (+12.4% core coding, −24.9% PM) |
+| 2026-05-22 | EPAM: From Traditional SDLC to Native AI SDLC | Bolt-on adoption explains the org-level paradox; native re-architecting required |
+| 2026-05-22 | Google DORA Research recap | AI ubiquitous but DORA metrics still gated by CI/CD, testing, architecture maturity |
 
 ---
 
