@@ -146,6 +146,42 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-05]` [McKinsey: 62% of Orgs Experimenting with AI Agents, 23% Scaling](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/where-ai-will-create-value-and-where-it-wont) - Latest McKinsey datapoint: agentic adoption crossing from pilot to scale. **Software engineering remains the top function for AI value capture.** Reinforces the broader thesis that agentic systems are now the operational frontier, with SE leading the way.
 
+- 🟡 `[2026-05]` [Microsoft Work Trend Index 2026 — AI Productivity Is Not Enough (Forbes / Moor Insights)](https://www.forbes.com/sites/moorinsights/2026/05/19/microsoft-work-trend-index-2026-shows-ai-productivity-is-not-enough/) - Trillions of M365 telemetry signals + 20K-worker global survey: **AI productivity gains plateau without org-level redesign of work**. "AI fluency" — proficient, multi-context use — now the dominant differentiator over raw adoption. Reinforces the Gartner Q1 2026 proficiency-vs-adoption thesis at Microsoft scale.
+
+  <details><summary>Key findings</summary>
+
+  - Adoption alone produces a one-time speed bump; sustained gains require **process redesign**, not just tool rollout
+  - **"AI fluency"** (multi-use-case, proficient, embedded in workflows) is the new productivity differentiator
+  - Reinforces the recurring 2026 pattern: org maturity dominates individual tooling
+  - Echoes Fowler/Morris "on-the-loop" framing — fluency = orchestration skill
+
+  </details>
+
+- 🔵 `[2026-05]` ["DORA Metrics Are Lying to You (and AI Is Making It Worse)" (Patrick Koss, May 2026)](https://medium.com/@patrickkoss/dora-metrics-are-lying-to-you-and-ai-is-making-it-worse-f60a1bead044) - Argues classic DORA metrics are easily **gamed by AI-padded PR throughput** — more PRs, larger diffs, no quality signal. Proposes **rework-rate + cognitive-load instrumentation** as corrective. Sits next to Harness 2026 ("94% of leaders say metrics miss the costs") as the practitioner case for next-gen DX measurement.
+
+- 🟡 `[2026-05]` [Google DORA Research Recap — Devs Use AI Heavily, DORA Metrics Don't Auto-Improve (Android Experto, May 17)](https://androidexperto.com/google-dora-research-software-developers-use-ai-heavily/) - Aggregates Google DORA team findings: AI is now ubiquitous in coding, but **delivery performance still gated by CI/CD maturity, testing discipline, architecture, and team coordination**. AI does not automatically lift DORA metrics — the foundations have to be there first. Strongly reinforces the "AI amplifies what's already there" thesis.
+
+- 🟢 `[2026-05]` [Characterizing Faults in Agentic AI — Empirical Taxonomy from 375 GitHub Issues](https://github.com/ai-boost/awesome-harness-engineering) - First grounded taxonomy of **agent-specific fault modes** mined from 375 issues across AutoGen, CrewAI, OpenAI Agents SDK, LangChain, CAMEL, and DB-GPT. Categories: initialization failures, role deviation, memory/state deficiencies, orchestration failures, and tool-integration errors. Anchors the "harness engineering" literature with empirical evidence on where agents actually break.
+
+  <details><summary>The fault taxonomy</summary>
+
+  - **Initialization failures** — agent setup, config, and capability declaration go wrong before any reasoning happens
+  - **Role deviation** — agents drift from assigned role/persona, producing out-of-scope outputs
+  - **Memory & state deficiencies** — context loss, stale state, cross-turn contradictions
+  - **Orchestration failures** — multi-agent handoffs, planning loops, deadlocks
+  - **Tool-integration errors** — bad arguments, mishandled errors, unsafe side effects
+  - Maps directly onto Fowler's "guides + sensors" + harness engineering remediation patterns
+
+  </details>
+
+- 🔵 `[2026-05]` [Daniel Sögl: "Beyond Copilot — How AI Coding Tools Change Productivity, Quality and the Developer Role" (BCN Data Nights, May 14)](https://speakerdeck.com/danielsogl/beyond-copilot-how-ai-coding-tools-change-productivity-quality-and-the-developer-role-bcn-data-nights-at-appodeal) - Practitioner synthesis of arXiv 2603.28592 + DORA 2026: the **instability tax is real but offset by ROI**, and the developer role shifts toward **reviewer / architect / agent-supervisor**. Useful as a digest deck for engineering leaders pitching AI strategy internally.
+
+- 🔵 `[2026-05]` ["We Have Been Measuring Developer Productivity Wrong for Forty Years" (Java Code Geeks, May 2026)](https://www.javacodegeeks.com/2026/05/we-have-been-measuring-developer-productivity-wrong-for-forty-years-and-the-metrics-we-replaced-the-bad-ones-with-are-also-wrong.html) - Critiques both the old (LOC, story points) and new (DORA) measurement orthodoxies in light of AI. Argues for **outcome-oriented + rework-aware measurement** as the next generation. Companion to Patrick Koss's "DORA Lying" critique.
+
+- 🟡 `[2026-05]` [MIT Sloan: Generative AI Changes How Employees Spend Their Time](https://mitsloan.mit.edu/ideas-made-to-matter/generative-ai-changes-how-employees-spend-their-time) - GitHub Copilot users shifted **+12.4% of their time toward core coding** and **−24.9% on project management**. **Composition change > raw speedup**: AI doesn't just make you faster, it redistributes what you spend time on. Empirical grounding for the "role redesign" thesis surfacing across Fowler, EPAM, and Microsoft Work Trend Index.
+
+- 🟡 `[2026-05]` [EPAM: From Traditional SDLC to Native AI SDLC](https://www.epam.com/about/newsroom/in-the-news/2026/from-traditional-software-to-a-native-ai-sdlc-how-genai-is-redefining-engineering) - Industry framing: **native-AI SDLC requires re-architecting CI/CD, review gates, and ownership models** — bolt-on adoption is why org-level metrics stagnate while individual gains are real. Names the architectural shift required to translate AI gains into business outcomes; pairs with DORA's J-Curve and Fowler's harness-engineering work.
+
 - 🟢 `[2026-05]` [SWE-Bench Pro Leaderboard Snapshot (May 13, 2026)](https://labs.scale.com/leaderboard/swe_bench_pro_public) - Frontier models still struggle on contamination-resistant SE: **Claude Mythos Preview 77.8%, Claude Opus 4.7 (Adaptive) 64.3%, GPT-5.5 58.6%.** The gap vs SWE-Verified (where frontier models approach 100%) quantifies the **benchmark-vs-reality divide** for real engineering work. Companion [BenchLM tracker](https://benchlm.ai/benchmarks/swePro).
 
 - 🟡 `[2026-04]` [NYT: The Big Bang — A.I. Has Created a Code Overload](https://www.nytimes.com/2026/04/06/technology/ai-code-overload.html) - Financial services firm went from 25K to 250K lines/month with Cursor, creating 1M-line review backlog. Code overload forcing companies to rethink velocity vs. absorption capacity.
@@ -2057,6 +2093,14 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-05-19 | Faros AI: "Acceleration Whiplash" (22K devs) | 66% throughput gains, incidents rising faster — quality/volume gap |
 | 2026-05-19 | "From Gains to Strains" (arXiv 2510.07435) | Formal model linking heavy GenAI use to burnout via verification load |
 | 2026-05-20 | McKinsey: 62% experimenting agents, 23% scaling | SE remains top function for AI value capture |
+| 2026-05-21 | Microsoft Work Trend Index 2026 | "AI fluency" replaces raw adoption as the productivity differentiator |
+| 2026-05-21 | Patrick Koss: "DORA metrics are lying to you" | AI-padded throughput breaks classic DORA; rework-rate + cognitive load proposed |
+| 2026-05-21 | Characterizing Faults in Agentic AI | First grounded fault taxonomy from 375 issues across AutoGen/CrewAI/LangChain/etc. |
+| 2026-05-21 | Java Code Geeks: 40 years of wrong dev productivity metrics | Outcome + rework-aware measurement as the next generation |
+| 2026-05-21 | Daniel Sögl: "Beyond Copilot" (BCN Data Nights) | Instability tax real but offset by ROI; dev role shifts to reviewer/architect |
+| 2026-05-22 | MIT Sloan: GenAI changes how employees spend their time | Composition change > raw speedup (+12.4% core coding, −24.9% PM) |
+| 2026-05-22 | EPAM: From Traditional SDLC to Native AI SDLC | Bolt-on adoption explains the org-level paradox; native re-architecting required |
+| 2026-05-22 | Google DORA Research recap | AI ubiquitous but DORA metrics still gated by CI/CD, testing, architecture maturity |
 
 ---
 
