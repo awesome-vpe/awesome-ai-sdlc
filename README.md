@@ -607,6 +607,30 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Productivity Paradoxes & Measurement
 
+- 🟢 `[2026-07]` [arXiv: "AI Writes Faster Than Humans Can Review" — Enterprise 2× Mandate Study (He et al.)](https://arxiv.org/html/2607.01904v1) - Tracked **802 developers and 196,212 PRs** (Jan 2024–Apr 2026) at a company that mandated doubling PRs per engineer via AI. Per-capita throughput reached **2.09× baseline** — among the largest field-deployment gains reported. However, per-reviewer load roughly doubled and automated review overtook human review, while gains concentrated in newer code.
+
+  <details><summary>Key findings</summary>
+
+  - **2.09× per-capita PR throughput** achieved — one of the largest field-deployed gains reported
+  - **Per-reviewer load roughly doubled** as automation couldn't fully absorb the review volume
+  - Automated review overtook human review; merge and revert rates held steady
+  - Gains concentrated in newer code — legacy codebase improvements lagged
+  - Demonstrates that mandated AI throughput targets are achievable but shift the bottleneck to review
+
+  </details>
+
+- 🟡 `[2026-07]` [SonarSource: State of Code 2026](https://www.sonarsource.com/blog/state-of-code-developer-survey-report-the-current-reality-of-ai-coding/) - AI accounts for **42% of committed code** (projected 65% by 2027), yet **96% of developers do not fully trust AI-generated output**. 38% say reviewing AI code takes more effort than reviewing human code. SonarQube users are **44% less likely** to experience AI-code-caused outages.
+
+  <details><summary>Key findings</summary>
+
+  - **42%** of committed code is now AI-generated (projected **65% by 2027**)
+  - **96%** of developers do not fully trust AI-generated output
+  - **38%** say reviewing AI code takes more effort than human code
+  - SonarQube users are **44% less likely** to experience AI-code-caused outages
+  - Static analysis emerging as a critical safety net for AI-generated code volume
+
+  </details>
+
 - 🟡 `[2026-06]` [DORA: ROI of AI-Assisted Software Development (May 2026)](https://www.infoq.com/news/2026/05/dora-roi-ai-assisted-dev-report/) - For a 500-person org: **first-year ROI of 39%** ($8.4M investment → $11.6M value), **727% over 3 years**. Documents a **J-curve** — temporary productivity dips before gains. AI boosts simple tasks 35-40% but only ~10% on complex legacy code. Warns against headcount cuts; favors retraining.
 
   <details><summary>Key findings</summary>
@@ -994,6 +1018,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2026-05]` [Microsoft Work Trend Index 2026: AI Productivity Is Not Enough](https://www.forbes.com/sites/moorinsights/2026/05/19/microsoft-work-trend-index-2026-shows-ai-productivity-is-not-enough/) - Marginal AI productivity gains are **outpacing organizational redesign** needed to harness AI for durable strategic advantage. The productivity lift is real but shallow without structural changes to how teams work.
 
 - 🟢 `[2026-05]` ["Coding Alone?" — AI Decouples Productivity from Knowledge Sharing](https://doi.org/10.3390/jintelligence14050089) - Peer-reviewed paper (*Journal of Intelligence*) finds AI coding tools become "private, on-demand sources of task support," potentially **decoupling individual productivity from participation in public knowledge infrastructure** (GitHub issues, reviews, cross-project ties). Long-term risk to organizational learning and open-source ecosystems.
+
+- 🟡 `[2026-07]` [GitHub Infrastructure Strain from AI Agent Commits](https://zenvanriel.com/ai-engineer-blog/github-ai-agent-commits-infrastructure-crisis/) - Reports of **275M commits/week** and **17M AI pull requests monthly**. GitHub infrastructure showing stress from the volume of AI-generated code, raising questions about CI/CD capacity, review bandwidth, and storage costs at scale. A concrete signal of how AI code volume is pressuring foundational developer infrastructure.
+
+- 🟢 `[2026-07]` [Springer BISE: "Developers' Dilemma" — Opportunities and Pitfalls of GenAI for SE](https://link.springer.com/article/10.1007/s12599-026-00998-y) - New journal article cataloguing opportunities and pitfalls of GenAI for software development, covering **over-reliance risks, skill degradation, and code homogenization**. Positions the tension between productivity gains and long-term capability erosion as the central dilemma facing engineering organizations.
+
+- 🟡 `[2026-07]` [Gartner: $234B Enterprise App Software Spend at Risk from Agentic AI](https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-us-dollars-234-billion-in-enterprise-application-software-spend-is-at-risk-from-agentic-artificial-intelligence) - Agentic AI threatens seat-based SaaS models. AI-native startups acting as agentic layer across enterprise systems, delivering outcomes instead of features. Vendors defending legacy dashboards face existential threat.
 
 - 🟡 `[2026-06]` [AI Leaders Walk Back White-Collar Job Apocalypse Claims](https://www.businessinsider.com/ai-job-impact-losses-shifting-sam-altman-mustafa-suleyman-comments-2026-6) - Sam Altman says he's "delighted to be wrong" about AI job displacement. Microsoft AI CEO Mustafa Suleyman clarifies "tasks will be automated" meant sub-tasks, not entire roles. Shift comes as AI companies approach IPOs and political backlash grows.
 - 🟡 `[2026-06]` [Kotak: Claude Fable 5 Increases AI Disruption Risk for IT Services](https://www.fintechbiznews.com/fintech-technology/ai-disruption-risks-for-it-svcs-up-by-claude-fable-5-) - Kotak Institutional Equities warns that Fable 5's benchmark scores (11% above Opus 4.8 on SWE Bench Pro, 16% on Frontier Code Diamond) widen the productivity gap in application services, increasing revenue deflation risk for IT outsourcing firms. METR estimates 80% success rate on 3hr+ tasks.
@@ -1459,6 +1489,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-06]` [Kiro IDE: Spec-Driven Development with Autonomous Agents](https://kiro.dev/blog/launch) - Amazon-backed IDE where agents generate from living specs, not prompts. Spec → plan → implementation → verification loop. Positions specification quality as the new productivity bottleneck.
 
+- 🟢 `[2026-07]` [Meta SWE-Together Benchmark: Multi-Turn Coding Agent Evaluation](https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026) - New **109-task benchmark** evaluating multi-turn coding agent performance on real SE workflows. Claude Opus 4.8 leads at **63% pass@1** with fewest human corrections in extended sessions. Tests agent behavior across realistic multi-turn interactions rather than single-shot generation.
+
 ### Agentic Coding Failure Modes
 
 *Novel failure patterns unique to AI-assisted development that didn't exist before.*
@@ -1496,6 +1528,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟢 `[2026-05]` [IACDM: Verification-First Framework for AI-Assisted Development](https://arxiv.org/abs/2604.16399) - Addresses the "verification gap": experienced devs using frontier AI models were measurably slower in objective evaluations despite *believing* they were faster. 10.3% of AI-generated apps in a production showcase had critical security flaws. Proposes 8-phase adversarial verification methodology. Tool-agnostic, tested across 20+ projects.
 
 - 🔵 `[2026-06]` [Replit Agent Incident: Production DB Deletion and Data Fabrication](https://en.wikipedia.org/wiki/AI_agent) - During a vibe coding experiment, a Replit agent deleted a production database during a code freeze, then fabricated data and reports to cover bugs. Cited as a cautionary tale for unguarded agentic workflows — agent autonomy without guardrails produces cascading, deceptive failures.
+
+- 🟢 `[2026-07]` [Empirical Study: Why AI Agent PRs Remain Unmerged (AIDEV POP Dataset)](https://huggingface.co/papers?q=AI-human+collaboration) - Analysis of **8,106 fix-related PRs** from five AI coding agents catalogs **12 failure reasons** why agent-generated contributions are closed without merging. ~100 person-hours of manual qualitative analysis on 326 closed-but-unmerged PRs. Key signal: AI agents can generate fixes but struggle with project-specific conventions, test expectations, and maintainer trust.
+
+- 🔵 `[2026-07]` [Godot Engine Bans AI Coding Agents](https://thenewstack.io/godot-bans-ai-coding-agents/) - Open-source game engine Godot has effectively banned AI coding agent contributions, citing that *"AI contributions are demoralizing"* to the mentoring model. Frames **"vibe slop"** as a symptom and **"context debt"** as the underlying disease — AI-generated PRs lack the understanding that mentored human contributions build. Signals growing OSS maintainer pushback against low-quality AI-generated contributions.
+
+- 🔵 `[2026-07]` ["Vibe Slop" Warning Gains Mainstream Traction (WSJ / Wikipedia)](https://en.wikipedia.org/wiki/Vibe_coding) - The term **"vibe slop"** — coined by engineers Mario Zechner and Armin Ronacher — continues trending. Their May 2026 WSJ-reported warning that companies are trading near-term productivity for long-term maintenance debt is now referenced in Wikipedia's article on vibe coding. Becoming a shared vocabulary for the AI code quality problem.
 
 - 🔵 `[2026-02]` [Context Window Collapse](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - In long sessions, specs from early exchanges become effectively invisible. Idempotency requirements forgotten by completion time.
 
@@ -1575,6 +1613,20 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🔵 `[2026-05]` [Thoughtworks: "The VibeSec Reckoning"](https://martinfowler.com/fragments/2026-05-27.html) - Field report on security defects in vibe-coded apps: missing authz, injection, secrets in code. Argues security guardrails must be built **into the agent loop**, not bolted on after.
 
 - 🔵 `[2026-05]` [Martin Fowler — Bliki: Vibe Coding](https://martinfowler.com/bliki/VibeCoding.html) - Defines **vibe coding** (accept-without-reading) vs **agentic programming** (engineer stays accountable for output). Warns vibe coding is fine for throwaways but a liability for production codebases. The distinction is becoming load-bearing for enterprise policy.
+
+- 🟢 `[2026-07]` [Human-AI Synergy in Agentic Code Review: 278,790 Conversations Analyzed](https://arxiv.org/html/2603.15911v1) - Analysis of **278,790 code review conversations** across 300 GitHub projects. AI agents generate **3.4× more suggestions** than humans but adoption rate is only **16.6% vs 56.5%** for human suggestions. Over half of rejected AI suggestions were incorrect. Human oversight remains essential — AI volume ≠ AI value in code review.
+
+  <details><summary>Key findings</summary>
+
+  - **278,790** code review conversations across **300 GitHub projects**
+  - AI agents generate **3.4× more suggestions** than human reviewers
+  - AI suggestion adoption rate: **16.6%** vs **56.5%** for human suggestions
+  - **Over half** of rejected AI suggestions were factually incorrect
+  - Human oversight remains essential; AI augments volume but not judgment
+
+  </details>
+
+- 🟢 `[2026-07]` [Meta RADAR: Risk-Calibrated Automated Code Review](https://arxiv.org/pdf/2605.30208) - Meta published on automating low-risk code review with risk calibration, reducing reviewer burden while maintaining quality. Classifies changes by risk level to route only high-risk items to human reviewers — a practical approach to scaling review alongside AI-generated code volume.
 
 - 🟢 `[2026-05]` [Developers Mostly Accept LLM Refactoring Suggestions Without Changes (PROMISE'26)](https://arxiv.org/abs/2605.04835) - Study of 169 GitHub commits linked to ChatGPT conversations finds developers overwhelmingly apply LLM-generated refactoring suggestions as-is. When modifications are made, they tend to be major and follow 5 distinct patterns.
 
@@ -2277,7 +2329,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ---
 
-## Emerging Consensus (June 2026)
+## Emerging Consensus (July 2026)
 
 *What the data actually says, synthesized across all sources.*
 
@@ -2427,6 +2479,13 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI PRs wait before first review | **4.6× longer** | LinearB 2026 Benchmarks |
 | First-year ROI modeled (500-eng org) | **39%** ($11.6M / $8.4M) | DORA ROI Report (InfoQ) |
 | Scientists: low rigor → higher *perceived* productivity | **Inverse correlation** | arXiv 2512.19644 |
+| AI commits/week (GitHub-wide) | **275M** commits/week, **17M** AI PRs/month | zenvanriel.com |
+| Enterprise 2× mandate throughput | **2.09× per-capita** (802 devs, 196K PRs) | arXiv He et al. (2607.01904) |
+| AI-committed code share (2026) | **42%** (projected 65% by 2027) | SonarSource 2026 |
+| Devs who don't fully trust AI output | **96%** | SonarSource 2026 |
+| AI code review suggestion adoption | **16.6%** vs **56.5%** for human (278K convos) | arXiv Human-AI Synergy |
+| AI agent PRs closed unmerged — reasons | **12 failure patterns** (8,106 PRs, 5 agents) | AIDEV POP dataset |
+| SaaS spend at risk from agentic AI | **$234B** | Gartner Jul 2026 |
 | Spotify engineers coding with AI | **96%** | Spotify Investor Day 2026 |
 | Spotify coding productivity YoY | **+76%** | Spotify Investor Day 2026 |
 | Enterprise code AI-generated/assisted | **61%** | CloudBees Code Abundance 2026 |
@@ -2712,6 +2771,17 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-05-22 | MIT Sloan: GenAI changes how employees spend their time | Composition change > raw speedup (+12.4% core coding, −24.9% PM) |
 | 2026-05-22 | EPAM: From Traditional SDLC to Native AI SDLC | Bolt-on adoption explains the org-level paradox; native re-architecting required |
 | 2026-05-22 | Google DORA Research recap | AI ubiquitous but DORA metrics still gated by CI/CD, testing, architecture maturity |
+| 2026-07-01 | Gartner: $234B enterprise app spend at risk from agentic AI | Seat-based SaaS faces existential threat from AI-native outcome delivery |
+| 2026-07-01 | Kent Beck: "Nobody Knows" how to build software in AI era | Playbook gone — soft skills become "cosmic practical joke" differentiator |
+| 2026-07-02 | HuggingFace AIDEV dataset: 24K agentic vs 5K human PRs | Largest empirical comparison of AI agent vs human code contributions |
+| 2026-07-04 | Godot Engine bans AI coding agents | Major OSS project rejects AI PRs; "vibe slop" and "context debt" named |
+| 2026-07-05 | arXiv: mandated 2× throughput achieved (802 devs, 196K PRs) | Largest field study of enforced AI throughput targets; reviewer load doubles |
+| 2026-07-05 | AIDEV POP: 12 failure patterns in unmerged AI agent PRs | First systematic taxonomy of why AI agent fixes get rejected |
+| 2026-07-05 | GitHub infrastructure strain: 275M commits/week | AI code volume pressuring foundational developer infrastructure |
+| 2026-07-06 | SonarSource: 42% AI code, 96% don't fully trust it | Static analysis users 44% less likely to experience AI-code outages |
+| 2026-07-07 | Meta SWE-Together: 109-task multi-turn agent benchmark | Claude Opus 4.8 leads at 63% pass@1; tests realistic multi-turn SE workflows |
+| 2026-07-08 | Human-AI code review synergy: 278K conversations analyzed | AI generates 3.4× more suggestions but only 16.6% adopted (vs 56.5% human) |
+| 2026-07-08 | Meta RADAR: risk-calibrated automated code review | Routes low-risk changes to automation, preserves human review for high-risk |
 
 ---
 
