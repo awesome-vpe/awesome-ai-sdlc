@@ -630,6 +630,9 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   - Static analysis emerging as a critical safety net for AI-generated code volume
 
   </details>
+- 🟡 `[2026-07]` [Jellyfish: State of AI in Software Engineering, H1 2026 — "Exploding Spend, Diverging Returns"](https://jellyfish.co/ai-engineering-trends/) - The industry's most comprehensive quantitative analysis of AI transformation: real-world engineering signals from thousands of organizations and hundreds of thousands of developers. Key finding: **AI spend is exploding but returns are diverging** — top-quartile adopters see 2× PR throughput while laggards see minimal gains. Confirms that organizational maturity, not tool selection, determines AI ROI.
+
+- 🟢 `[2026-06]` [METR Survey: 349 Technical Workers — 1.4–2× Self-Reported Value Change from AI](https://metr.org/) - Survey finds a **median 1.4–2× self-reported change in value of work** due to AI tools, expected to grow over time. Authors caution against taking the magnitude at face value — self-reported gains consistently exceed objectively measured ones (cf. METR's earlier finding that experienced devs were 19% *slower* while believing they were 20% faster).
 
 - 🟡 `[2026-06]` [DORA: ROI of AI-Assisted Software Development (May 2026)](https://www.infoq.com/news/2026/05/dora-roi-ai-assisted-dev-report/) - For a 500-person org: **first-year ROI of 39%** ($8.4M investment → $11.6M value), **727% over 3 years**. Documents a **J-curve** — temporary productivity dips before gains. AI boosts simple tasks 35-40% but only ~10% on complex legacy code. Warns against headcount cuts; favors retraining.
 
@@ -994,6 +997,19 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Organizational Impact
 
+- 🟡 `[2026-06]` [PwC 2026 Global AI Jobs Barometer — 1B+ Job Ads Across 27 Countries](https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html) - AI-exposed companies grew headcount **faster**, not slower. AI skills command a **62% wage premium** (up from 25% in 2024). Entry-level openings for junior software developers shrank while professionalized roles thrived. Judgment, creativity, and leadership rise as the most valued skills.
+
+  <details><summary>Key findings</summary>
+
+  - Analyzed **1 billion+ job ads** across 6 continents, 27 countries
+  - AI-most-exposed sectors grew headcount **5× faster** than least-exposed
+  - AI skills wage premium: **62%** globally (up from 25% in 2024)
+  - Entry-level roles shrinking: AI "seniorizes" previously junior positions
+  - Human skills (judgment, leadership) gaining emphasis alongside AI technical skills
+  - Creates a **two-track labor market**: professionalized roles thriving, routine roles compressed
+
+  </details>
+
 - 🟡 `[2026-05]` [AI Coding Cost Crisis: Microsoft and Uber Hit Budget Walls](https://startupfortune.com/microsofts-claude-pullback-shows-ai-coding-still-has-a-budget-problem/) - Microsoft restricted internal Claude Code access due to spiraling costs. Uber **exhausted its entire 2026 AI coding budget by April** — just 4 months after deploying Claude Code to ~5,000 engineers. Signals agentic coding tools hitting a cost wall at enterprise scale.
 
 - 🟡 `[2026-05]` [Gartner: Worldwide AI Spending to Grow 47% in 2026 to $2.59T](https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026) - Total AI spending forecast at **$2.59 trillion**. AI model consumption spending specifically up **110% YoY** (+$6B), driven by agentic automation adoption.
@@ -1295,6 +1311,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🔵 `[2026-06]` [Augment Code: AI SDLC Framework Reference Architecture](https://www.augmentcode.com/guides/ai-sdlc-framework-reference-architecture) - Comprehensive reference architecture for agentic SDLC. Cites DORA data: AI adoption at 90%, median 2 hrs daily AI use. Key warning: higher code generation rates create more PRs faster than review capacity expands — the **"review bottleneck cascade."**
 - [Aider](https://aider.chat) - Terminal-based pair programming with git integration.
 - [Windsurf](https://windsurf.com/) - IDE optimized for agent-developer collaboration.
+- 🟢 `[2026-07]` [arXiv: "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems"](https://arxiv.org/abs/2604.14228) - Systematic analysis of the coding agent design space using Claude Code as the reference architecture. Identifies layers (model, context/extension, harness) across Claude Code, OpenClaw, and Hermes. Proposes **six open design directions** for future agent systems grounded in empirical and architectural literature. Updated July 2026 (v2).
+
+- 🟠 `[2026-06]` [Andrew Ng: Three Loops for 0-to-1 AI Products (The Batch)](https://explainx.ai/blog/andrew-ng-three-loops-0-to-1-products-2026) - Frames product building with coding agents as **three nested loops** running at different speeds: *agentic coding loop* (seconds–minutes, agent writes/tests/iterates), *developer feedback loop* (hours, human steers direction), and *external user feedback loop* (days, user response shapes product). Conceptual complement to "loop engineering" from Boris Cherny (Claude Code) and Peter Steinberger (OpenClaw).
+
+- 🔵 `[2026-07]` [Loop Engineering Emerges as a Discipline (ADTmag)](https://adtmag.com/articles/2026/07/01/loop-engineering-emerges-as-developers-put-ai-coding-agents-on-repeat.aspx) - "Loop engineering" — writing the program that prompts the agent — crystallizes as a named discipline. Shift from typing prompts to **designing deterministic harnesses** that orchestrate agent iterations. Practitioners build outer programs with specs, tests, and verification gates that the inner agent loop executes against.
+
 - 🔵 `[2026-05]` [Martin Fowler / Kief Morris: "Humans and Agents in Software Engineering Loops"](https://www.martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) - Reframes the developer's role: shifting from **"in the loop"** (writing every line) to **"on the loop"** (designing specs, tests, feedback mechanisms that guide agents). Pairs with InfoQ's [Where Do Humans Fit in AI-Assisted SW Dev?](https://www.infoq.com/news/2026/03/mf-aiassisted-dev/) — warns that mid-career engineers are at the highest risk of being left behind as the orchestration model matures.
 
 - 🔵 `[2026-03]` [AI Agent Tools Study: 177K Tools, Software Development Dominates](https://www.coffeefranchisehub.com/archives/47192) - Analysis of Model Context Protocol repositories (Nov 2024–Feb 2026). Software development = **67% of all AI agent tools**, **90% of downloads**. Action tools (file/system modification) surged from 27% → 65%. Shift from passive data gathering to active environment manipulation.
@@ -1559,6 +1581,19 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
 - [Pixee](https://pixee.ai) - Finds security and quality issues, opens merge-ready PRs.
 - 🔵 `[2026-05]` [Stack Overflow: "Coding Agents Are Giving Everyone Decision Fatigue"](https://stackoverflow.blog/2026/05/21/coding-agents-are-giving-everyone-decision-fatigue/) - AI coding tools are shifting the bottleneck from code *production* to code **review and judgment**. One dev producing 7× more code overwhelms peer review. Anthropic's Cat Wu acknowledges that even with human judgment, *"errors can happen because we can get a little sloppy."* Organizations reconfiguring the SDLC to ease review intensity.
+
+- 🟢 `[2026-06]` [arXiv: "The Verification Horizon: No Silver Bullet for Coding Agent Rewards"](https://arxiv.org/abs/2606.26300) - As foundation models improve, the classical intuition that **verification is easier than generation is being inverted**. Characterizes verification quality along three dimensions — scalability, faithfulness, robustness — and argues that achieving all three simultaneously is the central challenge. Studies four reward constructions: test verifier, rubric verifier, user-as-verifier, and automated agent verifier. No fixed reward function remains effective as agent capabilities grow.
+
+  <details><summary>Key findings</summary>
+
+  - Verification difficulty **grows with model capability** — the "horizon" recedes as agents improve
+  - Three quality dimensions of verification signals: scalability, faithfulness, robustness
+  - **No single verification approach** scores high on all three simultaneously
+  - Test verifier works for general coding but fails on UI/UX and long-horizon tasks
+  - User-as-verifier gives faithful signal but doesn't scale
+  - Implications: verification infrastructure must co-evolve with agent capabilities, not be a one-time investment
+
+  </details>
 
 - 🔵 `[2026-02]` [ThoughtWorks: Code Review Is Being Unbundled](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Four functions of code review (mentorship, consistency, correctness, trust) each need a new home.
 - 🔵 `[2026-04]` [InfoWorld: How Agile Practices Ensure Quality in GenAI-Assisted Development](https://www.infoworld.com/article/4155901/how-agile-practices-ensure-quality-in-genai-assisted-development.html) - Practitioner framework: TDD, BDD, ATDD, pair programming and CI as guardrails for GenAI code. Cites Stanford finding that AI assistants increase security vulnerabilities; McKinsey confirms rethinking practices is required.
@@ -2040,6 +2075,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Roles & Career Evolution
 
+- 🟡 `[2026-06]` [PwC: AI Skills Command 62% Wage Premium, Entry-Level Roles Seniorizing](https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html) - PwC's 2026 Global AI Jobs Barometer (1B+ job ads, 27 countries) finds AI is **"seniorizing" entry-level roles** — junior developer openings shrinking while AI-skilled professionalized roles command a **62% wage premium** (up from 25% in 2024). AI-exposed companies are growing headcount *faster*, but with higher skill bars. Judgment, creativity, and leadership displace routine coding as the most valued skills.
+
 - 🟢 `[2026-01]` [CSH/Science: Only Senior Devs See Productivity Gains](https://www.science.org/doi/10.1126/science.adz9311) - Juniors use AI 37% more but gain nothing. AI is a skill amplifier, not equalizer.
 
 - 🔵 `[2026-02]` [Forrester: Mid-Career Engineers at Most Risk](https://www.forrester.com/blogs/takeaways-from-the-future-of-software-development-retreat-just-because-you-can-doesnt-mean-youre-ready-to/) - "It's the mid-career engineers energized by the joy of coding that we realized are in trouble."
@@ -2356,6 +2393,9 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Can't measure AI impact | **75%** of eng professionals | Multitudes |
 | AI skill transfer (adjacent roles) | **Works** (within 1% of experts) | Harvard/HBS |
 | AI skill transfer (distant roles) | **Fails** (13% below experts) | Harvard/HBS |
+| Self-reported AI value change | **1.4–2×** (but skepticism warranted) | METR 2026 survey |
+| AI skills wage premium | **62%** (up from 25% in 2024) | PwC 2026 AI Jobs Barometer |
+| AI spend vs returns | **Diverging** — top quartile 2×, laggards minimal | Jellyfish H1 2026 |
 | Experienced devs on familiar codebases | **-19% (slower)** → likely reversed | METR 2025 → METR 2026 |
 | CI throughput (average) | **+59%** (top 5%: +100%, median: +4%) | CircleCI 2026 |
 | AI I&O project full ROI | **28%** (20% fail outright) | Gartner Apr 2026 |
@@ -2782,6 +2822,15 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-07-07 | Meta SWE-Together: 109-task multi-turn agent benchmark | Claude Opus 4.8 leads at 63% pass@1; tests realistic multi-turn SE workflows |
 | 2026-07-08 | Human-AI code review synergy: 278K conversations analyzed | AI generates 3.4× more suggestions but only 16.6% adopted (vs 56.5% human) |
 | 2026-07-08 | Meta RADAR: risk-calibrated automated code review | Routes low-risk changes to automation, preserves human review for high-risk |
+
+| 2026-06-24 | arXiv: "The Verification Horizon" | Verification difficulty grows with model capability; no single approach solves it |
+| 2026-06-26 | METR: GPT-5.6 Sol predeployment evaluation | Frontier model safety evaluation milestone |
+| 2026-06-26 | METR survey: 349 workers report 1.4–2× value change | Self-reported gains exceed objectively measured ones |
+| 2026-06-30 | Andrew Ng: Three Loops for AI product building | Agentic loop (min) → developer loop (hrs) → user loop (days) |
+| 2026-06-30 | PwC AI Jobs Barometer: 62% wage premium for AI skills | 1B+ job ads; AI-exposed firms grow headcount faster |
+| 2026-07-01 | Loop Engineering crystallizes as named discipline | Shift from prompting to designing agent harnesses |
+| 2026-07-01 | Jellyfish H1 2026: "Exploding spend, diverging returns" | Most comprehensive quant analysis of AI engineering transformation |
+| 2026-07-02 | "Dive into Claude Code" v2 (arXiv) | Six open design directions for coding agent systems |
 
 ---
 
