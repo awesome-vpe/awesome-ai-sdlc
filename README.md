@@ -1095,6 +1095,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Organizational Impact
 
+- 🟡 `[2026-08]` [McKinsey Global Tech Agenda 2026: AI Is #1 Investment Priority](https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/mckinsey-global-tech-agenda-2026) - AI has become the **#1 technology investment priority** ahead of cybersecurity and infrastructure modernization, yet nearly a third of organizations still report AI-related talent and integration gaps. The challenge has shifted from "should we use AI" to "how do we make AI work inside the business."
+
+- 🟠 `[2026-08]` [CIO.com: CIOs Must Govern Evolving AI Systems, Not Just Deploy Them](https://www.cio.com/article/4204514/ways-cios-can-maintain-control-amid-changes-brought-by-ai.html) - The CIO challenge has shifted from building AI to **continuously governing evolving AI systems** — especially as AI generates software, coordinates workflows, and makes recommendations across functions.
+
 - 🟡 `[2026-07]` [Gartner: 60% of Orgs Will Adopt Smaller Engineering Teams by 2029](https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029) - Gartner predicts smaller AI-augmented engineering teams will jump from **15% (2026) to 60% by 2029**. Also forecasts 75% of developers will "orchestrate rather than code" by end of 2026. Introduces **"FinOps for Agentic AI"** as a new category.
 
 - 🟡 `[2026-07]` [Gartner Hype Cycle: "AI-Native Software Engineering" Debuts](https://www.gartner.com/en/documents/8000669) - **"AI-native software engineering"** enters the Gartner Hype Cycle for the first time. Agentic AI at Peak of Inflated Expectations. Only **17% of orgs have deployed AI agents**, but 60%+ plan to within 2 years. Agent-washing flagged as explicit market problem.
@@ -1752,6 +1756,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🔵 `[2026-08]` [Stackademic: AI Agents Accelerate Technical Debt Creation](https://blog.stackademic.com/your-ai-coding-agent-is-making-you-faster-your-codebase-is-paying-the-price-7800c51715e3) - Argues the real risk of AI coding agents isn't bad code but **plausible code generated faster than teams can evaluate long-term consequences**. AI moves the bottleneck from writing to understanding and maintaining. Teams close tickets faster but accumulate architectural debt that surfaces later.
+
+- 🔵 `[2026-08]` [Kodus: "What Does Code Quality Mean in the Age of AI?"](https://kodus.io/en/what-does-code-quality-mean-in-the-age-of-ai) - AI agents behave like **"extremely confident junior developers"** — they know patterns but lack context about business rules, incident history, and organizational knowledge. Reports teams going from **10 to 24 merged PRs/dev/month** after adopting agentic workflows, but warns that code that runs is a very low bar for production readiness.
+
 ### Code Review & Quality
 
 *AI-assisted code review, quality gates, and automated feedback.*
@@ -2174,6 +2182,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟡 `[2026-06]` [Gartner Hype Cycle for Platform Engineering 2026](https://www.gartner.com/en/documents/hype-cycle-platform-engineering-2026) - Platform engineering reaches "Slope of Enlightenment." AI-assisted developer portals, self-service infrastructure, and agent-ready platforms now tracked as distinct innovation profiles. Key signal: platforms must serve both human developers and AI agents.
 
+- 🔵 `[2026-08]` [TXI: AI Coding Assistants Learned from an Inaccessible Internet](https://txidigital.com/insights/inaccessible-ai-coding) - AI coding tools **systematically produce inaccessible interfaces** because they learned from web content that is overwhelmingly not accessible. A blind engineer's test of Claude Code produced interfaces with inaccessible buttons, cluttered regions, and structural problems. Teams must embed accessibility guidance into AI workflows rather than relying on better prompts alone.
+
 ### Skill Formation & Learning
 
 - 🟢 `[2026-01]` [Anthropic: How AI Impacts Skill Formation](https://arxiv.org/abs/2601.20245) - AI assistance reduces comprehension by 17%. Delegation hurts; conceptual questioning preserves learning.
@@ -2595,7 +2605,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ---
 
-## Emerging Consensus (July 2026)
+## Emerging Consensus (August 2026)
 
 *What the data actually says, synthesized across all sources.*
 
@@ -2785,6 +2795,9 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Codex user growth H1 2026 | **5×** (13-50× token output/dev) | OpenAI |
 | GenAI in SDLC market 2026 | **$0.96B** (38.6% CAGR → $2.92B by 2030) | GlobeNewsWire |
 | Smaller AI-augmented teams (2029 forecast) | **60%** (up from 15% in 2026) | Gartner Jul 2026 |
+| AI as #1 tech investment priority | **Ahead of cybersecurity and infra** | McKinsey Global Tech Agenda 2026 |
+| AI coding tools and accessibility | **Systematic inaccessible output** | TXI Aug 2026 |
+| AI agents as "confident juniors" | **10→24 PRs/dev/month** (low quality bar) | Kodus Aug 2026 |
 
 **The emerging pattern:**
 1. **AI makes coding faster but doesn't ship more features** — the bottleneck was never coding
@@ -3134,6 +3147,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-07-17 | METR follow-up study collapsed | 30-50% refused no-AI control group; controlled measurement "nearly impossible" |
 | 2026-07-17 | Anthropic internal: 67% more PRs, 27% novel work | 132 engineers, 200K transcripts; bottleneck shifted to verification |
 | 2026-07-17 | HBS: AI closes confidence gap, not competence gap | Non-experts underperform by 13% on execution despite equal planning |
+| 2026-08-20 | Stackademic: AI agents accelerate technical debt creation | Plausible code generated faster than teams can evaluate consequences |
+| 2026-08-20 | Kodus: AI agents as "extremely confident junior developers" | 10→24 PRs/dev/month but "code that runs" is a low bar |
+| 2026-08-20 | TXI: AI coding tools learned from an inaccessible internet | Systematic accessibility failures in AI-generated interfaces |
+| 2026-08-20 | McKinsey: AI is #1 tech investment priority globally | Challenge shifts from "should we" to "how do we integrate" |
+| 2026-08-20 | CIO.com: CIOs must govern evolving AI systems | Governance of AI that generates software, coordinates workflows |
 
 ---
 
