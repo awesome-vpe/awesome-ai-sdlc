@@ -92,6 +92,20 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
   </details>
 
+- 🟡 `[2026-08]` [JetBrains Developer Ecosystem Survey 2026: AI Coding Agent Adoption Hits 90%](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/) - Tenth annual survey (15,000+ developers, May–Jul 2026) finds **90% of professional developers use AI coding agents weekly**, 68% daily. **Claude Code dominates at 39% adoption** globally (47% US), overtaking GitHub Copilot which declined from 29% to 21%. Codex grew 5× to 16%. OpenCode (open-source) reached 7% with 42% mindshare. Cursor declined from 18% to 12%.
+
+  <details><summary>Key findings</summary>
+
+  - **90%** of professional developers now use AI coding agents at work weekly; **68%** daily
+  - **Claude Code: #1 at 39% adoption** globally (47% in the US) — surpassed Copilot
+  - **GitHub Copilot declined** from 29% to 21% market share
+  - **Codex grew 5×** to 16% adoption
+  - **OpenCode** (open-source) reached 7% adoption with 42% mindshare among open-source devs
+  - **Cursor declined** from 18% to 12%
+  - Survey of 15,000+ developers conducted May–Jul 2026
+
+  </details>
+
 - 🟡 `[2026-06]` [New Relic 2026 State of AI Coding Report — The Rise of "Agent Debt"](https://www.storyboard18.com/amp/how-it-works/94-praise-ai-generated-code-but-82-report-production-failures-report-100996.htm) - **94% of leaders rate AI code higher than human code at review time**, yet **82% experienced production failures** from AI code in the past 6 months. 62% deploy without line-by-line review. 88% of orgs formally allow vibe coding in production. New Relic coins **"agent debt"** — unvetted architectural logic accumulating silently downstream.
 
   <details><summary>Key findings</summary>
@@ -2653,6 +2667,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Google AI-generated code share | **75%** (up from 50% fall 2025) | Pichai disclosure |
 | Devs using AI at work | **90%** | JetBrains AI Pulse |
 | Claude Code adoption growth | **6× in 3 quarters** (18% share) | JetBrains AI Pulse |
+| Claude Code market leadership | **39% adoption** (47% US), overtook Copilot | JetBrains Dev Ecosystem 2026 |
+| GitHub Copilot decline | **29% → 21%** market share | JetBrains Dev Ecosystem 2026 |
 | Multi-model usage (3+ models) | **70%+** of orgs | Datadog 2026 |
 | Teams shipping 19% slower despite faster devs | **Confirmed** | Wawandco/DORA |
 | Cursor users coding hours vs VS Code | **65% more** (50.5h vs 30.6h) | PanDev |
@@ -3152,6 +3168,7 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-08-20 | TXI: AI coding tools learned from an inaccessible internet | Systematic accessibility failures in AI-generated interfaces |
 | 2026-08-20 | McKinsey: AI is #1 tech investment priority globally | Challenge shifts from "should we" to "how do we integrate" |
 | 2026-08-20 | CIO.com: CIOs must govern evolving AI systems | Governance of AI that generates software, coordinates workflows |
+| 2026-08-20 | JetBrains Dev Ecosystem 2026: Claude Code at 39% adoption | Overtook Copilot (21%); 90% weekly agent usage; Cursor fell to 12% |
 
 ---
 
