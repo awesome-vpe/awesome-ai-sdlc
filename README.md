@@ -78,6 +78,19 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-08]` [JetBrains Developer Ecosystem Survey 2026: AI Coding Agent Adoption Hits 90%](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/) - JetBrains' tenth annual survey (15,000+ developers) finds **90% of professional developers use AI coding agents weekly**, 68% daily. **Claude Code dominates at 39% adoption** globally (47% in the US), overtaking GitHub Copilot which declined from 29% to 21%. Codex grew 5× to 16%. OpenCode reached 7% with 42% mindshare. Cursor declined from 18% to 12%.
+
+  <details><summary>Key findings</summary>
+
+  - **90%** of professional developers now use AI coding agents at work weekly; **68%** daily
+  - **Claude Code #1** at 39% global adoption (47% US) — overtakes Copilot
+  - **GitHub Copilot declines** from 29% → 21% as CLI agents gain share
+  - **Codex grows 5×** to 16%; OpenCode reaches 7% with 42% mindshare among OSS-focused devs
+  - **Cursor declines** from 18% → 12% — IDE-based agents losing share to CLI-first tools
+  - First major survey to show CLI agentic tools dominating over IDE-integrated copilots
+
+  </details>
+
 - 🟢 `[2026-01]` [Who is using AI to code? Global diffusion and impact of generative AI](https://www.science.org/doi/10.1126/science.adz9311) - Landmark Science paper: 160K devs, 30M commits. AI writes 29% of new US code but only seniors see 3.6% productivity gain.
 
   <details><summary>Key findings</summary>
@@ -624,6 +637,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Productivity Paradoxes & Measurement
 
+- 🔵 `[2026-08]` [Stackademic: AI Agents Accelerate Technical Debt Creation](https://blog.stackademic.com/your-ai-coding-agent-is-making-you-faster-your-codebase-is-paying-the-price-7800c51715e3) - Analysis argues the real risk of AI coding agents isn't bad code but **plausible code generated faster than teams can evaluate long-term consequences**. AI moves the bottleneck from writing to understanding and maintaining. Teams close tickets faster but accumulate architectural debt that surfaces later.
+
 - 🟢 `[2026-07]` [arXiv: "AI Writes Faster Than Humans Can Review" — Enterprise 2× Mandate Study (He et al.)](https://arxiv.org/html/2607.01904v1) - Tracked **802 developers and 196,212 PRs** (Jan 2024–Apr 2026) at a company that mandated doubling PRs per engineer via AI. Per-capita throughput reached **2.09× baseline** — among the largest field-deployment gains reported. However, per-reviewer load roughly doubled and automated review overtook human review, while gains concentrated in newer code.
 
   <details><summary>Key findings</summary>
@@ -1094,6 +1109,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟢 `[2026-07]` ["Rise of AI-Native SE" — Three Paradoxes (Alenezi)](https://arxiv.org/html/2606.12986) - Identifies three paradoxes: **productivity** (gains are context-dependent), **competence** (fluent output masks shallow understanding), **trust** (adoption rises despite declining confidence). Experienced devs worked **~19% slower** with AI while believing themselves faster.
 
 ### Organizational Impact
+
+- 🟡 `[2026-08]` [McKinsey Global Tech Agenda 2026: AI Is Top Investment Priority But Integration Gaps Persist](https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/mckinsey-global-tech-agenda-2026) - AI has become the **#1 technology investment priority** ahead of cybersecurity and infrastructure modernization, yet nearly a third of organizations still report AI-related talent and integration gaps. The challenge has shifted from "should we use AI" to "how do we make AI work inside the business."
+
+- 🟠 `[2026-08]` [CIO.com: CIOs Must Govern Evolving AI Systems, Not Just Deploy Them](https://www.cio.com/article/4204514/ways-cios-can-maintain-control-amid-changes-brought-by-ai.html) - The CIO challenge has shifted from **building AI to continuously governing evolving AI systems** — especially as AI generates software, coordinates workflows, and makes recommendations across functions. Static governance frameworks are insufficient for systems that learn and change.
 
 - 🟡 `[2026-07]` [Gartner: 60% of Orgs Will Adopt Smaller Engineering Teams by 2029](https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029) - Gartner predicts smaller AI-augmented engineering teams will jump from **15% (2026) to 60% by 2029**. Also forecasts 75% of developers will "orchestrate rather than code" by end of 2026. Introduces **"FinOps for Agentic AI"** as a new category.
 
@@ -1682,6 +1701,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Novel failure patterns unique to AI-assisted development that didn't exist before.*
 
+- 🔵 `[2026-08]` [TXI: AI Coding Assistants Learned from an Inaccessible Internet](https://txidigital.com/insights/inaccessible-ai-coding) - AI coding tools **systematically produce inaccessible interfaces** because they learned from web content that is overwhelmingly not accessible. A blind engineer's test of Claude Code produced interfaces with inaccessible buttons, cluttered regions, and structural problems. Teams need to **embed accessibility guidance into AI workflows** rather than relying on better prompts alone.
+
 - 🔵 `[2026-02]` [Parallel AI Sessions: "Quantum State" Bugs](https://medium.com/@fernando.garcia.varela/ai-coding-taming-the-new-pet-4e85bb2c0967) - Multiple AI sessions on same codebase create internally consistent but mutually contradictory changes. Code integrates cleanly but behaves incorrectly.
 
   <details><summary>How it works</summary>
@@ -1758,6 +1779,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
 - [Pixee](https://pixee.ai) - Finds security and quality issues, opens merge-ready PRs.
+- 🔵 `[2026-08]` [Kodus: Redefining Code Quality When Humans Stop Reading Code](https://kodus.io/en/what-does-code-quality-mean-in-the-age-of-ai) - AI agents behave like **"extremely confident junior developers"** — they know patterns but lack context about business rules, incident history, and organizational knowledge. Teams went from 10 to 24 merged PRs/dev/month after adopting agentic workflows, but warns that **code that runs is a very low bar** for production readiness.
+
 - 🔵 `[2026-05]` [Stack Overflow: "Coding Agents Are Giving Everyone Decision Fatigue"](https://stackoverflow.blog/2026/05/21/coding-agents-are-giving-everyone-decision-fatigue/) - AI coding tools are shifting the bottleneck from code *production* to code **review and judgment**. One dev producing 7× more code overwhelms peer review. Anthropic's Cat Wu acknowledges that even with human judgment, *"errors can happen because we can get a little sloppy."* Organizations reconfiguring the SDLC to ease review intensity.
 
 - 🟢 `[2026-07]` [HuggingFace AIDev Dataset: Large-Scale Empirical Analysis of Agentic vs Human PRs](https://huggingface.co/papers?q=Coding+Agents) - Analysis of **24,014 merged agentic PRs** (440,295 commits) vs **5,081 merged human PRs** (23,242 commits), examining integration outcomes, latency, and factors that hinder successful merging. One of the largest empirical datasets comparing AI agent and human code contributions.
@@ -2595,7 +2618,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ---
 
-## Emerging Consensus (July 2026)
+## Emerging Consensus (August 2026)
 
 *What the data actually says, synthesized across all sources.*
 
@@ -2641,6 +2664,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | CEO-reported AI productivity impact | **~90% report none** | Fortune/NBER |
 | Average AI usage among adopters | **1.5 hrs/week** | Fortune/NBER |
 | Google AI-generated code share | **75%** (up from 50% fall 2025) | Pichai disclosure |
+| Devs using AI agents weekly | **90%** (68% daily) | JetBrains Dev Ecosystem 2026 |
+| Claude Code market share | **39%** (#1 globally, 47% US) | JetBrains Dev Ecosystem 2026 |
 | Devs using AI at work | **90%** | JetBrains AI Pulse |
 | Claude Code adoption growth | **6× in 3 quarters** (18% share) | JetBrains AI Pulse |
 | Multi-model usage (3+ models) | **70%+** of orgs | Datadog 2026 |
@@ -3134,6 +3159,10 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 | 2026-07-17 | METR follow-up study collapsed | 30-50% refused no-AI control group; controlled measurement "nearly impossible" |
 | 2026-07-17 | Anthropic internal: 67% more PRs, 27% novel work | 132 engineers, 200K transcripts; bottleneck shifted to verification |
 | 2026-07-17 | HBS: AI closes confidence gap, not competence gap | Non-experts underperform by 13% on execution despite equal planning |
+| 2026-08-20 | JetBrains Dev Ecosystem 2026: 90% weekly AI agent usage | Claude Code #1 at 39%; Copilot declines to 21%; CLI agents dominate |
+| 2026-08-20 | McKinsey Global Tech Agenda 2026 | AI is #1 investment priority; integration gaps persist |
+| 2026-08-20 | TXI: AI coding tools produce inaccessible interfaces | Training data bias creates systematic accessibility failures |
+| 2026-08-20 | Kodus: 10→24 merged PRs/dev/month with agents | "Code that runs" is too low a bar; agents lack organizational context |
 
 ---
 
