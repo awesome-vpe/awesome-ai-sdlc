@@ -657,6 +657,21 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Productivity Paradoxes & Measurement
 
+- 🟡 `[2026-09]` [Cambridge Bennett School: "Where Are the AI Productivity Gains?"](https://www.bennettschool.cam.ac.uk/blog/ai-productivity-gains/) - Cambridge public-policy analysis argues AI adoption is **"broad but shallow"** outside software development. ChatGPT has 1B+ users but only **15% use AI daily at work** (Gallup); median enterprise AI spend is **$12/employee/month** (Ramp). Coding is the one domain with proven gains (20–40% in RCTs), yet even there results are contingent. a16z data: **AI coding revenues are 2× everything else combined**. Concludes the macro productivity payoff requires organisational redesign, not just tool adoption.
+
+- 🔵 `[2026-09]` [Keyhole Software: What the Data Shows About AI in Software Development](https://keyholesoftware.com/impact-of-ai-on-software-development/) - Practitioner synthesis of 2025–2026 research with enterprise experience. Veracode data: **AI now authors ~50% of committed code** but security failure rates have barely moved in two years. Key framing: "model selection is now an engineering decision" — leading models pass **68% of security tasks** while most cluster at 50–53%. Finds enterprise codebases constrain AI gains in ways greenfield demos never surface.
+
+  <details><summary>Key findings</summary>
+
+  - DORA 2025: adoption at 90%, but delivery instability rising
+  - Productivity gains are 20–40% on tasks, not on end-to-end delivery
+  - Veracode: AI-generated code security failure rates flat over 2 years
+  - Enterprise legacy codebases see significantly lower gains than greenfield
+  - Role shift: architects and reviewers become the binding constraint
+  </details>
+
+- 🔵 `[2026-09]` [Larridin: What Tools Measure AI-Assisted Developer Productivity](https://larridin.com/blog/what-tools-measure-ai-assisted-developer-productivity) - Comparative analysis of tools for measuring AI's impact on developer productivity. Distinguishes between delivery-pipeline tools (DORA-derived) and tools that connect AI usage to engineering outcomes. Useful reference for teams selecting measurement infrastructure.
+
 - 🔵 `[2026-09]` [Reviewing AI Code from Juniors Is Slower Than Writing It Yourself](https://dev.to/adioof/reviewing-ai-code-from-juniors-is-slower-than-writing-it-yourself-4ic) - Practitioner analysis citing Faros AI data (**10,000+ devs, 1,255 teams**): individual output jumped **98% more PRs** and **154% larger PRs**, but review time increased **91%**. Uplevel Data Labs (800 engineers using Copilot) found no significant change in PR cycle time but **41% more bugs shipped**. Sonar survey: 96% don't fully trust AI code, ~40% say it requires more review effort.
 
 - 🟡 `[2026-08]` [ACM Queue: "Eight Myths on Software Engineering and GenAI" (Butler, Houck et al.)](https://queue.acm.org/detail.cfm?id=3799738) - Microsoft researchers debunk 8 GenAI coding myths with data. Developers spend only **~14% of time writing code**, so even doubling coding speed caps total productivity gain near 15%. 80% of devs use AI tools but only **29% trust accuracy**. The "10x developer" narrative is unsupported by rigorous studies.
@@ -2451,6 +2466,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Roles & Career Evolution
 
+- 🟢 `[2026-09]` [Federal Reserve: "AI and Coder Employment: Compiling the Evidence" (Crane & Soto)](https://www.federalreserve.gov/econres/feds/ai-and-coder-employment-compiling-the-evidence.htm) - Fed Board working paper finds **coder employment growth is ~3% lower annually** since ChatGPT's introduction. Using O*NET–CPS linkage and a novel control for industry shocks, authors show the deceleration is **not attributable to broader industry downturns** — it's specific to coding-exposed occupations. First rigorous macro-labor evidence that AI coding tools are measurably affecting aggregate developer employment.
+
+- 🟡 `[2026-09]` [CSO Online: "AI Made Software Development Unrecognizable — Is Cybersecurity Next?"](https://www.csoonline.com/article/4221311/ai-made-software-development-unrecognizable-is-cybersecurity-next.html) - Analysis of how AI's transformation of software engineering previews changes coming to cybersecurity. Cites Gartner prediction: **80% of orgs will evolve large teams into smaller AI-augmented teams by 2030**, with new roles (AI-governance specialists, context designers). Argues cybersecurity transformation will differ because security requires reproducibility and explainability that autonomous agents struggle to provide.
+
 - 🟡 `[2026-07]` [Amazon CTO Vogels: Code Review More Critical Than Ever (Fortune)](https://fortune.com/2026/07/09/amazons-cto-on-how-developers-can-ride-out-the-ai-powered-coding-wave/) - Werner Vogels emphasizes AI-generated code still requires rigorous human review, especially in regulated industries. *"You can't say to the regulator, oh, AI made a mistake."* Advocates for **"Renaissance Developers"** — T-shaped engineers with deep specialization and broad systems understanding.
 
 - 🟢 `[2026-07]` [Stanford 2026 AI Index: ~20% Fewer Junior US Developers Since 2024](https://www.explainx.ai/blog/ai-skills-developers-need-2026-roadmap) - Stanford's 2026 AI Index found **~20% fewer US software developers aged 22-25** compared to 2024, even as GitHub AI-related projects grew significantly — suggesting AI is **compressing the entry-level pipeline** while expanding overall code output.
@@ -3009,6 +3028,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-09-18 | Cambridge Bennett School: "Where are the AI productivity gains?" | AI adoption "broad but shallow" outside coding; median $12/employee/month |
+| 2026-09-17 | Keyhole Software: Enterprise AI impact synthesis | AI authors ~50% of committed code; security failure rates flat over 2 years |
+| 2026-09-16 | Larridin: AI productivity measurement tool comparison | Pipeline tools vs outcome-connecting tools; DORA insufficient alone |
+| 2026-09-15 | CSO Online: AI dev transformation previews cybersecurity shift | 80% of orgs to smaller AI-augmented teams by 2030 (Gartner) |
+| 2026-09-14 | Federal Reserve: Coder employment ~3% lower post-ChatGPT | Not attributable to industry shocks; first rigorous macro-labor evidence |
 | 2026-09-02 | Stanford DEL: entry-level employment gap reaches 19% | 22-25 y/o in AI-exposed jobs 19% below expected trajectory |
 | 2026-09-02 | McKinsey: 40% of large orgs scaling AI agents | 32% skip buying software — build with agentic tools instead |
 | 2026-09-01 | VS Code 1.135 "Rubber Duck" multi-model review | Second AI model reviews primary agent's work |
