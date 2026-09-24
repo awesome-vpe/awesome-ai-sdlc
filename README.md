@@ -94,6 +94,29 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🔵 `[2026-09]` [Anthropic: "When AI Builds Itself" — Recursive Self-Improvement Disclosure](https://www.anthropic.com/institute/recursive-self-improvement) - Anthropic publishes unprecedented internal data on AI accelerating its own development. Claude now leads **26% of Anthropic's R&D** end-to-end from high-level prompts. Engineers merge **8× as much code per day** as in 2024. **>80% of merged code** is authored by Claude. METR autonomous task horizon reached **12-hour tasks** (Claude Opus 4.6), doubling every ~4 months. SWE-bench saturated in two years. The paper names recursive self-improvement directly and argues current trends could reach full autonomy sooner than institutions are prepared.
+
+  <details><summary>Key findings</summary>
+
+  - **26%** of Anthropic's model R&D is now led by Claude (end-to-end from high-level prompts)
+  - **>80%** of merged code at Anthropic authored by Claude (up from single digits pre-Feb 2025)
+  - Engineers merge **8× as much code/day** as in 2024 — two inflection points (agent launch, long-horizon autonomy)
+  - METR task horizon: 4 min (Mar 2024) → 1.5 hr (2025) → **12 hr** (2026), doubling every ~4 months
+  - Gap remains: Claude executes well but still struggles with choosing which problems to work on
+  - First major lab to explicitly name recursive self-improvement risk alongside capability claims
+  </details>
+
+- 🟡 `[2026-09]` [Qodo 2026 State of AI Code Quality: Review Is Now the #1 Delivery Bottleneck](https://www.qodo.ai/blog/2026-state-of-ai-code-quality/) - Survey of **500 developers + 300 engineering leaders** (Censuswide, Aug 2026). Both groups independently rank reviewing/validating AI-generated code as the **top delivery bottleneck** (26% each). **36%** of developers say AI code review takes the same time but requires greater cognitive effort — a "trust tax." **90%** of leaders are confident reporting AI impact to executives, but only **45%** have traceability from AI activity to code changes. **35%** say agents always follow org standards.
+
+  <details><summary>Key findings</summary>
+
+  - Review and validation is the **#1 bottleneck** preventing AI from accelerating delivery (26% of devs and leaders)
+  - **36%** say reviewing AI code requires greater cognitive effort despite similar time — "trust tax"
+  - **90%** of leaders confident reporting AI impact; only **45%** have evidence of traceability
+  - **43%** of leaders say giving agents the right codebase context is a major governance gap
+  - **35%** of developers say AI agents always follow organizational standards
+  </details>
+
 - 🟡 `[2026-08]` [JetBrains Developer Ecosystem Survey 2026: AI Coding Agent Adoption Hits 90%](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/) - JetBrains' tenth annual survey (15,000+ developers) finds **90% of professional developers use AI coding agents weekly**, 68% daily. **Claude Code dominates at 39% adoption** globally (47% in the US), overtaking GitHub Copilot which declined from 29% to 21%. Codex grew 5× to 16%. OpenCode reached 7% with 42% mindshare. Cursor declined from 18% to 12%.
 
   <details><summary>Key findings</summary>
@@ -1155,6 +1178,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Organizational Impact
 
+- 🟡 `[2026-09]` [GitLab Cuts Workforce to Redirect Resources to AI Agents](https://economictimes.indiatimes.com/tech/artificial-intelligence/gitlab-to-cut-jobs-reinvest-in-ai-agents-push-ceo-bill-staples/articleshow/131027221.cms) - GitLab CEO Bill Staples announced workforce reductions to reposition the company for **"agentic" opportunities**. Restructuring includes reducing management layers, reorganizing R&D, scaling back country operations, and integrating AI agents into internal workflows (reviews, approvals, operational handoffs). Part of a broader wave: DeepL cut 25%, Freshworks 11%, Kyndryl also cutting — **93,000+ tech roles cut across 106 companies** in 2026 as of May. Shares fell 8% on the announcement.
+
 - 🟡 `[2026-08]` [McKinsey Global Tech Agenda 2026: AI Is #1 Investment Priority](https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/mckinsey-global-tech-agenda-2026) - AI has become the **#1 technology investment priority** ahead of cybersecurity and infrastructure modernization, yet nearly a third of organizations still report AI-related talent and integration gaps. The challenge has shifted from "should we use AI" to "how do we make AI work inside the business."
 
 - 🟠 `[2026-08]` [CIO.com: CIOs Must Govern Evolving AI Systems, Not Just Deploy Them](https://www.cio.com/article/4204514/ways-cios-can-maintain-control-amid-changes-brought-by-ai.html) - The CIO challenge has shifted from building AI to **continuously governing evolving AI systems** — especially as AI generates software, coordinates workflows, and makes recommendations across functions.
@@ -1534,6 +1559,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Tools and models for code generation, autocomplete, and inline assistance.*
 
+- 🔵 `[2026-09]` [Claude Opus 5.5 Released — Leads Terminal-Bench 4.0 at 66.4%](https://venturebeat.com/technology/anthropic-releases-claude-opus-5-5-beating-fable-5-1-on-key-agentic-benchmarks-at-60-cheaper-api-price) - Anthropic's new frontier model for long-running coding agents and research. **66.4% on Terminal-Bench 4.0**, beating Fable 5.1. Priced at **$4/$20 per 1M tokens** (60% cheaper API than Fable). Targets multi-hour autonomous coding sessions.
+
+- 🔵 `[2026-09]` [DeepSeek V4.1 Flash — 552B MoE, Open Weights, $0.15/$0.60 per 1M Tokens](https://neomanex.com/news/deepseek-v4-1-flash-launch-v4-flash-retired) - Released September 10, 2026. **552B parameters, 8B activated per token** (prefill), 16B (decode). Open weights. **1M-token context**. V4 Flash retired same day — old model ID auto-routes to V4.1. Cline updated defaults to V4.1 Flash across 44 providers. Continues the trend of capable open-weight models undercutting proprietary pricing.
+
 - [GitHub Copilot](https://github.com/features/copilot) - AI pair programmer with autocomplete-style suggestions.
 
 - [Cursor](https://www.cursor.sh/) - Code editor built for AI-first development.
@@ -1555,6 +1584,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - [Claude Code](https://www.anthropic.com/claude-code) - Agentic coding tool in the terminal. ~4% of GitHub commits by Feb 2026.
 
 - [OpenAI Codex](https://openai.com/index/codex/) - Cloud-based coding agent with sandbox.
+
+- 🟡 `[2026-09]` [SpaceXAI Acquires Cursor (Anysphere) for ~$60B](https://en.wikipedia.org/wiki/SpaceXAI) - SpaceX's AI division (formed after acquiring xAI for $250B in Feb 2026) acquired Cursor's parent company Anysphere in **August 2026**. Signals that IDE-embedded agentic coding is now considered strategic infrastructure, not just a developer tool. Cursor had ~12% market share (JetBrains 2026) and was declining before the acquisition.
+
+- 🔵 `[2026-09]` [Cognition Rebrands Windsurf to Devin Desktop — $47B Valuation](https://devin.ai/desktop) - Cognition AI ($47B valuation, $900M+ ARR) rebranded Windsurf to **Devin Desktop** in June 2026, positioning it as a "command center for managing all your agents." Reflects the convergence of autonomous agents and IDE-based coding into a single workflow — the agent isn't a sidebar feature, it's the primary interface.
 
 - 🟡 `[2026-09]` [Harness Launches Agent-Ready Code Repository](https://smestreet.in/technology/harness-launches-code-repository-with-ai-code-review-for-agent-ready-development-12458376) - Source control system designed for **AI-agent scale**: handles thousands of simultaneous PRs, gives agents **scoped RBAC permissions**, and integrates AI code review that understands risk context. Reflects the shift from "AI writes code" to "how do we govern agent-generated code at scale."
 
@@ -1873,6 +1906,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 *AI-assisted code review, quality gates, and automated feedback.*
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
+
+- 🟡 `[2026-09]` [Qodo 2026 State of AI Code Quality Report](https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/qodo-s-2026-state-of-ai-code-quality-report-reveals-growing-verification-challenge-as-agentic-development-scales.html) - Survey of **500 developers + 300 engineering leaders**: reviewing AI-generated code is now the **#1 delivery bottleneck** (26% of both groups). **36%** say AI code reviews require greater cognitive effort — the "trust tax." Leadership confidence (90%) runs far ahead of actual control: only **45%** have traceability from AI activity to code changes. Confirms the verification bottleneck is structural, not just cultural.
 
 - 🟡 `[2026-09]` [G2 Analysis: 92% Rate AI Code Gen Positively, But Accuracy Friction Is Constant](https://learn.g2.com/ai-code-generation) - Analysis of **3,000+ reviews**: 92% rate AI code generation positively, but up to **1 in 4 ChatGPT reviews** and **1 in 5 Gemini reviews** cite accuracy issues. Purpose-built coding tools (Copilot, Claude, Cursor) score significantly lower on complaint rates. **Claude leads with 4.6/5** structured accuracy rating.
 
@@ -2804,7 +2839,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI-generated security vulnerabilities | **+15-18%** | Opsera |
 | AI PR review wait time | **4.6x longer** (without governance) | Opsera |
 | AI inference cost decline (3yr) | **-92%** | Radoff/METR |
-| METR autonomous task horizon | **14.5 hours** (doubling every 123 days) | METR/Radoff |
+| METR autonomous task horizon | **12+ hours** (doubling every ~4 months) | METR/Radoff, Anthropic RSI |
 | Org with weak foundations | **2x more incidents** | DX |
 | AI adoption (companies using for most coding) | **63%** | Jellyfish |
 | High-adoption PR throughput vs low | **2x** (2.2 vs 1.12/week) | Jellyfish |
@@ -2825,6 +2860,11 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI code fails in production (post-QA) | **43%** | Lightrun 2026 |
 | Task completion speed with AI | **+55%** (4,800 devs) | GitHub + Accenture |
 | Teams using agentic AI | **51%** | MIT Tech Review/Thoughtworks |
+| AI-authored code at Anthropic | **>80%** of merged code | Anthropic RSI disclosure |
+| Engineer code output (with AI) | **8× more code/day** vs 2024 | Anthropic RSI disclosure |
+| AI code review = #1 bottleneck | **26%** of devs and leaders (independently) | Qodo 2026 |
+| AI code review "trust tax" | **36%** say same time but more cognitive effort | Qodo 2026 |
+| AI traceability gap | **90%** confident reporting; only **45%** have evidence | Qodo 2026 |
 | Aim for full AI-managed SDLC (<18mo) | **41%** of eng execs | MIT Tech Review/Thoughtworks |
 | AI skills readiness | **Only 19%** of engineers | Scaler India |
 | Copilot 3-year ROI | **376%** | Forrester TEI via Exceeds AI |
@@ -3028,6 +3068,10 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-09-23 | Qodo 2026 State of AI Code Quality Report | Review/validation is #1 delivery bottleneck; 36% report "trust tax" on AI code |
+| 2026-09-22 | Anthropic releases Claude Opus 5.5 | 66.4% Terminal-Bench 4.0; 60% cheaper API than Fable 5.1 |
+| 2026-09-19 | Anthropic: "When AI Builds Itself" — RSI disclosure | Claude leads 26% of R&D; engineers merge 8× more code; >80% code AI-authored |
+| 2026-09-19 | GitLab cuts workforce for AI agents pivot | Reducing management layers, R&D reorg; part of 93K+ tech jobs cut in 2026 |
 | 2026-09-18 | Cambridge Bennett School: "Where are the AI productivity gains?" | AI adoption "broad but shallow" outside coding; median $12/employee/month |
 | 2026-09-17 | Keyhole Software: Enterprise AI impact synthesis | AI authors ~50% of committed code; security failure rates flat over 2 years |
 | 2026-09-16 | Larridin: AI productivity measurement tool comparison | Pipeline tools vs outcome-connecting tools; DORA insufficient alone |
