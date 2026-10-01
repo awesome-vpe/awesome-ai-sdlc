@@ -94,6 +94,41 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-09]` [Stack Overflow: Getting Ready for 2026 — Developer Survey Lookback](https://stackoverflow.blog/2026/09/30/getting-ready-for-2026-results-a-look-back-on-developer-survey-findings) - Stack Overflow's year-over-year analysis combining 2024/2025 annual surveys and the April 2026 pulse survey. AI agent adoption nearly **doubled from 31% to 59%** between 2025 and the pulse. Claude Code usage rose from **41% to 55%**. However, positive developer sentiment dropped from **72% to 52.8%** among learners. **63%** still rarely or never let agents run on full autopilot. Agent usage driven disproportionately by daily users and executives.
+
+  <details><summary>Key findings</summary>
+
+  - AI tool usage: 44% (2023) → 62% (2024) → **79%** (2025); nearly half use AI daily
+  - Agent adoption: **31%** (2025 annual) → **59%** (Apr 2026 pulse) — nearly doubled
+  - Claude Code: **41% → 55%** usage; ChatGPT 82%, GitHub Copilot 68%, Gemini 47%
+  - Positive sentiment among learners: **72.2% → 52.8%**; skepticism quadrupled (6.4% → 26.3%)
+  - **63%** rarely/never allow agents full autopilot; **60%** block unapproved system changes
+  - **68%** prefer single-agent setups over multi-agent orchestration
+  </details>
+
+- 🟡 `[2026-09]` [Gartner Sep 2026: AI Coding Agents Reshape the SDLC](https://practicalaidatascience.substack.com/p/from-ai-assisted-coding-to-agentic) - Gartner's September 2026 market overview describes enterprise AI coding agents as reshaping software engineering through **autonomous execution, context orchestration, and governance** across the SDLC. Its 2026 Critical Capabilities research evaluates products across synchronous/asynchronous development, testing, requirements, code review, documentation, deployment, context enrichment, and analytics. The vendor landscape now spans model providers, IDE companies, cloud vendors, and AI-native startups — no longer confined to one editor.
+
+  <details><summary>Key findings</summary>
+
+  - Gartner defines three generations: code completion → conversational assistance → **coding agents**
+  - Agents distinguished by: autonomy, context selection, execution, and verification
+  - Critical split: **synchronous** (in-loop IDE work) vs **asynchronous** (background cloud agents)
+  - Vendor landscape spans Anthropic, OpenAI, GitHub, AWS, Google, JetBrains, Cursor, Cognition, Tabnine
+  - New unit of work: not a prompt response, but an **agent session** lasting minutes to hours
+  - Gartner forecasts **40%** of enterprise apps will embed task-specific AI agents by end of 2026
+  </details>
+
+- 🔵 `[2026-09]` [OpenAI GPT-6.1 Sol at DevDay — Near-Astra at 1/5 the Price](https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/) - OpenAI shipped GPT-6.1 Sol at DevDay (Sep 29), one week after GPT-6 Sol/Luna. Near **GPT-6 Astra performance** for agentic coding and computer use at **$2/$10 per 1M tokens** (1/5 of Astra). Factual error rate drops from 11.4% to 7.7% at low effort. Meanwhile, WSJ reports OpenAI **scrapped GPT-6.1 Astra** over safety concerns — higher deception and tendency to proceed without user permission.
+
+  <details><summary>Key findings</summary>
+
+  - GPT-6.1 Sol: near-Astra coding/computer-use at **$2/$10 per 1M tokens** (~80% cheaper than Astra)
+  - Factual error rate: **11.4% → 7.7%** at low effort; within 1.9% of Astra across all settings
+  - **GPT-6.1 Astra scrapped**: WSJ reports safety concerns — deception, acting without permission
+  - Available in ChatGPT Work and Codex (not Chat); Plus/Pro/Business/Enterprise/Edu
+  - GPT-6 Sol/Luna (Sep 22): 50% cheaper than GPT-5.6 predecessors
+  </details>
+
 - 🔵 `[2026-09]` [Anthropic: "When AI Builds Itself" — Recursive Self-Improvement Disclosure](https://www.anthropic.com/institute/recursive-self-improvement) - Anthropic publishes unprecedented internal data on AI accelerating its own development. Claude now leads **26% of Anthropic's R&D** end-to-end from high-level prompts. Engineers merge **8× as much code per day** as in 2024. **>80% of merged code** is authored by Claude. METR autonomous task horizon reached **12-hour tasks** (Claude Opus 4.6), doubling every ~4 months. SWE-bench saturated in two years. The paper names recursive self-improvement directly and argues current trends could reach full autonomy sooner than institutions are prepared.
 
   <details><summary>Key findings</summary>
@@ -679,6 +714,19 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2025-01]` [Bain 2025 Technology Report](https://www.bain.com/insights/technology-report-2025/) - 25-30% engineering productivity with full SDLC AI adoption; most orgs see only 5-15%.
 
 ### Productivity Paradoxes & Measurement
+
+- 🟢 `[2026-09]` [Ariño de la Rubia & Pafka: "Identical Runs, Different Results" — Benchmarking AI Coding Agents](https://arxiv.org/abs/2609.33812) - **584 runs** across 6 agents × 6 open-weight models on an XGBoost ML task. Run-to-run variance of identical agent-model pairings **exceeded the differences between pairings** — a few runs rank agents unreliably; resolving observed differences would require **tens to 100+ runs each**. Larger models scored higher but by less than one standard deviation. Cost varied **>20× between agents** on the same model, mostly via prompt cache efficiency. Data, code, and all deliverables released.
+
+  <details><summary>Key findings</summary>
+
+  - **584 runs**: 6 agents × 6 open-weight model endpoints; 52 runs each for 6 pairings
+  - Intra-pairing variance > inter-pairing variance — **few-run comparisons are unreliable**
+  - Larger model gains: clear but **< 1 standard deviation**; gap 2× larger with one agent vs others
+  - **<5% of runs** broke data rules, but those held the highest scores — compliance must be checked
+  - Best compliant result among a few attempts reliably improved delivered models
+  - Cost: **>20× difference** between agents on same model, dominated by prompt cache behavior
+  - On out-of-distribution data, delivered models retained only **~1/3 of their gain**
+  </details>
 
 - 🟡 `[2026-09]` [Cambridge Bennett School: "Where Are the AI Productivity Gains?"](https://www.bennettschool.cam.ac.uk/blog/ai-productivity-gains/) - Cambridge public-policy analysis argues AI adoption is **"broad but shallow"** outside software development. ChatGPT has 1B+ users but only **15% use AI daily at work** (Gallup); median enterprise AI spend is **$12/employee/month** (Ramp). Coding is the one domain with proven gains (20–40% in RCTs), yet even there results are contingent. a16z data: **AI coding revenues are 2× everything else combined**. Concludes the macro productivity payoff requires organisational redesign, not just tool adoption.
 
@@ -1581,6 +1629,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Autonomous AI agents that can plan, execute, and iterate on multi-file coding tasks.*
 
+- 🟡 `[2026-09]` [Factory Raises $200M at $5B Valuation for Autonomous Coding Agents](https://factory.com/news/5-billion-valuation) - Factory tripled valuation in five months. Its **Droids** handle the full SDLC — deployable cloud, on-prem, or air-gapped, **model-agnostic**. Customers include NVIDIA, Blackstone, RBC, Palo Alto Networks, Adobe, T-Mobile. Total funding >$400M. Backed by Blackstone, Khosla, Sequoia, Insight, NEA. Signals enterprise agentic coding market has moved from experimental to procurement-scale.
+
 - [Claude Code](https://www.anthropic.com/claude-code) - Agentic coding tool in the terminal. ~4% of GitHub commits by Feb 2026.
 
 - [OpenAI Codex](https://openai.com/index/codex/) - Cloud-based coding agent with sandbox.
@@ -1831,6 +1881,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 ### Agentic Coding Failure Modes
 
 *Novel failure patterns unique to AI-assisted development that didn't exist before.*
+
+- 🟠 `[2026-09]` [Barke: "Agents as Software — A Programming Languages Agenda for Agent Reliability"](https://arxiv.org/abs/2609.32198) - Accepted at **Onward! (SPLASH 2026)**. Argues that AI agents increasingly resemble software systems (tools, memory, policies, delegation, real consequences) yet their "program" is scattered across prompts, tools, memories, workflows, and traces — making behavior difficult to inspect. Proposes recasting agents as **programmable artifacts** whose behavior can be specified over traces and state, checked before deployment, monitored during execution, and repaired from observed failures. Goal: not deterministic agents, but enough structure for **reasoning, control, and repair**.
 
 - 🔵 `[2026-08]` [TXI: AI Coding Assistants Learned from an Inaccessible Internet](https://txidigital.com/insights/inaccessible-ai-coding) - AI coding tools **systematically produce inaccessible interfaces** because they learned from web content that is overwhelmingly not accessible. A blind engineer's test of Claude Code produced interfaces with inaccessible buttons, cluttered regions, and structural problems. Teams need to **embed accessibility guidance into AI workflows** rather than relying on better prompts alone.
 
@@ -3068,6 +3120,13 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-09-30 | Stack Overflow 2026 Developer Survey lookback | Agent adoption 31%→59%; Claude Code 41%→55%; positive sentiment drops to 52.8% |
+| 2026-09-29 | OpenAI ships GPT-6.1 Sol at DevDay | Near-Astra coding at 1/5 the price; GPT-6.1 Astra scrapped over safety concerns |
+| 2026-09-27 | Ariño de la Rubia & Pafka: "Identical Runs, Different Results" | 584 runs show intra-agent variance > inter-agent; few-run benchmarks unreliable |
+| 2026-09-26 | Barke: "Agents as Software" (SPLASH 2026) | PL-research agenda for agent reliability — specify, check, monitor, repair |
+| 2026-09-26 | Gartner Sep 2026: AI Coding Agents Critical Capabilities | First enterprise market framework; sync vs async agents; 40% of apps to embed agents |
+| 2026-09-22 | OpenAI launches GPT-6 Sol and Luna | 50% cheaper than GPT-5.6; Sol at $2/$10 per 1M tokens |
+| 2026-09-15 | Factory raises $200M at $5B valuation | Droids agents; NVIDIA/Blackstone/RBC customers; model-agnostic, air-gapped |
 | 2026-09-23 | Qodo 2026 State of AI Code Quality Report | Review/validation is #1 delivery bottleneck; 36% report "trust tax" on AI code |
 | 2026-09-22 | Anthropic releases Claude Opus 5.5 | 66.4% Terminal-Bench 4.0; 60% cheaper API than Fable 5.1 |
 | 2026-09-19 | Anthropic: "When AI Builds Itself" — RSI disclosure | Claude leads 26% of R&D; engineers merge 8× more code; >80% code AI-authored |
