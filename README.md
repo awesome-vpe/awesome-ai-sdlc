@@ -94,6 +94,33 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-09]` [Agoda AI Developer Report 2026: Agents Enter Production Across SEA & India](https://www.pninews.com/agoda-releases-ai-developer-report-2026-indian-developers-see-system-architecture-as-the-most-important-future-skill/) - Survey of developers across **7 Southeast Asian countries + India**. **60%** save ≥7 hrs/week (vs 20% in 2025). **60%** of orgs report AI agents in selected production workflows, but only **40%** consider codebases ready for fully autonomous agents. Cost is the **#1 adoption barrier** (30%), ahead of integration complexity and governance (20% each). **79%** require human approval for production deployment. **50% of junior developers** feel less career-secure vs only 20% of C-level respondents.
+
+  <details><summary>Key findings</summary>
+
+  - **60%** save ≥7 hrs/week with AI (3× the 2025 figure); 60% say AI code is usable without major changes
+  - **60%** of orgs have AI agents in selected production workflows; **40%** say codebase is agent-ready
+  - **Cost** is #1 barrier (30%) — extends beyond model calls to design, integrate, review, and validate agents
+  - **4 in 5** developers work under AI usage limits (token quotas, caps, budget restrictions)
+  - **79%** require human approval for prod deployment — autonomy accepted for low-risk reversible work only
+  - Future skills: system architecture & design, AI literacy, agent orchestration
+  - **50%** of juniors feel less career-secure vs **20%** of CTO/VPE — sharpest seniority split yet
+  </details>
+
+- 🟡 `[2026-09]` [BairesDev Q3 2026 Dev Barometer: The Review Shift](https://itbrief.ca/story/ai-coding-tools-shift-developers-towards-review-work) - Survey of **705 developers** (60+ countries) and **41 Fortune 500/mid-market CTOs**. The share of devs where AI writes ≥50% of their code leapt from **12% to 42%** in one year. Developers save an average **13 hrs/week** on coding (up from 7). But only **21%** now spend more than half their week writing code from scratch — **67%** spend more time reviewing AI output and **52%** more time fixing AI-introduced bugs. **78% of CTOs** report increased spending on code review, QA, and validation.
+
+  <details><summary>Key findings</summary>
+
+  - AI writes ≥50% of code for **42%** of devs (up from 12% a year ago)
+  - Avg coding time saved: **13 hrs/week** (up from 7)
+  - Only **21%** spend >half their week writing new code from scratch
+  - **67%** spend more time reviewing AI code; **52%** more time fixing AI bugs
+  - **78% of CTOs** increased QA/review spending to support AI-generated work
+  - Devs spend **9 hrs/week** learning AI tools (up from 4)
+  - **86%** describe role as more fulfilling; AI fluency is **#1 factor** in pay rises (29%)
+  - Only **7%** say code shipping has been fully delegated to AI without human input
+  </details>
+
 - 🟡 `[2026-09]` [Stack Overflow: Getting Ready for 2026 — Developer Survey Lookback](https://stackoverflow.blog/2026/09/30/getting-ready-for-2026-results-a-look-back-on-developer-survey-findings) - Stack Overflow's year-over-year analysis combining 2024/2025 annual surveys and the April 2026 pulse survey. AI agent adoption nearly **doubled from 31% to 59%** between 2025 and the pulse. Claude Code usage rose from **41% to 55%**. However, positive developer sentiment dropped from **72% to 52.8%** among learners. **63%** still rarely or never let agents run on full autopilot. Agent usage driven disproportionately by daily users and executives.
 
   <details><summary>Key findings</summary>
@@ -2838,6 +2865,21 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Models for assessing organizational AI-SDLC maturity.*
 
+- 🟡 `[2026-10]` [Port.io / Gartner: Scaling Agentic SDLC Without Losing Control](https://www.port.io/blog/scaling-agentic-sdlc-without-losing-control) - Synthesis of **6 Gartner reports** on agentic SDLC at scale. By 2027 **40%** of platform teams will use AI across every SDLC phase (up from <5%). By 2028 **60%** of engineering initiatives run on autonomous agentic code generation. Coordinated AI across the full SDLC yields **25–30% productivity gains** vs **<10%** when planning/testing/release remain manual. **71%** of IT heads see platforms as backbone for scaling AI. Frames the **"platform harness"** — context, governance, and orchestration across agents — as the durable competitive advantage, not the coding agent itself.
+
+  <details><summary>Key findings (Gartner data)</summary>
+
+  - **<5% → 40%** of platform teams using AI across full SDLC by 2027
+  - **60%** of engineering initiatives on autonomous agentic code gen by 2028
+  - **25–30%** productivity gains when AI is coordinated across entire SDLC; **<10%** if partial
+  - Only **>10%** of agentic AI projects achieve strong ROI today — weak context platforms are the main cause
+  - **51%** of developers cite tool sprawl as barrier to AI adoption
+  - **65%+** of engineering teams will rely on automated platforms for control by 2027
+  - Thesis: "Platform harness" (config + context + governance) is the competitive moat, not the agent
+  </details>
+
+- 🔵 `[2026-09]` [ai-sdlc-framework/ai-sdlc: Declarative Governance for AI-Augmented SDLC](https://github.com/ai-sdlc-framework/ai-sdlc) - Open-source declarative governance framework modeled on **Kubernetes-style API maturity** (v1alpha1 → v1beta1 → v1). Defines resource types, policy enforcement levels, autonomy boundaries, agent configurations, and adapters under a formal spec. Designed to bring the same rigor that K8s brought to infrastructure to the governance of AI agents in the SDLC — standardized, versionable, and machine-enforceable.
+
 - 🔵 `[2026-07]` [Martin Fowler: Harness Engineering Goes Mainstream at Thoughtworks Retreat](https://martinfowler.com/fragments/2026-07-13.html) - Notes from Thoughtworks Future of Software Development Retreat. Harness Engineering — unknown at their January retreat — now has dedicated sessions. Key takeaway: **context management matters more than context window size**; models "only focus attention on part of the context." Practical pattern: keeping agents.md **under 200 lines**. Also notes shift to languages with stronger type systems (e.g. Rust) and "leveling up" validation with property-based testing and formal methods.
 
 - 🟡 `[2026-07]` [Gartner: Inaugural Hype Cycle for Agentic AI](https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai) - Agentic AI at **Peak of Inflated Expectations**. Only **17% of orgs have deployed AI agents**, but 60%+ plan to within 2 years. Agent-washing flagged as explicit market problem. Predicts 75% of developers will spend more time orchestrating than writing code by end of 2026.
@@ -3120,6 +3162,10 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-10-01 | Port.io / Gartner: Scaling Agentic SDLC Without Losing Control | 40% platform teams on full-SDLC AI by 2027; 25-30% gains when coordinated vs <10% partial |
+| 2026-09-28 | Agoda AI Developer Report 2026 | 60% save ≥7 hrs/week (3× 2025); 60% agents in prod; cost #1 barrier; 50% juniors career-anxious |
+| 2026-09-27 | BairesDev Q3 2026 Dev Barometer | AI writes ≥50% of code for 42% of devs; 67% spend more time reviewing; 78% CTOs up QA spend |
+| 2026-09-28 | ai-sdlc-framework: K8s-style governance spec for AI SDLC | Declarative policy enforcement, autonomy boundaries, versionable agent governance |
 | 2026-09-30 | Stack Overflow 2026 Developer Survey lookback | Agent adoption 31%→59%; Claude Code 41%→55%; positive sentiment drops to 52.8% |
 | 2026-09-29 | OpenAI ships GPT-6.1 Sol at DevDay | Near-Astra coding at 1/5 the price; GPT-6.1 Astra scrapped over safety concerns |
 | 2026-09-27 | Ariño de la Rubia & Pafka: "Identical Runs, Different Results" | 584 runs show intra-agent variance > inter-agent; few-run benchmarks unreliable |
