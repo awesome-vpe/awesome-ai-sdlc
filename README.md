@@ -94,6 +94,22 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-10]` [Bain Technology Report 2026: "The Missing Architecture for Agentic Software Development"](https://www.bain.com/insights/the-missing-architecture-for-agentic-software-development-technology-report-2026/) - Survey of **293 senior tech leaders**. Orgs expect **148% release-cycle speedup** and **95% productivity uplift**, but current gains are only **20-27%**. Key finding: bottleneck has shifted from coding to review — devs complete ~21% more tasks but review time rises ~91%. Developers now manage **47% more concurrent workstreams**. Companies pulling ahead build three things: machine-readable engineering knowledge, automated quality harnesses, and treat the SDLC as a product. Stripe merges **1,300 AI-authored PRs/week**. Amazon handles up to **70% of code reviews via AI**.
+
+  <details><summary>Key findings</summary>
+
+  - **293 senior tech leaders** surveyed; expectations (148% speed, 95% productivity) far exceed reality (20-27%)
+  - **Shifting bottleneck paradox:** devs +21% tasks, but review time +91%
+  - **47% more concurrent workstreams** per developer — context-switching burden rising
+  - Leaders who pull ahead: machine-readable engineering knowledge, deterministic quality harnesses, SDLC-as-product
+  - **41%** of companies plan risk-tiered governance models; only **6%** envision fully autonomous dev
+  - Stripe: **1,300 AI-authored PRs/week**; Amazon: up to **70%** of code reviews via AI
+  </details>
+
+- 🟡 `[2026-10]` [JetBrains Developer Ecosystem Survey 2026: 47% of Code Now Fully AI-Written](https://unicoconnect.com/blogs/ai-statistics-2026) - Survey of **15,000+ developers** finds on average **~47% of code is fully written by AI agents**, ~38% with some AI assistance. Only **~15% of code is fully human-authored** in enterprise repos.
+
+- 🟡 `[2026-10]` [AI Coding Assistants Statistics 2026 Roundup](https://stats.web2ai.eu/ai-coding-assistants-statistics) - Aggregated data: developers complete tasks **55% faster** with AI assistants. GitHub Copilot leads at **42% enterprise share**, Claude Code at **24%**, ChatGPT at **34%**. AI reduces syntax errors by **60%** and security vulns by **18%**. **78%** of devs report higher job satisfaction from reduced boilerplate. New hires reach productivity baseline **30% faster**. **15%** of advanced users now use agentic coding tools.
+
 - 🟡 `[2026-09]` [Agoda AI Developer Report 2026: Agents Enter Production Across SEA & India](https://www.pninews.com/agoda-releases-ai-developer-report-2026-indian-developers-see-system-architecture-as-the-most-important-future-skill/) - Survey of developers across **7 Southeast Asian countries + India**. **60%** save ≥7 hrs/week (vs 20% in 2025). **60%** of orgs report AI agents in selected production workflows, but only **40%** consider codebases ready for fully autonomous agents. Cost is the **#1 adoption barrier** (30%), ahead of integration complexity and governance (20% each). **79%** require human approval for production deployment. **50% of junior developers** feel less career-secure vs only 20% of C-level respondents.
 
   <details><summary>Key findings</summary>
@@ -1253,6 +1269,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Organizational Impact
 
+- 🔵 `[2026-10]` [Token Prices Falling but Total AI Bills Rising](https://www.artificialintelligence-news.com/news/generative-ai-development-building-for-production-in-2026/) - Financial Times reported Amazon, Walmart, Cisco, Uber, and Meta all saw total AI spending increase despite per-token price drops through 2026. **Cost per completed task**, not per token, is the metric that matters — agent loops and multi-step workflows consume far more tokens than simple completions.
+
 - 🟡 `[2026-09]` [GitLab Cuts Workforce to Redirect Resources to AI Agents](https://economictimes.indiatimes.com/tech/artificial-intelligence/gitlab-to-cut-jobs-reinvest-in-ai-agents-push-ceo-bill-staples/articleshow/131027221.cms) - GitLab CEO Bill Staples announced workforce reductions to reposition the company for **"agentic" opportunities**. Restructuring includes reducing management layers, reorganizing R&D, scaling back country operations, and integrating AI agents into internal workflows (reviews, approvals, operational handoffs). Part of a broader wave: DeepL cut 25%, Freshworks 11%, Kyndryl also cutting — **93,000+ tech roles cut across 106 companies** in 2026 as of May. Shares fell 8% on the announcement.
 
 - 🟡 `[2026-08]` [McKinsey Global Tech Agenda 2026: AI Is #1 Investment Priority](https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/mckinsey-global-tech-agenda-2026) - AI has become the **#1 technology investment priority** ahead of cybersecurity and infrastructure modernization, yet nearly a third of organizations still report AI-related talent and integration gaps. The challenge has shifted from "should we use AI" to "how do we make AI work inside the business."
@@ -1986,6 +2004,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
 
+- 🔵 `[2026-10]` [Cubic.dev: Code Review Becomes the Critical Bottleneck](https://www.cubic.dev/blog/code-review-tools) - AI made code cheap to write, so checking it is the slow part of shipping. AI code review tools now average **$15-25/review**. Martian's Code Review Bench scores bots on precision (comments devs acted on), recall (real fixes caught), and F1. Three-layer approach emerging: **review platforms + static analysis + AI reviewers**.
+
+- 🟡 `[2026-10]` [Snyk 2026: AI-Generated Code Shows 37% Fewer Post-Release Bugs](https://dev.to/nlocoding/future-of-ai-in-software-engineering-what-changes-in-2026-2gbe) - Snyk reports that AI-suggested code has **37% fewer post-release bugs** compared to human-only code. Figma cited as example using AI to auto-generate React components. **Counterpoint** to the "AI creates more bugs" narrative — suggests the picture depends heavily on tooling, review process, and measurement methodology.
+
 - 🟡 `[2026-09]` [Qodo 2026 State of AI Code Quality Report](https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/qodo-s-2026-state-of-ai-code-quality-report-reveals-growing-verification-challenge-as-agentic-development-scales.html) - Survey of **500 developers + 300 engineering leaders**: reviewing AI-generated code is now the **#1 delivery bottleneck** (26% of both groups). **36%** say AI code reviews require greater cognitive effort — the "trust tax." Leadership confidence (90%) runs far ahead of actual control: only **45%** have traceability from AI activity to code changes. Confirms the verification bottleneck is structural, not just cultural.
 
 - 🟡 `[2026-09]` [G2 Analysis: 92% Rate AI Code Gen Positively, But Accuracy Friction Is Constant](https://learn.g2.com/ai-code-generation) - Analysis of **3,000+ reviews**: 92% rate AI code generation positively, but up to **1 in 4 ChatGPT reviews** and **1 in 5 Gemini reviews** cite accuracy issues. Purpose-built coding tools (Copilot, Claude, Cursor) score significantly lower on complaint rates. **Claude leads with 4.6/5** structured accuracy rating.
@@ -2447,6 +2469,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 ## Cross-Cutting Concerns
 
 ### Developer Experience (DevEx)
+
+- 🔵 `[2026-10]` [Addy Osmani: "agent-skills" — Production-Grade Engineering Skills for AI Coding Agents](https://github.com/addyosmani/agent-skills) - **9 slash commands** mapping to the dev lifecycle (spec → plan → build → test → review → ship). Skills encode senior engineer workflows as reusable packages for **70+ agents**. Installable via Vercel's skills CLI. Reflects trend of codifying engineering practices as agent-consumable knowledge rather than relying on prompt engineering alone.
 
 - 🔵 `[2026-08]` [Larridin: CTO AI Coding Tool Scorecard — 5 Metric Sets](https://larridin.com/blog/ai-coding-tool-scorecard-cto-metrics) - Proposes balanced scorecard connecting: (1) DORA delivery performance, (2) AI adoption/proficiency, (3) code quality, (4) cost and ROI, (5) developer experience. Every speed metric needs a **paired quality/friction signal**.
 
@@ -2916,6 +2940,9 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 | Metric | Finding | Sources |
 |--------|---------|---------|
+| Release-cycle expectations vs reality | **148% expected, 20-27% actual** | Bain Tech Report 2026 |
+| Concurrent workstreams per dev | **+47%** | Bain Tech Report 2026 |
+| AI code post-release bugs (counterpoint) | **-37%** vs human-only code | Snyk 2026 |
 | AI-authored share of merged code | **>50%** (52.7% in Q2, up from ~34% in Q1) | DX Q2 2026 |
 | Code churn increase | **+861%** (≈10× more code deleted vs added) | Faros AI 2026 |
 | AI code security pass rate | **56%** (flat since 2025) | Veracode 2026 |
@@ -3162,6 +3189,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-10-05 | Bain: "The Missing Architecture for Agentic Software Development" | 293 leaders; expect 148% speedup, get 20-27%; review time +91%; Stripe 1,300 AI PRs/week |
+| 2026-10-05 | Snyk 2026: AI code has 37% fewer post-release bugs | Counterpoint data — AI quality depends on tooling and review process |
+| 2026-10-05 | Addy Osmani: agent-skills repo | 9 lifecycle commands for 70+ agents; codifying senior eng workflows as reusable packages |
+| 2026-10-05 | Token prices falling but total AI bills rising | Amazon, Walmart, Cisco, Uber, Meta see rising total AI spend despite per-token drops |
+| 2026-10-05 | JetBrains 2026: 47% of code fully AI-written | 15K+ devs; ~15% of enterprise code fully human-authored |
 | 2026-10-01 | Port.io / Gartner: Scaling Agentic SDLC Without Losing Control | 40% platform teams on full-SDLC AI by 2027; 25-30% gains when coordinated vs <10% partial |
 | 2026-09-28 | Agoda AI Developer Report 2026 | 60% save ≥7 hrs/week (3× 2025); 60% agents in prod; cost #1 barrier; 50% juniors career-anxious |
 | 2026-09-27 | BairesDev Q3 2026 Dev Barometer | AI writes ≥50% of code for 42% of devs; 67% spend more time reviewing; 78% CTOs up QA spend |
