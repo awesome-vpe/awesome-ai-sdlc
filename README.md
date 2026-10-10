@@ -94,6 +94,19 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-10]` [Uvik: AI Coding Assistant Statistics 2026 — Adoption, Agents, Trust](https://uvik.net/blog/ai-coding-assistant-statistics/) - Comprehensive analysis synthesizing JetBrains, Stack Overflow, and METR data. **90% of professional developers** use AI coding agents at work weekly, **68% daily**. Claude Code dominates at **39% adoption** (47% in US), overtaking GitHub Copilot (21%, down from 29%). METR autonomous task horizon reached **12-hour tasks** (Opus 4.6). Trust remains the gap: adoption is near-universal but delegation is not.
+
+- 🟠 `[2026-10]` [Fuggetta: "Why Software Engineering Is Indispensable in the Age of Coding Agents" (CACM)](https://arxiv.org/abs/2610.10226) - Accepted for **Communications of the ACM**. Argues the rise of AI coding agents makes SE *essential*, not obsolete. Three structural LLM properties — probabilistic generation, agnosticism, and semantic statelessness — create a vacuum that no amount of training can fill. Four knowledge levers (methodological, domain, design choices, process choices) must be reified as persistent artifacts. The software engineer's role shifts to **methodologist, mediator, and custodian**.
+
+  <details><summary>Key argument</summary>
+
+  - Three structural LLM properties (probabilistic generation, agnosticism, semantic statelessness) create an irreducible vacuum
+  - Four knowledge levers required: methodological knowledge, domain knowledge, design choices, process choices
+  - All four must be **reified as persistent artifacts**, not left implicit
+  - Engineer's role: methodologist (how to build), mediator (what to build), custodian (keeping it coherent)
+  - Without SE discipline, AI produces "misleadingly plausible, unverifiable, and ultimately untrustworthy software"
+  </details>
+
 - 🟡 `[2026-10]` [Bain Technology Report 2026: "The Missing Architecture for Agentic Software Development"](https://www.bain.com/insights/the-missing-architecture-for-agentic-software-development-technology-report-2026/) - Survey of **293 senior tech leaders**. Orgs expect **148% release-cycle speedup** and **95% productivity uplift**, but current gains are only **20-27%**. Key finding: bottleneck has shifted from coding to review — devs complete ~21% more tasks but review time rises ~91%. Developers now manage **47% more concurrent workstreams**. Companies pulling ahead build three things: machine-readable engineering knowledge, automated quality harnesses, and treat the SDLC as a product. Stripe merges **1,300 AI-authored PRs/week**. Amazon handles up to **70% of code reviews via AI**.
 
   <details><summary>Key findings</summary>
@@ -757,6 +770,18 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2025-01]` [Bain 2025 Technology Report](https://www.bain.com/insights/technology-report-2025/) - 25-30% engineering productivity with full SDLC AI adoption; most orgs see only 5-15%.
 
 ### Productivity Paradoxes & Measurement
+
+- 🟢 `[2026-10]` [Harvard/Jellyfish: "AI Coding Agents Generate More Code, But Not More Software"](https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/) — Analysis of **300 million work events** across **700,000+ employees at 700+ firms** (2021–Mar 2026, via Jellyfish). Pull request volume increased after AI agent adoption, but **review time ballooned 49%**, changes requested nearly **doubled**, and comments per PR rose **35%**. Features shipped showed **no significant increase**. 80% of firms use some AI code review, but AI handles only **23.3%** of review comments and **10.8%** of PRs — humans still do the vast majority. No significant employment changes attributable to AI detected. ([Paper](https://fion.ac/jellyfish.pdf))
+
+  <details><summary>Key findings</summary>
+
+  - **300M work events**, 700K+ employees, 700+ firms — largest empirical study of AI coding agents to date
+  - PR volume up, but review process time **+49%**; changes requested nearly **2×**; comments **+35%**
+  - **Features shipped: no significant increase** — more code ≠ more software
+  - AI code review tools present but marginal: only **23.3%** of comments, **10.8%** of PRs
+  - **14% more workers** shifted to code review roles post-AI adoption
+  - No significant employment changes attributable to AI (cross-referenced with LinkedIn data)
+  </details>
 
 - 🟢 `[2026-09]` [Ariño de la Rubia & Pafka: "Identical Runs, Different Results" — Benchmarking AI Coding Agents](https://arxiv.org/abs/2609.33812) - **584 runs** across 6 agents × 6 open-weight models on an XGBoost ML task. Run-to-run variance of identical agent-model pairings **exceeded the differences between pairings** — a few runs rank agents unreliably; resolving observed differences would require **tens to 100+ runs each**. Larger models scored higher but by less than one standard deviation. Cost varied **>20× between agents** on the same model, mostly via prompt cache efficiency. Data, code, and all deliverables released.
 
@@ -2004,6 +2029,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
 
+- 🟢 `[2026-10]` [JetBrains Research / ESEIW 2026: Framework for Reviewing AI-Generated Code](https://blog.jetbrains.com/research/2026/10/review-ai-generated/) - JetBrains HAX team + Lund University propose a conceptual framework for AI-ready code review tools. Core finding: **trust calibration** is the central problem — LLMs present every line with equal apparent confidence regardless of actual uncertainty. Traditional **diff-view paradigm fails to scale** when agents generate thousands of lines across dozens of files. Based on participatory design with **17 practitioners** + survey of **43 professionals**. Presented at ESEIW 2026. ([Paper](https://doi.org/10.4230/LIPIcs.ESEM.2026.89))
+
 - 🔵 `[2026-10]` [Cubic.dev: Code Review Becomes the Critical Bottleneck](https://www.cubic.dev/blog/code-review-tools) - AI made code cheap to write, so checking it is the slow part of shipping. AI code review tools now average **$15-25/review**. Martian's Code Review Bench scores bots on precision (comments devs acted on), recall (real fixes caught), and F1. Three-layer approach emerging: **review platforms + static analysis + AI reviewers**.
 
 - 🟡 `[2026-10]` [Snyk 2026: AI-Generated Code Shows 37% Fewer Post-Release Bugs](https://dev.to/nlocoding/future-of-ai-in-software-engineering-what-changes-in-2026-2gbe) - Snyk reports that AI-suggested code has **37% fewer post-release bugs** compared to human-only code. Figma cited as example using AI to auto-generate React components. **Counterpoint** to the "AI creates more bugs" narrative — suggests the picture depends heavily on tooling, review process, and measurement methodology.
@@ -2551,6 +2578,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Team Topologies & Agent Topologies
 
+- 🟠 `[2026-10]` [ADLC: An Agentic Development Lifecycle for Governing Agentic Software Development](https://sdtimes.com/agentic-ai/onboarding-agents-through-an-agent-development-life-cycle/) - Proposes the **Agent Development Lifecycle (ADLC)** as a framework for managing AI agents in enterprise software delivery. Blends traditional SDLC engineering rigor with **HR-style onboarding principles** — treating agents as probabilistic team members that need onboarding, guardrails, and performance management rather than deterministic tools. Identifies five structural changes in the shift from human-steered to agent-executed work. ([Zenodo](https://zenodo.org/records/23175398))
+
 - 🔵 `[2026-06]` [Forbes: "The Real Cost of Enterprise Vibe Coding Shows Up After the Prompt"](https://www.forbes.com/councils/forbestechcouncil/2026/06/03/how-the-real-cost-of-enterprise-vibe-coding-shows-up-after-the-prompt/) - While code generation speeds up, the other **75% of the work** — review, integration, release, maintenance — inherits the strain. Vibe coding lowers build cost but **raises maintenance cost**. Open-source maintainers like Steve Ruiz (tldraw) auto-closed all external PRs after being overwhelmed by low-quality AI-generated contributions.
 
 - 🔵 `[2026-06]` [DevOps.com: "AI Is Accelerating DevOps, Poor Integrations Are Slowing It Down"](https://devops.com/ai-is-accelerating-devops-poor-integrations-are-slowing-it-down/) - AI copilots made individual tools smarter, but the bottleneck shifted to **cross-tool integration gaps**. End-to-end delivery pipelines don't feel faster because data crossing tool boundaries (Jira ↔ Zendesk ↔ ServiceNow) still breaks down. The **"integration tax"** is the new constraint.
@@ -2940,6 +2969,9 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 | Metric | Finding | Sources |
 |--------|---------|---------|
+| Code review time post-AI agents | **+49%**; changes requested nearly **2×** | Harvard/Jellyfish (300M events) |
+| Features shipped post-AI agents | **No significant increase** | Harvard/Jellyfish (300M events) |
+| Weekly AI coding agent use | **90%** of professional developers | JetBrains 2026 / Uvik |
 | Release-cycle expectations vs reality | **148% expected, 20-27% actual** | Bain Tech Report 2026 |
 | Concurrent workstreams per dev | **+47%** | Bain Tech Report 2026 |
 | AI code post-release bugs (counterpoint) | **-37%** vs human-only code | Snyk 2026 |
@@ -3189,6 +3221,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-10-09 | Harvard/Jellyfish: "More Code, But Not More Software" | 300M events, 700+ firms; PR review +49%, changes requested 2×, features shipped unchanged |
+| 2026-10-07 | Fuggetta: "Why SE Is Indispensable" (CACM) | Three structural LLM properties create irreducible vacuum only SE discipline can fill |
+| 2026-10-07 | JetBrains/ESEIW: AI code review trust calibration framework | Diff-view paradigm fails at scale; need risk/confidence signals per code region |
+| 2026-10-06 | ADLC: Agentic Development Lifecycle framework | Treat agents as probabilistic team members needing onboarding, not deterministic tools |
+| 2026-10-06 | Uvik: 90% weekly AI agent adoption, 68% daily | Claude Code at 39% (47% US); Copilot declining to 21% |
 | 2026-10-05 | Bain: "The Missing Architecture for Agentic Software Development" | 293 leaders; expect 148% speedup, get 20-27%; review time +91%; Stripe 1,300 AI PRs/week |
 | 2026-10-05 | Snyk 2026: AI code has 37% fewer post-release bugs | Counterpoint data — AI quality depends on tooling and review process |
 | 2026-10-05 | Addy Osmani: agent-skills repo | 9 lifecycle commands for 70+ agents; codifying senior eng workflows as reusable packages |
