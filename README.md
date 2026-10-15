@@ -94,6 +94,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-10]` [Stack Overflow Developer Survey 2026 — AI Section](https://survey.stackoverflow.co/2026/ai) - **83% of developers** use at least one AI tool. Coding assistants (66%) and general chat (63%) dominate; agents/workflows reach **26%**. 73% of AI users are now daily users, with ~1/3 spending **4+ hours/day** with AI tools.
+
+- 🟡 `[2026-10]` [Business Insider: Developers Burned Out as AI Reshapes Work](https://www.businessinsider.com/developers-are-burned-out-as-ai-coding-reshapes-work-survey-2026-10) - Stack Overflow survey coverage highlighting developer **malaise alongside massive AI adoption shifts**. Nearly 2/3 of respondents use AI coding assistants or agents. Signals that the human cost of the AI transition is becoming a workforce concern.
+
+- 🟡 `[2026-10]` [Sonar 2026 State of Code Survey: 42% of Committed Code Now AI-Generated](https://capitalandcompute.net/blog/state-of-ai-programming-2026/) - Survey of **1,100+ developers**: 42% of committed code is AI-generated or AI-assisted, but **96% of developers do not fully trust** the output. The trust–adoption gap continues to widen.
+
 - 🟡 `[2026-10]` [Uvik: AI Coding Assistant Statistics 2026 — Adoption, Agents, Trust](https://uvik.net/blog/ai-coding-assistant-statistics/) - Comprehensive analysis synthesizing JetBrains, Stack Overflow, and METR data. **90% of professional developers** use AI coding agents at work weekly, **68% daily**. Claude Code dominates at **39% adoption** (47% in US), overtaking GitHub Copilot (21%, down from 29%). METR autonomous task horizon reached **12-hour tasks** (Opus 4.6). Trust remains the gap: adoption is near-universal but delegation is not.
 
 - 🟠 `[2026-10]` [Fuggetta: "Why Software Engineering Is Indispensable in the Age of Coding Agents" (CACM)](https://arxiv.org/abs/2610.10226) - Accepted for **Communications of the ACM**. Argues the rise of AI coding agents makes SE *essential*, not obsolete. Three structural LLM properties — probabilistic generation, agnosticism, and semantic statelessness — create a vacuum that no amount of training can fill. Four knowledge levers (methodological, domain, design choices, process choices) must be reified as persistent artifacts. The software engineer's role shifts to **methodologist, mediator, and custodian**.
@@ -771,6 +777,16 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Productivity Paradoxes & Measurement
 
+- 🟢 `[2026-10]` [freeCodeCamp: "Code is Cheaper but Expertise is More Valuable" (Full Book)](https://www.freecodecamp.org/news/the-state-of-ai-and-software-engineering-book) - Long-form synthesis. **180% increase in commits** yielded only **30% increase in actual releases** and no measurable increase in end-user adoption (NBER study of 100K+ devs). Anthropic's own data: same model succeeds **~2× more often** when operated by an expert vs. novice. BLS projects "computer programmer" declining 6% while "software developer" grows 16% — a **bifurcation**, not a collapse.
+
+  <details><summary>Key findings</summary>
+
+  - **180% more commits → 30% more releases → 0% more adoption** (NBER, 100K+ devs)
+  - Same AI model **2× more effective** with expert operator vs. novice (Anthropic data)
+  - BLS projects "computer programmer" **-6%** vs. "software developer" **+16%** — skill bifurcation
+  - Code is becoming cheaper; the ability to evaluate, integrate, and maintain it is becoming more valuable
+  </details>
+
 - 🟢 `[2026-10]` [Harvard/Jellyfish: "AI Coding Agents Generate More Code, But Not More Software"](https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/) — Analysis of **300 million work events** across **700,000+ employees at 700+ firms** (2021–Mar 2026, via Jellyfish). Pull request volume increased after AI agent adoption, but **review time ballooned 49%**, changes requested nearly **doubled**, and comments per PR rose **35%**. Features shipped showed **no significant increase**. 80% of firms use some AI code review, but AI handles only **23.3%** of review comments and **10.8%** of PRs — humans still do the vast majority. No significant employment changes attributable to AI detected. ([Paper](https://fion.ac/jellyfish.pdf))
 
   <details><summary>Key findings</summary>
@@ -1293,6 +1309,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   </details>
 
 ### Organizational Impact
+
+- 🟡 `[2026-10]` [InfoWorld: Organizations Must Redesign Delivery Systems Around AI](https://www.infoworld.com/article/4230849/ai-has-accelerated-coding-now-software-organizations-must-redesign-everything-around-it.html) - Despite commits and PRs rising, many orgs report **deployments have slowed** and governance overhead has grown. McKinsey confirms companies capturing real value are **redesigning workflows, not just deploying tools**. Context infrastructure and governance integration emerging as critical capabilities.
 
 - 🔵 `[2026-10]` [Token Prices Falling but Total AI Bills Rising](https://www.artificialintelligence-news.com/news/generative-ai-development-building-for-production-in-2026/) - Financial Times reported Amazon, Walmart, Cisco, Uber, and Meta all saw total AI spending increase despite per-token price drops through 2026. **Cost per completed task**, not per token, is the metric that matters — agent loops and multi-step workflows consume far more tokens than simple completions.
 
@@ -2029,6 +2047,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
 
+- 🟢 `[2026-10]` [ESEM 2026: AI-Assisted Code Impact on Quality and Review Time at Scale](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.93) - Empirical study presented at **ESEM 2026** analyzing impact of AI-assisted/generated code on quality, centrality, and review time at industrial scale. Adds to growing body of conference-grade evidence on how AI code is changing review dynamics.
+
 - 🟢 `[2026-10]` [JetBrains Research / ESEIW 2026: Framework for Reviewing AI-Generated Code](https://blog.jetbrains.com/research/2026/10/review-ai-generated/) - JetBrains HAX team + Lund University propose a conceptual framework for AI-ready code review tools. Core finding: **trust calibration** is the central problem — LLMs present every line with equal apparent confidence regardless of actual uncertainty. Traditional **diff-view paradigm fails to scale** when agents generate thousands of lines across dozens of files. Based on participatory design with **17 practitioners** + survey of **43 professionals**. Presented at ESEIW 2026. ([Paper](https://doi.org/10.4230/LIPIcs.ESEM.2026.89))
 
 - 🔵 `[2026-10]` [Cubic.dev: Code Review Becomes the Critical Bottleneck](https://www.cubic.dev/blog/code-review-tools) - AI made code cheap to write, so checking it is the slow part of shipping. AI code review tools now average **$15-25/review**. Martian's Code Review Bench scores bots on precision (comments devs acted on), recall (real fixes caught), and F1. Three-layer approach emerging: **review platforms + static analysis + AI reviewers**.
@@ -2515,6 +2535,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Skill Formation & Learning
 
+- 🟢 `[2026-10]` [AAAI/AIES 2026: "Who Will Become the Next Senior?"](https://ojs.aaai.org/index.php/AIES/article/view/43353) - Yu & Moon argue GenAI is absorbing not just junior tasks but **the developmental pathway** through which juniors become seniors. AI handles the "learning-by-doing" work that builds expertise. Calls for **deliberate institutional design** across classrooms and workplaces to preserve skill formation pathways.
+
 - 🟢 `[2026-09]` [Stanford Digital Economy Lab: AI Entry-Level Employment Gap Widens to 19%](https://siliconcanals.com/t-ai-entry-level-employment-gap-career-ladder/) - Revised analysis of US payroll records through Jun 2026 shows employment among **22-25-year-olds in AI-exposed occupations running 19% below expected trajectory** (up from 13% in earlier version). The gap opened because companies hired fewer juniors, not because experienced workers were displaced. Raises critical pipeline question: who becomes tomorrow's senior engineer if the junior rung thins out?
 
 - 🔵 `[2026-08]` [MarkTechPost: "What Would Have to Be True for Agentic Coding to Replace Junior Engineers"](https://www.marktechpost.com/2026/08/26/what-would-have-to-be-true-for-agentic-coding-to-replace-junior-engineers/) - Rigorous analysis identifies **4 conditions** needed for replacement; argues **3 of 4 are NOT met**. METR time-horizon data shows agents near-perfect on <4min tasks but **<10% success on 4hr+ tasks**. OpenAI retired SWE-bench Verified in Feb 2026 after finding **59.4% of audited test cases were flawed**. DORA data: 90% using AI at work, but 30% report little/no trust in outputs.
@@ -2632,6 +2654,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🔵 `[2026-02]` [Karpathy: "Agentic Engineering"](https://x.com/karpathy/status/2026731645169185220) - Proposed term for supervisory engineering with AI agents. "Deep technical expertise is even more of a multiplier."
 
 ### Roles & Career Evolution
+
+- 🟡 `[2026-10]` [CNBC: Software Dev Job Postings Up 15% Despite AI Automation](https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html) - U.S. software development job postings rose **~15% since Feb 2025**, bucking overall job market trends. GitHub reports **1 in 3 pull requests** now involve an AI agent (vs. 1 in 10 a year ago). McKinsey's Kutcher: "We're seeing much more growth in places we thought we'd see the biggest displacement." **Jevons paradox** in action.
 
 - 🟢 `[2026-09]` [Federal Reserve: "AI and Coder Employment: Compiling the Evidence" (Crane & Soto)](https://www.federalreserve.gov/econres/feds/ai-and-coder-employment-compiling-the-evidence.htm) - Fed Board working paper finds **coder employment growth is ~3% lower annually** since ChatGPT's introduction. Using O*NET–CPS linkage and a novel control for industry shocks, authors show the deceleration is **not attributable to broader industry downturns** — it's specific to coding-exposed occupations. First rigorous macro-labor evidence that AI coding tools are measurably affecting aggregate developer employment.
 
@@ -2969,6 +2993,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 | Metric | Finding | Sources |
 |--------|---------|---------|
+| Commits vs releases vs adoption | **+180% commits → +30% releases → 0% adoption** | NBER (100K+ devs) / freeCodeCamp |
+| AI-generated code share (committed) | **42%**, but **96% don't fully trust** it | Sonar 2026 (1,100+ devs) |
+| AI tool daily usage intensity | **73%** daily; **~1/3 spend 4+ hrs/day** | Stack Overflow 2026 |
+| SW dev job postings (US) | **+15%** since Feb 2025 despite AI | CNBC / BLS |
 | Code review time post-AI agents | **+49%**; changes requested nearly **2×** | Harvard/Jellyfish (300M events) |
 | Features shipped post-AI agents | **No significant increase** | Harvard/Jellyfish (300M events) |
 | Weekly AI coding agent use | **90%** of professional developers | JetBrains 2026 / Uvik |
@@ -3221,6 +3249,14 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-10-12 | Stack Overflow Developer Survey 2026 — AI Section | 83% use AI tools; 73% daily; agents/workflows reach 26%; 1/3 spend 4+ hrs/day |
+| 2026-10-12 | freeCodeCamp: "Code is Cheaper but Expertise is More Valuable" | 180% more commits → 30% more releases → 0% more adoption; expert operators 2× more effective |
+| 2026-10-12 | AAAI/AIES: "Who Will Become the Next Senior?" | AI absorbs the developmental pathway juniors use to become seniors |
+| 2026-10-12 | Sonar: 42% of committed code now AI-generated | 1,100+ devs; 96% don't fully trust AI output |
+| 2026-10-11 | CNBC: SW dev job postings up 15% | Jevons paradox — more AI → more demand for developers, not less |
+| 2026-10-12 | ESEM 2026: AI code impact on quality and review at scale | Empirical industrial-scale study of AI-assisted code quality and review dynamics |
+| 2026-10-12 | InfoWorld: Redesign delivery systems around AI | Deployments slowing despite rising commits; workflow redesign > tool deployment |
+| 2026-10-12 | Business Insider: Developers burned out amid AI shift | Developer malaise alongside record AI adoption |
 | 2026-10-09 | Harvard/Jellyfish: "More Code, But Not More Software" | 300M events, 700+ firms; PR review +49%, changes requested 2×, features shipped unchanged |
 | 2026-10-07 | Fuggetta: "Why SE Is Indispensable" (CACM) | Three structural LLM properties create irreducible vacuum only SE discipline can fill |
 | 2026-10-07 | JetBrains/ESEIW: AI code review trust calibration framework | Diff-view paradigm fails at scale; need risk/confidence signals per code region |
