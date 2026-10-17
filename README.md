@@ -94,6 +94,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-10]` [Wharton/GBK 2026 AI Adoption Report](https://knowledge.wharton.upenn.edu/special-report/2026-ai-adoption-report/) - Fourth annual Wharton Human-AI Research + GBK Collective study tracking AI adoption, ROI, agents, training, and workforce impact. **First year comparing leader perspectives with entry- and mid-level employees**. Provides enterprise benchmarks on whether AI investments are paying off and how transformation is experienced across the workforce hierarchy.
+
 - 🟡 `[2026-10]` [Stack Overflow Developer Survey 2026 — AI Section](https://survey.stackoverflow.co/2026/ai) - **83% of developers** use at least one AI tool. Coding assistants (66%) and general chat (63%) dominate; agents/workflows reach **26%**. 73% of AI users are now daily users, with ~1/3 spending **4+ hours/day** with AI tools.
 
 - 🟡 `[2026-10]` [Business Insider: Developers Burned Out as AI Reshapes Work](https://www.businessinsider.com/developers-are-burned-out-as-ai-coding-reshapes-work-survey-2026-10) - Stack Overflow survey coverage highlighting developer **malaise alongside massive AI adoption shifts**. Nearly 2/3 of respondents use AI coding assistants or agents. Signals that the human cost of the AI transition is becoming a workforce concern.
@@ -777,6 +779,17 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Productivity Paradoxes & Measurement
 
+- 🟡 `[2026-10]` [Faros AI "Speed Trap" — AI Engineering Report Q3 2026](https://www.faros.ai/research/speed-trap) - Analysis across teams deepening AI adoption. Task throughput per developer **+69.0%**, epics completed per developer **+53.7%**, deployment frequency **+13.8%**. But: work restarts per developer **+66.7%**, average time in QA **+300.6%**, PR size **+71.8%**, files per PR **+52.0%**, daily task contexts **+44.6%**. Introduces concept of **"comprehension debt"** — effort to understand AI-generated code is deferred, then resurfaces during modification or failure diagnosis. ([Summary](https://www.faros.ai/blog/how-ai-affects-developer-productivity))
+
+  <details><summary>Key findings</summary>
+
+  - Task throughput **+69%**, epics **+53.7%** — teams are completing more work
+  - Work restarts **+66.7%**, QA time **+300.6%** — but rework and verification costs are surging
+  - PR size **+71.8%**, files per PR **+52%** — larger changes = harder review
+  - Daily task contexts per dev **+44.6%** — shift toward orchestration over execution
+  - **"Comprehension debt"**: deferred understanding resurfaces during maintenance/debugging
+  </details>
+
 - 🟢 `[2026-10]` [freeCodeCamp: "Code is Cheaper but Expertise is More Valuable" (Full Book)](https://www.freecodecamp.org/news/the-state-of-ai-and-software-engineering-book) - Long-form synthesis. **180% increase in commits** yielded only **30% increase in actual releases** and no measurable increase in end-user adoption (NBER study of 100K+ devs). Anthropic's own data: same model succeeds **~2× more often** when operated by an expert vs. novice. BLS projects "computer programmer" declining 6% while "software developer" grows 16% — a **bifurcation**, not a collapse.
 
   <details><summary>Key findings</summary>
@@ -1309,6 +1322,21 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   </details>
 
 ### Organizational Impact
+
+- 🟢 `[2026-10]` [Anthropic: "How Employment Is Changing at Anthropic"](https://www.anthropic.com/research/employment-at-anthropic) - Anthropic publishes internal employment data as a **leading indicator** of AI-driven workforce change. AI agent hours outnumber employee hours **6 to 1**. Code per person, sales per rep, and contracts processed all rose as employees adopted agents. Reading all agent output would take **half an employee's work week** — human attention is now the bottleneck. Junior technical hiring share is declining. Hiring managers increasingly emphasize **autonomy and judgment** over domain expertise. One engineer: *"an army of Claudes, with every one asking for my attention."*
+
+  <details><summary>Key findings</summary>
+
+  - Agent hours **6:1** vs. human hours by August 2026
+  - Output per person rose sharply when employees adopted coding agents
+  - Even non-technical staff would need **half their work week** just reading agent output
+  - Junior technical hiring share declining
+  - Hiring now prioritizes **autonomy and judgment** over domain expertise
+  - Employees increasingly do **"meta-work"** — building monitoring tools and visibility for agent pipelines
+  - Anthropic set up an early warning system for jobs at risk and prioritizes internal redeployment
+  </details>
+
+- 🟠 `[2026-10]` [Forbes Tech Council: "AI Is Changing the Economics of Software Engineering, Not Just Productivity"](https://www.forbes.com/councils/forbestechcouncil/2026/10/16/ai-is-changing-the-economics-of-software-engineering-not-just-developer-productivity/) - Argues the real shift is **economic, not just speed**. As code generation becomes cheap, scarcity moves to problem definition, architecture, verification, and outcome measurement. DORA describes AI as an **amplifier of what's already there** — weak testing/architecture still constrains delivery regardless of coding speed. Activity metrics (PRs, tickets closed) become less useful; engineering metrics must move closer to **business outcomes**.
 
 - 🟡 `[2026-10]` [InfoWorld: Organizations Must Redesign Delivery Systems Around AI](https://www.infoworld.com/article/4230849/ai-has-accelerated-coding-now-software-organizations-must-redesign-everything-around-it.html) - Despite commits and PRs rising, many orgs report **deployments have slowed** and governance overhead has grown. McKinsey confirms companies capturing real value are **redesigning workflows, not just deploying tools**. Context infrastructure and governance integration emerging as critical capabilities.
 
@@ -2047,6 +2075,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
 
+- 🔵 `[2026-10]` [HackerNoon/QA.tech: "Product Quality in the AI SDLC — Why the Auditor Cannot Be the Creator"](https://hackernoon.com/product-quality-in-the-ai-sdlc-why-the-auditor-cannot-be-the-creator) - Argues AI-generated code needs **independent verification** from a separate system, not self-review. Cites Faros data: PRs merging with **no review at all up 31.3%**, median review time **+441.5%**. The same agent that writes code cannot reliably audit it. Agentic testing and smarter quality gates are the mitigation strategy.
+
 - 🟢 `[2026-10]` [ESEM 2026: AI-Assisted Code Impact on Quality and Review Time at Scale](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.93) - Empirical study presented at **ESEM 2026** analyzing impact of AI-assisted/generated code on quality, centrality, and review time at industrial scale. Adds to growing body of conference-grade evidence on how AI code is changing review dynamics.
 
 - 🟢 `[2026-10]` [JetBrains Research / ESEIW 2026: Framework for Reviewing AI-Generated Code](https://blog.jetbrains.com/research/2026/10/review-ai-generated/) - JetBrains HAX team + Lund University propose a conceptual framework for AI-ready code review tools. Core finding: **trust calibration** is the central problem — LLMs present every line with equal apparent confidence regardless of actual uncertainty. Traditional **diff-view paradigm fails to scale** when agents generate thousands of lines across dozens of files. Based on participatory design with **17 practitioners** + survey of **43 professionals**. Presented at ESEIW 2026. ([Paper](https://doi.org/10.4230/LIPIcs.ESEM.2026.89))
@@ -2346,6 +2376,17 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 *AI tools for vulnerability detection, SAST/DAST, and security review.*
 
 <!-- Entries welcome: AI SAST/DAST tools, vulnerability scanners, security copilots -->
+
+- 🟢 `[2026-10]` [Arnica: AI Coding Agents Write 2.7x More Vulnerable Code by Default](https://www.arnica.io/blog/ai-coding-agents-security-benchmark) - Benchmark of **six models from five vendors** (Opus-class, GPT-5-class, Sonnet-class, Grok-class, Gemini Flash-class, Muse-class). Without security rules, agents got **47% of security decisions wrong**. With agentic rules (CLAUDE.md, copilot-instructions, .cursor/rules), error rate dropped to **17%** — a 2.7× reduction. On open-source apps never tuned on, error rate fell from **58% to 32%**. 54% of midsize and 75% of enterprise companies use **3+ AI coding tools**, making cross-tool rule delivery the next governance challenge.
+
+  <details><summary>Key findings</summary>
+
+  - **47% security decisions wrong** without rules → **17%** with agentic rules (2.7× improvement)
+  - Tested six models: Opus-class, GPT-5-class, Sonnet-class, Grok-class, Gemini Flash-class, Muse-class
+  - Generalizes to unseen codebases: 58% → 32% on open-source apps
+  - 54% midsize / 75% enterprise use **3+ AI coding tools** — rule delivery across tools is hard
+  - Security rules must be **native to each agent** (CLAUDE.md, .github/copilot-instructions.md, .cursor/rules)
+  </details>
 
 - 🔵 `[2026-07]` [Qoder Security: Three-Layer Security Review in AI Coding Sessions](https://www.wingerdaily.com/2026/07/23/qoder-launches-qoder-security-putting-three-layers-of-security-into-the-ai-coding-session/) - Embeds 3-layer security review directly in the AI coding session. Cites academic study of **~9,000 C++ programs** finding AI-generated code triggers confirmed runtime violations at **~2× the rate** of human-written code, even after controlling for length and test pass rates. Claims 60% improvement in vuln detection, 80% reduction in false positives vs traditional scanning.
 
@@ -2993,6 +3034,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 | Metric | Finding | Sources |
 |--------|---------|---------|
+| Task throughput vs rework | **+69% throughput, +53.7% epics** but **+66.7% restarts, +300.6% QA time** | Faros "Speed Trap" Q3 2026 |
+| Agent hours vs human hours | **6:1** (at Anthropic) | Anthropic employment study |
+| AI security decisions (without rules) | **47% wrong**; drops to **17%** with agentic rules | Arnica benchmark (6 models) |
+| PRs merging with no review | **Up 31.3%**; median review time **+441.5%** | Faros / QA.tech |
 | Commits vs releases vs adoption | **+180% commits → +30% releases → 0% adoption** | NBER (100K+ devs) / freeCodeCamp |
 | AI-generated code share (committed) | **42%**, but **96% don't fully trust** it | Sonar 2026 (1,100+ devs) |
 | AI tool daily usage intensity | **73%** daily; **~1/3 spend 4+ hrs/day** | Stack Overflow 2026 |
@@ -3249,6 +3294,12 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-10-16 | Anthropic: "How Employment Is Changing at Anthropic" | Agent hours 6:1 vs human; junior hiring declining; autonomy/judgment > domain expertise |
+| 2026-10-16 | Forbes Tech Council: AI changing economics of SE | Scarcity moves from code production to architecture, testing, outcome measurement |
+| 2026-10-14 | Arnica: AI agents write 2.7× more vulnerable code | 47% security decisions wrong without rules; 17% with agentic rules; 6 models benchmarked |
+| 2026-10-14 | HackerNoon/QA.tech: "Auditor Cannot Be the Creator" | PRs with no review +31.3%; median review time +441.5%; independent verification needed |
+| 2026-10-13 | Faros AI "Speed Trap" Q3 2026 report | Throughput +69%, epics +53.7%, but restarts +66.7%, QA time +300.6%; "comprehension debt" |
+| 2026-10-13 | Wharton/GBK 2026 AI Adoption Report | 4th-year study; first time comparing leaders vs. entry/mid-level employees on AI impact |
 | 2026-10-12 | Stack Overflow Developer Survey 2026 — AI Section | 83% use AI tools; 73% daily; agents/workflows reach 26%; 1/3 spend 4+ hrs/day |
 | 2026-10-12 | freeCodeCamp: "Code is Cheaper but Expertise is More Valuable" | 180% more commits → 30% more releases → 0% more adoption; expert operators 2× more effective |
 | 2026-10-12 | AAAI/AIES: "Who Will Become the Next Senior?" | AI absorbs the developmental pathway juniors use to become seniors |
