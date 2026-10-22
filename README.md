@@ -94,6 +94,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-10]` [European Parliament: GenAI in Software Development — Technology Monitoring](https://euagenda.eu/publications/download/801455) - EU Parliament technology monitoring report documenting the shift toward **agent-based workflows** in enterprise software development. Notes ChatGPT reaching **900M weekly active users** by Feb 2026. Provides a European regulatory-body perspective on how GenAI is reshaping the SDLC — useful as a policy-grade complement to industry surveys.
+
 - 🟡 `[2026-10]` [Wharton/GBK 2026 AI Adoption Report](https://knowledge.wharton.upenn.edu/special-report/2026-ai-adoption-report/) - Fourth annual Wharton Human-AI Research + GBK Collective study tracking AI adoption, ROI, agents, training, and workforce impact. **First year comparing leader perspectives with entry- and mid-level employees**. Provides enterprise benchmarks on whether AI investments are paying off and how transformation is experienced across the workforce hierarchy.
 
 - 🟡 `[2026-10]` [Stack Overflow Developer Survey 2026 — AI Section](https://survey.stackoverflow.co/2026/ai) - **83% of developers** use at least one AI tool. Coding assistants (66%) and general chat (63%) dominate; agents/workflows reach **26%**. 73% of AI users are now daily users, with ~1/3 spending **4+ hours/day** with AI tools.
@@ -779,6 +781,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Productivity Paradoxes & Measurement
 
+- 🔵 `[2026-10]` [ByteHerald: "AI Dev Productivity Is 25–50%, Not 10x"](https://www.byteherald.com/2026/10/ai-dev-productivity-is-25-50-not-10x.html) - Synthesis of the Harvard (718 firms, 726K workers) and MIT (500K+ GitHub devs) studies. Individual coding speed is dramatically faster, but **firm-level gains are eaten by the review queue**. The honest range for end-to-end productivity improvement sits at **25–50%**, far below marketing "10x" claims. Gains attenuate from LoC → commits → PRs → releases.
+
+- 🟡 `[2026-10]` [DORA 2026: AI Reduces Implementation Effort, Shifts Cost Downstream](https://thenextlevelsoftware.com/blog/will-ai-replace-developers-2026) - DORA's 2026 analysis confirms a recurring trade-off: AI reduces the effort to **begin and implement** work, but saved time moves downstream into **auditing and verification**. Only ~10% of work code is fully AI-generated on average; manually written code still accounts for ~75%.
+
 - 🟡 `[2026-10]` [Faros AI "Speed Trap" — AI Engineering Report Q3 2026](https://www.faros.ai/research/speed-trap) - Analysis across teams deepening AI adoption. Task throughput per developer **+69.0%**, epics completed per developer **+53.7%**, deployment frequency **+13.8%**. But: work restarts per developer **+66.7%**, average time in QA **+300.6%**, PR size **+71.8%**, files per PR **+52.0%**, daily task contexts **+44.6%**. Introduces concept of **"comprehension debt"** — effort to understand AI-generated code is deferred, then resurfaces during modification or failure diagnosis. ([Summary](https://www.faros.ai/blog/how-ai-affects-developer-productivity))
 
   <details><summary>Key findings</summary>
@@ -1323,6 +1329,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Organizational Impact
 
+- 🟡 `[2026-10]` [Technology.org: How Enterprises Are Actually Building AI in 2026](https://www.technology.org/2026/10/12/how-enterprises-are-actually-building-ai-in-2026-the-engineering-realities-behind-the-boom/) - Enterprise AI adoption in 2026 is increasingly **agent-based**. The shift creates new challenges: code that ships safely vs. code that creates risk. Agent-based workflows require **fundamentally different quality gates** than human-written code.
+
 - 🟢 `[2026-10]` [Anthropic: "How Employment Is Changing at Anthropic"](https://www.anthropic.com/research/employment-at-anthropic) - Anthropic publishes internal employment data as a **leading indicator** of AI-driven workforce change. AI agent hours outnumber employee hours **6 to 1**. Code per person, sales per rep, and contracts processed all rose as employees adopted agents. Reading all agent output would take **half an employee's work week** — human attention is now the bottleneck. Junior technical hiring share is declining. Hiring managers increasingly emphasize **autonomy and judgment** over domain expertise. One engineer: *"an army of Claudes, with every one asking for my attention."*
 
   <details><summary>Key findings</summary>
@@ -1624,6 +1632,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Resources on using AI to improve requirements gathering, user story writing, and spec quality.*
 
+- 🟢 `[2026-10]` [Springer Requirements Engineering: GenAI Shifts Effort From Code to Requirements](https://link.springer.com/article/10.1007/s00766-026-00477-6) - Peer-reviewed paper argues that as implementation becomes cheaper through SE agents, effort shifts from writing correct code toward **"expressing, curating, verifying, and evaluating requirements."** Requirements engineering becomes **more critical, not less** — the inverse of what many predicted.
+
 <!-- Entries welcome: AI tools for requirements, NLP for user stories, automated acceptance criteria -->
 
 ### Spec-Driven Development
@@ -1744,6 +1754,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 ### Agentic Coding
 
 *Autonomous AI agents that can plan, execute, and iterate on multi-file coding tasks.*
+
+- 🟢 `[2026-10]` [ICSE 2026 / LLM4Code: "Usage, Effects and Requirements for AI Coding Assistants in the Enterprise"](https://www.sepolimi.com/p/se-ai-bibliography-productivity) - Merler et al. present enterprise-scale findings at ICSE 2026's LLM4Code workshop on how AI coding assistants are actually used, their measurable effects, and what practitioners need next. Accompanied by new preprint: Mazloomzadeh et al., **"How Do AI Coding Agents Contribute to Software Development?"** ([arXiv:2607.21832](https://arxiv.org/abs/2607.21832)) — analyzing agent contribution patterns at the PR level.
 
 - 🟡 `[2026-09]` [Factory Raises $200M at $5B Valuation for Autonomous Coding Agents](https://factory.com/news/5-billion-valuation) - Factory tripled valuation in five months. Its **Droids** handle the full SDLC — deployable cloud, on-prem, or air-gapped, **model-agnostic**. Customers include NVIDIA, Blackstone, RBC, Palo Alto Networks, Adobe, T-Mobile. Total funding >$400M. Backed by Blackstone, Khosla, Sequoia, Insight, NEA. Signals enterprise agentic coding market has moved from experimental to procurement-scale.
 
@@ -3034,6 +3046,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 | Metric | Finding | Sources |
 |--------|---------|---------|
+| End-to-end productivity (honest range) | **25–50%**, not 10× | ByteHerald synthesis of Harvard + MIT |
+| AI-written code share (developer-reported) | **42%** (up from 12% a year ago) | BairesDev Q3 2026 (705 devs) |
 | Task throughput vs rework | **+69% throughput, +53.7% epics** but **+66.7% restarts, +300.6% QA time** | Faros "Speed Trap" Q3 2026 |
 | Agent hours vs human hours | **6:1** (at Anthropic) | Anthropic employment study |
 | AI security decisions (without rules) | **47% wrong**; drops to **17%** with agentic rules | Arnica benchmark (6 models) |
@@ -3294,6 +3308,12 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-10-21 | Springer RE: GenAI shifts effort to requirements | As implementation cheapens, requirements engineering becomes more critical, not less |
+| 2026-10-21 | EU Parliament technology monitoring report on GenAI in SE | Regulatory-body perspective; ChatGPT at 900M WAU; documents agent-workflow shift |
+| 2026-10-21 | ByteHerald: Real productivity is 25–50%, not 10x | Synthesis of Harvard + MIT studies; firm-level gains eaten by review queue |
+| 2026-10-21 | DORA 2026: AI shifts cost from implementation to verification | ~10% fully AI-generated code; saved effort moves downstream |
+| 2026-10-21 | ICSE 2026 / LLM4Code: enterprise AI coding assistants | Merler et al. on usage, effects, requirements; Mazloomzadeh on agent contribution patterns |
+| 2026-10-21 | Technology.org: enterprises shifting to agent-based workflows | Agent-based workflows require fundamentally different quality gates |
 | 2026-10-16 | Anthropic: "How Employment Is Changing at Anthropic" | Agent hours 6:1 vs human; junior hiring declining; autonomy/judgment > domain expertise |
 | 2026-10-16 | Forbes Tech Council: AI changing economics of SE | Scarcity moves from code production to architecture, testing, outcome measurement |
 | 2026-10-14 | Arnica: AI agents write 2.7× more vulnerable code | 47% security decisions wrong without rules; 17% with agentic rules; 6 models benchmarked |
