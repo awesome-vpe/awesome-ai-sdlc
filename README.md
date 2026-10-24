@@ -94,6 +94,12 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-10]` [Linux Foundation Survey: AI Cuts Coding Time 52% but 25% of PRs Are "AI Slop"](https://www.digitaltoday.co.kr/en/view/118685/faster-speed-questionable-quality-reviewing-ai-coding-output) - Linux Foundation survey finds AI reduces coding time by **~52%** on average, but maintainers estimate **25% of incoming PRs are low-quality "AI slop"** (31% in large projects). 66% of freed time goes to tech debt, 63% to new features. Only **35% of projects have formal AI-use policies**. 21% say complex tasks take *longer* with AI review.
+
+- 🟡 `[2026-10]` [Gartner: AI Spending Forecast at $2.7T in 2026 (+49.5% YoY)](https://www.issuewire.com/implixo-examines-the-economics-of-ai-powered-app-development-as-global-ai-investment-accelerates-1879835931943695) - AI app development platform spending projected to grow from $6.9B (2025) to **$9.5B** (2026), reaching $12.5B by 2027. Industry narrative shifting from "faster development" to **measurable savings, quality, and long-term business value**.
+
+- 🟡 `[2026-10]` [SaaSVora/JetBrains 2026: Cursor Most Used AI Coding Tool at 39%](https://www.saasvora.com/best-ai-coding-assistants-2026/) - Cursor is the **most-used AI coding tool at work** (39% of professional developers per JetBrains' 2026 survey), also named most often as a favorite in The Pragmatic Engineer's 2026 survey. Its agentic, multi-file workflow cited as the differentiator vs. single-file assistants.
+
 - 🟡 `[2026-10]` [European Parliament: GenAI in Software Development — Technology Monitoring](https://euagenda.eu/publications/download/801455) - EU Parliament technology monitoring report documenting the shift toward **agent-based workflows** in enterprise software development. Notes ChatGPT reaching **900M weekly active users** by Feb 2026. Provides a European regulatory-body perspective on how GenAI is reshaping the SDLC — useful as a policy-grade complement to industry surveys.
 
 - 🟡 `[2026-10]` [Wharton/GBK 2026 AI Adoption Report](https://knowledge.wharton.upenn.edu/special-report/2026-ai-adoption-report/) - Fourth annual Wharton Human-AI Research + GBK Collective study tracking AI adoption, ROI, agents, training, and workforce impact. **First year comparing leader perspectives with entry- and mid-level employees**. Provides enterprise benchmarks on whether AI investments are paying off and how transformation is experienced across the workforce hierarchy.
@@ -780,6 +786,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2025-01]` [Bain 2025 Technology Report](https://www.bain.com/insights/technology-report-2025/) - 25-30% engineering productivity with full SDLC AI adoption; most orgs see only 5-15%.
 
 ### Productivity Paradoxes & Measurement
+
+- 🟢 `[2026-10]` [arXiv: "When Code Gets Cheap, Evaluation Gets Scarce" — Agile Experience Report](https://arxiv.org/abs/2610.30916) - Franceschetti (Oct 22) reports building a compliance-critical exam-grading system with **zero hand-written code in 3 days**. Key insight: AI doesn't mainly make programming faster — it shifts the bottleneck to **evaluation** (knowing whether the result is correct). Defects passed test suites at mock boundaries; deployment exposed assumptions local tests missed. Five lessons: gated traceable process, prototype-driven discovery, validate in real env, gate the assistant not just the work, record decisions the assistant forgets.
+
+- 🟢 `[2026-10]` [Safeguard.sh Meta-Analysis: AI Productivity Studies 2023–2026](https://safeguard.sh/resources/blog/ai-coding-tools-developer-productivity-studies-2023-2026) - Comprehensive review of **6 controlled studies** finds no single productivity figure: Peng et al. 55.8% faster on greenfield; Google RCT 21% less time (not statistically significant); Cui et al. +26% completed tasks (4,867 devs); METR 2025 found tasks took **19% longer**. Self-reported speedups (devs estimated 20–24%) are weakest evidence — and most commonly quoted.
 
 - 🔵 `[2026-10]` [ByteHerald: "AI Dev Productivity Is 25–50%, Not 10x"](https://www.byteherald.com/2026/10/ai-dev-productivity-is-25-50-not-10x.html) - Synthesis of the Harvard (718 firms, 726K workers) and MIT (500K+ GitHub devs) studies. Individual coding speed is dramatically faster, but **firm-level gains are eaten by the review queue**. The honest range for end-to-end productivity improvement sits at **25–50%**, far below marketing "10x" claims. Gains attenuate from LoC → commits → PRs → releases.
 
@@ -1785,7 +1795,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - 🟢 `[2026-08]` [SWE-Bench Pro August Leaderboard: Open-Weight Model Beats GPT-5.5](https://benchlm.ai/benchmarks/swe-bench-pro) - Claude Mythos 5 leads at **80.3%**, Claude Fable 5 at **80%**, Claude Opus 5 at **79.2%**. Open-weights highlight: **GLM-5.2 hits 62.1%** (beating GPT-5.5's 58.6%) — a self-hostable MIT-licensed model outperforming a frontier closed model.
 
-- 🔵 `[2026-08]` [Agentic AI Coding Landscape Consolidation](https://agentic.ai/best/coding-agents) - Roo Code archived May 2026, community forked as Kilo Code v5.x. Agentic.ai now tracking **21+ coding agents** with SWE-bench Verified results up to 70.6%. Market consolidation accelerating.
+- 🔵 `[2026-10]` [Agentic AI Coding Landscape Consolidation](https://agentic.ai/best/coding-agents) - Agentic.ai now tracking **29 coding agents** (up from 21 in Aug); top SWE-bench Verified result at **70.6%**. The field is rapidly consolidating around agentic workflows with **human-in-the-loop governance** as the standard pattern.
 
 - 🟢 `[2026-07]` [arXiv: "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems"](https://arxiv.org/abs/2604.14228) - Systematic analysis of the coding agent design space using Claude Code as the reference architecture. Identifies layers (model, context/extension, harness) across Claude Code, OpenClaw, and Hermes. Proposes **six open design directions** for future agent systems grounded in empirical and architectural literature. Updated July 2026 (v2).
 
@@ -2086,6 +2096,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 *AI-assisted code review, quality gates, and automated feedback.*
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
+
+- 🟢 `[2026-10]` [404K Research: Claude Used for Formal Verification at Scale](https://404kresearch.substack.com/p/404k-semi-ai-evening-brief-october-b2a) - Researchers used Claude to generate crash-free proofs across **239 entry points** in **123 open-source libraries**, producing **~180 million lines of Rocq proof code**. Machine-checked formal verification offers stronger guarantees than traditional testing — significant milestone for AI-assisted code quality assurance.
 
 - 🔵 `[2026-10]` [HackerNoon/QA.tech: "Product Quality in the AI SDLC — Why the Auditor Cannot Be the Creator"](https://hackernoon.com/product-quality-in-the-ai-sdlc-why-the-auditor-cannot-be-the-creator) - Argues AI-generated code needs **independent verification** from a separate system, not self-review. Cites Faros data: PRs merging with **no review at all up 31.3%**, median review time **+441.5%**. The same agent that writes code cannot reliably audit it. Agentic testing and smarter quality gates are the mitigation strategy.
 
@@ -3046,6 +3058,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 | Metric | Finding | Sources |
 |--------|---------|---------|
+| AI coding time reduction (self-reported) | **~52%**, but **25% of PRs are "AI slop"** | Linux Foundation 2026 survey |
+| Controlled study divergence | **55.8% faster** to **19% slower** depending on context | Safeguard.sh meta-analysis (6 RCTs) |
 | End-to-end productivity (honest range) | **25–50%**, not 10× | ByteHerald synthesis of Harvard + MIT |
 | AI-written code share (developer-reported) | **42%** (up from 12% a year ago) | BairesDev Q3 2026 (705 devs) |
 | Task throughput vs rework | **+69% throughput, +53.7% epics** but **+66.7% restarts, +300.6% QA time** | Faros "Speed Trap" Q3 2026 |
@@ -3308,6 +3322,13 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-10-23 | arXiv: "When Code Gets Cheap, Evaluation Gets Scarce" | Zero hand-written code in 3 days; bottleneck shifts to evaluation, not coding speed |
+| 2026-10-23 | Linux Foundation: AI cuts coding time 52%, 25% of PRs are "AI slop" | Large-project maintainers flag quality; only 35% have formal AI-use policies |
+| 2026-10-23 | Safeguard.sh meta-analysis of 6 controlled productivity studies | Results range from 55.8% faster to 19% slower; self-reports are weakest evidence |
+| 2026-10-23 | Gartner: AI spending forecast at $2.7T (+49.5% YoY) | App dev platform spend $6.9B → $9.5B; narrative shifts to measurable ROI |
+| 2026-10-23 | JetBrains/SaaSVora: Cursor most-used AI coding tool at 39% | Agentic multi-file workflow cited as differentiator |
+| 2026-10-23 | 404K Research: Claude for formal verification at scale | 239 entry points, 123 libraries, ~180M lines of Rocq proof code |
+| 2026-10-23 | Agentic.ai: 29 coding agents tracked (up from 21) | Human-in-the-loop governance becoming standard pattern |
 | 2026-10-21 | Springer RE: GenAI shifts effort to requirements | As implementation cheapens, requirements engineering becomes more critical, not less |
 | 2026-10-21 | EU Parliament technology monitoring report on GenAI in SE | Regulatory-body perspective; ChatGPT at 900M WAU; documents agent-workflow shift |
 | 2026-10-21 | ByteHerald: Real productivity is 25–50%, not 10x | Synthesis of Harvard + MIT studies; firm-level gains eaten by review queue |
