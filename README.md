@@ -94,6 +94,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🔵 `[2026-10]` [Geshan Manandhar: "41 Things About How Software Engineering Has Changed in 2026"](https://geshan.com.np/blog/2026/10/ai-software-engineering/) - Practitioner reflection arguing the pace of AI-driven change in software engineering in 2026 exceeds the entire previous decade (2015–2025). Covers **team size compression**, the explosion of AI-generated code, processes/tools playing catch-up, and growing cybersecurity concerns from AI-generated code proliferation.
+
 - 🟡 `[2026-10]` [Linux Foundation Survey: AI Cuts Coding Time 52% but 25% of PRs Are "AI Slop"](https://www.digitaltoday.co.kr/en/view/118685/faster-speed-questionable-quality-reviewing-ai-coding-output) - Linux Foundation survey finds AI reduces coding time by **~52%** on average, but maintainers estimate **25% of incoming PRs are low-quality "AI slop"** (31% in large projects). 66% of freed time goes to tech debt, 63% to new features. Only **35% of projects have formal AI-use policies**. 21% say complex tasks take *longer* with AI review.
 
 - 🟡 `[2026-10]` [Gartner: AI Spending Forecast at $2.7T in 2026 (+49.5% YoY)](https://www.issuewire.com/implixo-examines-the-economics-of-ai-powered-app-development-as-global-ai-investment-accelerates-1879835931943695) - AI app development platform spending projected to grow from $6.9B (2025) to **$9.5B** (2026), reaching $12.5B by 2027. Industry narrative shifting from "faster development" to **measurable savings, quality, and long-term business value**.
@@ -787,6 +789,14 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Productivity Paradoxes & Measurement
 
+- 🟢 `[2026-10]` [METR Perception Gap: Developers Believe 20% Faster, Measured 19% Slower](https://byteiota.com/ai-dev-productivity-studies-the-19-to-56-gap-explained/) - Synthesis of METR randomized trial data reveals a **39-point perception gap**: developers believed they were 20% faster with AI while the trial measured them 19% slower. Suggests self-reported productivity surveys — the most commonly cited evidence — significantly overestimate AI benefits.
+
+- 🟢 `[2026-10]` [Systematic Review: AI in SDLC Operational Efficiency — 52 Peer-Reviewed Studies](https://malque.pub/ojs/index.php/mr/article/view/18516) - Meta-analysis of **52 peer-reviewed studies from 22 countries** (2023–2026). Confirms productivity gains in coding tasks but highlights that downstream phases (testing, review, deployment) remain **human-bottlenecked**. Evidence base for the "verification bottleneck" thesis.
+
+- 🟡 `[2026-10]` [DX Q3 2026: PRs Up 75.5%, Ease of Delivery Up Only 3%](https://dev.to/jamilxt/ai-makes-coding-faster-why-does-shipping-still-feel-slow-4e1p) - Median weekly PRs per developer rose **75.5%** over four quarters; perceived ease of delivery improved only **3%**. AI-written code share jumped from 34% to 52% between Q1 and Q2 2026; code maintainability up just **3.8%**. Quantifies the gap between code volume and delivery improvement.
+
+- 🔵 `[2026-10]` [Senior Executive AI Think Tank: "AI Code Is Faster. Is Delivery Better?"](https://seniorexecutive.com/ai-coding-productivity-measuring-business-value/) - Industry leaders argue the bottleneck has shifted from code creation to **verification and delivery**. Recommend measuring lead time to production, change failure rates, and escaped defects instead of code volume metrics.
+
 - 🟢 `[2026-10]` [arXiv: "When Code Gets Cheap, Evaluation Gets Scarce" — Agile Experience Report](https://arxiv.org/abs/2610.30916) - Franceschetti (Oct 22) reports building a compliance-critical exam-grading system with **zero hand-written code in 3 days**. Key insight: AI doesn't mainly make programming faster — it shifts the bottleneck to **evaluation** (knowing whether the result is correct). Defects passed test suites at mock boundaries; deployment exposed assumptions local tests missed. Five lessons: gated traceable process, prototype-driven discovery, validate in real env, gate the assistant not just the work, record decisions the assistant forgets.
 
 - 🟢 `[2026-10]` [Safeguard.sh Meta-Analysis: AI Productivity Studies 2023–2026](https://safeguard.sh/resources/blog/ai-coding-tools-developer-productivity-studies-2023-2026) - Comprehensive review of **6 controlled studies** finds no single productivity figure: Peng et al. 55.8% faster on greenfield; Google RCT 21% less time (not statistically significant); Cui et al. +26% completed tasks (4,867 devs); METR 2025 found tasks took **19% longer**. Self-reported speedups (devs estimated 20–24%) are weakest evidence — and most commonly quoted.
@@ -1338,6 +1348,14 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
   </details>
 
 ### Organizational Impact
+
+- 🟡 `[2026-10]` [Karat 2026-2027 AI Workforce Transformation Report](https://karat.com/will-ai-replace-software-engineers/) - Survey of tech leaders: **90% maintaining or growing engineering headcount** (Jevons paradox in action). But **67% report longer time-to-market** and **44% report more coding errors**. 82% report increased feature volume. Hiring shifting toward senior ICs; entry-level demand declining.
+
+- 🟡 `[2026-10]` [Gartner: 40% of Enterprise Apps Will Embed Task-Specific AI Agents by End of 2026](https://que.com/how-ai-shifts-from-prediction-to-autonomous-authority-in-2026/) - Gartner projects **40% of enterprise applications** will embed task-specific AI agents by end of 2026, up from single digits recently. 80% of orgs deploying AI agents report measurable economic returns. The shift is from assistive tools to **autonomous decision engines** — raising new questions about accountability and trust.
+
+- 🟠 `[2026-10]` [LLM Price War: Inference Costs Drop ~80% in Months](https://aiweekly.co/ai-news-today) - Analysis shows LLM inference prices have dropped **~80%** as open-weights models cap pricing power. Relevant to engineering teams evaluating AI tooling costs — the economic barrier to widespread AI coding assistant adoption continues to fall rapidly.
+
+- 🟠 `[2026-10]` [Ben Thompson / Stratechery: "AI Has Killed the Open Web"](https://stratechery.com/) - Thompson argues the open web is effectively dead, killed by AI-powered attacks on foundational software and aggregator-driven discovery. Prediction: software follows blogs/social into **"infinite local markets"** — small-team custom apps built by AI rather than one global open web. Relevant framing for how engineering teams think about building and deploying software.
 
 - 🟡 `[2026-10]` [Technology.org: How Enterprises Are Actually Building AI in 2026](https://www.technology.org/2026/10/12/how-enterprises-are-actually-building-ai-in-2026-the-engineering-realities-behind-the-boom/) - Enterprise AI adoption in 2026 is increasingly **agent-based**. The shift creates new challenges: code that ships safely vs. code that creates risk. Agent-based workflows require **fundamentally different quality gates** than human-written code.
 
@@ -2097,6 +2115,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
 
+- 🟢 `[2026-10]` [Isong et al.: "From Code Author to Code Reviewer" — Meta-Review of 58 Empirical Studies](https://journal-isi.org/index.php/isi/article/view/1826) - Systematic review of **58 empirical studies** (2024–early 2026) on Copilot, ChatGPT, Claude, and Gemini. Key finding: developers are shifting from code production to code review — **>50% of AI-generated code is discarded** after evaluation. **45.6-point gap** between self-reported and objectively measured productivity. AI-generated code showed exploitable vulnerabilities at **40–50% rates**. Experienced engineers see an "AI Boost" while juniors face **"AI Drag"** — structured mentorship reduces the gap.
+
 - 🟢 `[2026-10]` [404K Research: Claude Used for Formal Verification at Scale](https://404kresearch.substack.com/p/404k-semi-ai-evening-brief-october-b2a) - Researchers used Claude to generate crash-free proofs across **239 entry points** in **123 open-source libraries**, producing **~180 million lines of Rocq proof code**. Machine-checked formal verification offers stronger guarantees than traditional testing — significant milestone for AI-assisted code quality assurance.
 
 - 🔵 `[2026-10]` [HackerNoon/QA.tech: "Product Quality in the AI SDLC — Why the Auditor Cannot Be the Creator"](https://hackernoon.com/product-quality-in-the-ai-sdlc-why-the-auditor-cannot-be-the-creator) - Argues AI-generated code needs **independent verification** from a separate system, not self-review. Cites Faros data: PRs merging with **no review at all up 31.3%**, median review time **+441.5%**. The same agent that writes code cannot reliably audit it. Agentic testing and smarter quality gates are the mitigation strategy.
@@ -2401,6 +2421,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 <!-- Entries welcome: AI SAST/DAST tools, vulnerability scanners, security copilots -->
 
+- 🟡 `[2026-10]` [AI-Generated Code Security: Only 24% Run Comprehensive Evaluations](https://www.paperclipped.de/en/blog/ai-generated-code-security-vulnerabilities/) - Only **24% of organizations** run comprehensive security/quality evaluations on AI-generated code. Veracode 2026 report: **82% of organizations carry security debt**; AI-generated PRs carry **1.7× more issues** than human-authored ones. Quantifies the governance gap between AI code generation speed and security review capacity.
+
 - 🟢 `[2026-10]` [Arnica: AI Coding Agents Write 2.7x More Vulnerable Code by Default](https://www.arnica.io/blog/ai-coding-agents-security-benchmark) - Benchmark of **six models from five vendors** (Opus-class, GPT-5-class, Sonnet-class, Grok-class, Gemini Flash-class, Muse-class). Without security rules, agents got **47% of security decisions wrong**. With agentic rules (CLAUDE.md, copilot-instructions, .cursor/rules), error rate dropped to **17%** — a 2.7× reduction. On open-source apps never tuned on, error rate fell from **58% to 32%**. 54% of midsize and 75% of enterprise companies use **3+ AI coding tools**, making cross-tool rule delivery the next governance challenge.
 
   <details><summary>Key findings</summary>
@@ -2582,6 +2604,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Developer Experience (DevEx)
 
+- 🟢 `[2026-10]` [Richards et al.: Developer Interaction Styles with AI Assistants (ICSME 2026)](https://agentpatterns.ai/human/developer-interaction-style-adaptation/) - Think-aloud study (n=27) identifies **5 distinct interaction modes** and 10 underlying needs when using Copilot chat, mapped to cognitive problem-solving style (Kirton's Adaption-Innovation theory). Implication: a single default AI assistant config is tuned for one cognitive style and **silently underperforms for others**. Per-developer config pays back only at sufficient team size.
+
 - 🔵 `[2026-10]` [Addy Osmani: "agent-skills" — Production-Grade Engineering Skills for AI Coding Agents](https://github.com/addyosmani/agent-skills) - **9 slash commands** mapping to the dev lifecycle (spec → plan → build → test → review → ship). Skills encode senior engineer workflows as reusable packages for **70+ agents**. Installable via Vercel's skills CLI. Reflects trend of codifying engineering practices as agent-consumable knowledge rather than relying on prompt engineering alone.
 
 - 🔵 `[2026-08]` [Larridin: CTO AI Coding Tool Scorecard — 5 Metric Sets](https://larridin.com/blog/ai-coding-tool-scorecard-cto-metrics) - Proposes balanced scorecard connecting: (1) DORA delivery performance, (2) AI adoption/proficiency, (3) code quality, (4) cost and ROI, (5) developer experience. Every speed metric needs a **paired quality/friction signal**.
@@ -2599,6 +2623,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🔵 `[2026-02]` [ThoughtWorks: Reframe as "Agent Experience"](https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future%20_of_software_development_retreat_%20key_takeaways.pdf) - Wallets open faster for agent experience. Overlap with developer experience is nearly complete.
 
 ### Skill Formation & Learning
+
+- 🔵 `[2026-10]` [InfoQ: "The Ladder Is Missing Rungs" — AI Supervision Paradox](https://www.infoq.com/presentations/ai-software-engineering-pipeline/) - Alasdair Allan presents empirical research from METR and Anthropic on the **"supervision paradox"**: AI tools disrupt junior skill development, risk institutional context loss, and threaten the engineering talent pipeline. Redwood Research analysis shows Anthropic's "90% AI-written code" claim **drops to ~50% when counting only committed code**; Google ~25%, Microsoft ~30%.
 
 - 🟢 `[2026-10]` [AAAI/AIES 2026: "Who Will Become the Next Senior?"](https://ojs.aaai.org/index.php/AIES/article/view/43353) - Yu & Moon argue GenAI is absorbing not just junior tasks but **the developmental pathway** through which juniors become seniors. AI handles the "learning-by-doing" work that builds expertise. Calls for **deliberate institutional design** across classrooms and workplaces to preserve skill formation pathways.
 
@@ -3007,6 +3033,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Models for assessing organizational AI-SDLC maturity.*
 
+- 🟠 `[2026-10]` [Savyre: AI-Native PDLC Framework for 2027](https://savyre.com/ai-native-pdlc-in-2027-trends-challenges-and-future-predictions) - Forward-looking framework embedding AI across the **full product development lifecycle** — from requirement analysis through deployment. Key tension: AI accelerates development but teams still need verification, security checks, and clear acceptance criteria. Human review remains essential; the goal is structured, measurable, **responsible AI-assisted development**.
+
 - 🟡 `[2026-10]` [Port.io / Gartner: Scaling Agentic SDLC Without Losing Control](https://www.port.io/blog/scaling-agentic-sdlc-without-losing-control) - Synthesis of **6 Gartner reports** on agentic SDLC at scale. By 2027 **40%** of platform teams will use AI across every SDLC phase (up from <5%). By 2028 **60%** of engineering initiatives run on autonomous agentic code generation. Coordinated AI across the full SDLC yields **25–30% productivity gains** vs **<10%** when planning/testing/release remain manual. **71%** of IT heads see platforms as backbone for scaling AI. Frames the **"platform harness"** — context, governance, and orchestration across agents — as the durable competitive advantage, not the coding agent itself.
 
   <details><summary>Key findings (Gartner data)</summary>
@@ -3322,6 +3350,20 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-10-30 | InfoQ: "The Ladder Is Missing Rungs" — supervision paradox | AI disrupts junior skill development; "90% AI-written" drops to ~50% committed code |
+| 2026-10-30 | Karat 2026-2027 Workforce Report | 90% maintaining headcount, but 67% longer time-to-market, 44% more errors |
+| 2026-10-30 | DX Q3 2026: PRs up 75.5%, ease of delivery up 3% | Quantifies gap between code volume and delivery improvement |
+| 2026-10-30 | METR Perception Gap: 39-point self-report vs. measurement divergence | Developers believed 20% faster; measured 19% slower |
+| 2026-10-30 | Systematic review of 52 peer-reviewed studies (22 countries) | Downstream phases remain human-bottlenecked despite coding gains |
+| 2026-10-30 | AI-Generated Code Security: 82% carry security debt | Only 24% run comprehensive evaluations; AI PRs carry 1.7× more issues |
+| 2026-10-26 | Isong et al.: "From Code Author to Code Reviewer" (58 studies) | >50% AI code discarded after evaluation; 45.6-point self-report gap |
+| 2026-10-26 | Richards et al.: Developer interaction styles (ICSME 2026) | 5 distinct modes; single-config AI assistant silently underperforms for most |
+| 2026-10-26 | Gartner: 40% enterprise apps embed AI agents by end 2026 | Shift from assistive tools to autonomous decision engines |
+| 2026-10-26 | Savyre: AI-Native PDLC framework for 2027 | Full-lifecycle AI embedding with human verification gates |
+| 2026-10-26 | Geshan: "41 Things About How SE Has Changed in 2026" | Pace of AI change in 2026 exceeds entire previous decade |
+| 2026-10-26 | LLM inference prices drop ~80% | Economic barrier to AI coding adoption falling rapidly |
+| 2026-10-26 | Ben Thompson: "AI Has Killed the Open Web" | Software follows media into "infinite local markets" built by AI |
+| 2026-10-26 | Senior Executive Think Tank: verification bottleneck | Bottleneck shifted from code creation to verification/delivery |
 | 2026-10-23 | arXiv: "When Code Gets Cheap, Evaluation Gets Scarce" | Zero hand-written code in 3 days; bottleneck shifts to evaluation, not coding speed |
 | 2026-10-23 | Linux Foundation: AI cuts coding time 52%, 25% of PRs are "AI slop" | Large-project maintainers flag quality; only 35% have formal AI-use policies |
 | 2026-10-23 | Safeguard.sh meta-analysis of 6 controlled productivity studies | Results range from 55.8% faster to 19% slower; self-reports are weakest evidence |
