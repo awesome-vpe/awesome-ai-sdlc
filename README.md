@@ -94,6 +94,19 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟢 `[2026-11]` [arXiv: "Are We Just Applying LLMs?" — Census of 4,790 SE Research Papers (2018–2026)](https://arxiv.org/abs/2611.04206) - Census of **4,790 papers** from ICSE, FSE, and ASE (2018–2026) plus survey of 244 SE researchers. AI accounted for **93.1% of publication growth** since 2022, but expansion in some areas concealed contraction in others. **92.6% of LLM-era papers revisit established SE problems** — the field's tools changed more than its problem boundaries. Researchers report pressure to adopt AI and align research topics with it.
+
+  <details><summary>Key findings</summary>
+
+  - By 2025, AI appeared in more than half of all research-track papers at top SE venues
+  - LLM wave changed tools more than problem boundaries; most new problems arise from LLMs in the SE process
+  - Engagement with AI remains uneven across SE sub-communities
+  - Researchers report social pressure to incorporate AI regardless of fit
+  - The field risks narrowing its intellectual agenda around LLM capabilities
+  </details>
+
+- 🟡 `[2026-11]` [DevOps.com / ETR-Futurum: "State of AI Coding in DevOps Workflows"](https://devops.com/resources/state-of-ai-coding-in-devops-workflows) - ETR arm of Futurum Group reports **93% of AI coding tool users report measurable productivity gains** — the strongest signal of tangible return on AI investment to date. Examines how AI coding tools integrate with DevOps pipelines, CI/CD automation, and infrastructure-as-code workflows beyond the IDE.
+
 - 🟡 `[2026-11]` [First Page Sage: AI Coding Assistant Market Share — November 2026](https://firstpagesage.com/seo-blog/ai-coding-assistant-market-share/) - Survey of **2,514 professional developers** (Aug–Oct 2026). Claude Code overtook GitHub Copilot as the most common primary AI coding assistant in mid-2026: **Claude Code 30.1%** (+11.6 pts), GitHub Copilot 22.2% (−8.3 pts), Cursor 12.8% (−5.2 pts), OpenAI Codex 12.1% (+7.9 pts). Terminal-based coding agents, which barely registered in mid-2025, now account for the **largest block of developer usage**.
 
   <details><summary>Key findings</summary>
@@ -812,6 +825,17 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2025-01]` [Bain 2025 Technology Report](https://www.bain.com/insights/technology-report-2025/) - 25-30% engineering productivity with full SDLC AI adoption; most orgs see only 5-15%.
 
 ### Productivity Paradoxes & Measurement
+
+- 🟡 `[2026-11]` [Atlassian State of Developer Experience 2026: "AI Makes Developers Faster — It's Also Exposing What's Broken"](https://www.atlassian.com/blog/development/developer-experience-report-2026) - **87% of developers say AI helps them ship faster**, but **72% experience the same or more friction** than before AI. Only **28%** report noticeably less friction. Time savings are *falling*: 68% saved 10+ hrs/week in 2025 vs only **25% in 2026** despite better models. Only **1 in 5 developers** say their organization has a clear AI strategy. Developers with a clear, implemented strategy are **almost twice as likely** to report reduced friction.
+
+  <details><summary>Key findings</summary>
+
+  - 65% of developers regularly switch between 4+ tools to complete a single task
+  - AI accelerates coding but creates new bottlenecks downstream in review, testing, and deployment
+  - The Williams F1 analogy: improving one part of the car doesn't make the car faster — it can create constraints elsewhere
+  - Organizations need to optimize the full delivery system, not just the coding step
+  - Cycle time improved from 11.5 to 6.7 days only when downstream phases also accelerate
+  </details>
 
 - 🟡 `[2026-11]` [Miro "State of Intelligent Collaboration 2026": Individual AI Productivity Soars, Organizational Impact Stalls](https://miro.com/blog/state-of-intelligent-collaboration-2026/) - Survey of **9,500+ leaders and employees** across 4 regions (Sep–Oct 2026). **83% agree AI improved individual productivity**, 73% say speed of output increased — but only **56% see quality improvement** and most have yet to see improved decision-making or collaboration. **69% of AI-assisted work happens in private sessions** rather than shared spaces, creating fragmentation that blocks organizational impact.
 
@@ -1822,6 +1846,9 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Autonomous AI agents that can plan, execute, and iterate on multi-file coding tasks.*
 
+- 🟢 `[2026-11]` [arXiv: "How Should Agents See Code?" — Code Representations for Agentic SE](https://arxiv.org/abs/2611.07286) - Studies **five code-representation workflows** (ASTs, call graphs, module dependencies, doc-enriched search, hybrid) as a design variable for coding agents. Tests Claude Code with Haiku 4.5 across four tasks: fault localization (LinuxFLBench), code generation/repair (SWE-bench Pro), test generation (SWT-bench), and security patching (SecBench). Key finding: how agents *see* repositories — not just raw files and shell commands — significantly changes retrieval behavior, task success, token use, and latency.
+
+
 - 🟢 `[2026-10]` [ICSE 2026 / LLM4Code: "Usage, Effects and Requirements for AI Coding Assistants in the Enterprise"](https://www.sepolimi.com/p/se-ai-bibliography-productivity) - Merler et al. present enterprise-scale findings at ICSE 2026's LLM4Code workshop on how AI coding assistants are actually used, their measurable effects, and what practitioners need next. Accompanied by new preprint: Mazloomzadeh et al., **"How Do AI Coding Agents Contribute to Software Development?"** ([arXiv:2607.21832](https://arxiv.org/abs/2607.21832)) — analyzing agent contribution patterns at the PR level.
 
 - 🟡 `[2026-09]` [Factory Raises $200M at $5B Valuation for Autonomous Coding Agents](https://factory.com/news/5-billion-valuation) - Factory tripled valuation in five months. Its **Droids** handle the full SDLC — deployable cloud, on-prem, or air-gapped, **model-agnostic**. Customers include NVIDIA, Blackstone, RBC, Palo Alto Networks, Adobe, T-Mobile. Total funding >$400M. Backed by Blackstone, Khosla, Sequoia, Insight, NEA. Signals enterprise agentic coding market has moved from experimental to procurement-scale.
@@ -2495,6 +2522,18 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Securing AI agents themselves — permissions, sandboxing, audit trails.*
 
+- 🟡 `[2026-11]` [Forrester Wave: Agentic Development Security Tools, Q4 2026](https://www.forrester.com/blogs/agentic-development-security-picks-up-where-traditional-security-tools-leave-off/) - First analyst evaluation of **"agentic development security" as a distinct market category**. Evaluated **12 vendors across 29 criteria**. Snyk and Endor Labs named Leaders. Key insight: coding agents don't generate secure code — security teams must govern dependency selection, tool invocation, and task execution, not just code output. Few vendors yet analyze requirements and design artifacts to flag security gaps upstream. Traditional AppSec tools insufficient for agentic workflows where buggy AI code generation outpaces human review.
+
+  <details><summary>Key capabilities evaluated</summary>
+
+  - Coding guardrails: security instructions to agents, generated code inspection, risky tool-call blocking
+  - AI-specific and semantic flaw detection beyond pattern matching
+  - AI software supply chain security and posture management
+  - Contextual AI prioritization and autonomous remediation
+  - Enforcement across local, cloud, and CI environments
+  </details>
+
+
 - 🔵 `[2026-11]` [Adversa.ai: Top AI Coding Agent Security Resources — November 2026](https://adversa.ai/blog/top-ai-coding-agent-security-resources-november-2026/) - Monthly roundup of **14 security resources** covering October's AI coding agent vulnerabilities. Highlights: Copilot RCE via **trailing dot filename** (patched by Microsoft), Claude Code **child session hook bypass** (closed as Informative by Anthropic), Copilot CLI **ciphertext decryption attack** leading to file exfiltration, opencode **no-consent RCE** fixed without CVE. Also covers man-in-the-model attacks on agent-to-API traffic and CERT-EU research on supply chain backdoors in agent extensions.
 
   <details><summary>Key attack patterns</summary>
@@ -3083,6 +3122,9 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Models for assessing organizational AI-SDLC maturity.*
 
+- 🟠 `[2026-11]` [Allytics: "Govern the AI-Native SDLC Before It Sprawls"](https://allyticstechperspectives.com/executive-briefing-govern-the-ai-native-sdlc-before-it-sprawls/) - Executive briefing arguing software governance models built on human chain-of-custody are **fraying as agents draft stories into code, generate tests, and prepare deployments faster than existing approval rituals can absorb**. Proposes that governance must shift from gating ceremonies to continuous, machine-readable policy enforcement embedded in the agent loop.
+
+
 - 🔵 `[2026-11]` [Codacy: "AI-Native SDLC — How to Get There Without Rebuilding Your Process"](https://blog.codacy.com/ai-native-sdlc) - Practitioner guide arguing that adding AI to individual steps is **not the same as redesigning the SDLC flow**. When code generation collapses from weeks to hours, bottlenecks shift to planning, review, and deployment. Key principle: **agents act up to the gate, humans decide at it**. Cites Atlassian's cycle time dropping from 11.5 to 6.7 days when downstream phases also accelerate. Governance must be executable — if a check is optional, the agent skips it.
 
 - 🟠 `[2026-10]` [Savyre: AI-Native PDLC Framework for 2027](https://savyre.com/ai-native-pdlc-in-2027-trends-challenges-and-future-predictions) - Forward-looking framework embedding AI across the **full product development lifecycle** — from requirement analysis through deployment. Key tension: AI accelerates development but teams still need verification, security checks, and clear acceptance criteria. Human review remains essential; the goal is structured, measurable, **responsible AI-assisted development**.
@@ -3168,6 +3210,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI individual productivity (self-reported) | **83%** say improved; only **56%** see quality gains | Miro 2026 (9,500+ workers) |
 | AI work in private sessions | **69%** (blocks organizational impact) | Miro 2026 |
 | Features shipped | **No change** | Harvard/Jellyfish |
+| Devs shipping faster with AI | **87%**, but **72%** same/more friction | Atlassian State of DevEx 2026 |
+| Orgs with clear AI strategy | **Only 1 in 5** developers say yes | Atlassian State of DevEx 2026 |
+| AI coding tool measurable gains | **93%** of users report measurable productivity gains | ETR / Futurum Group 2026 |
+| SE research dominated by AI | **93.1%** of publication growth; 92.6% revisit established problems | arXiv census (4,790 papers, 2018–2026) |
 | Delivery stability | **-7.2%** | DORA 2025 |
 | PR review time | **+91%** | Faros AI |
 | PR size | **+154%** | Faros AI |
@@ -3407,6 +3453,12 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-11-06 | Forrester Wave: Agentic Development Security Tools, Q4 2026 | First analyst evaluation of ADS as distinct market; 12 vendors, 29 criteria; Snyk & Endor Labs named Leaders |
+| 2026-11-05 | arXiv: "How Should Agents See Code?" — code representations for agentic SE | Map-based repo views (ASTs, call graphs, hybrid) significantly change agent success, token use, and latency |
+| 2026-11-05 | DevOps.com / ETR-Futurum: 93% of AI coding tool users report measurable gains | Strongest signal of tangible AI coding ROI; examines DevOps pipeline integration |
+| 2026-11-03 | arXiv: "Are We Just Applying LLMs?" — 4,790 SE research paper census | AI accounts for 93.1% of publication growth; 92.6% revisit established problems, not new ones |
+| 2026-11-03 | Atlassian State of DevEx 2026: 87% ship faster, 72% same/more friction | Only 28% less friction; time savings falling (68% → 25% saving 10+ hrs/week); 1 in 5 have AI strategy |
+| 2026-11-03 | Allytics: Govern the AI-native SDLC before it sprawls | Governance models fraying; agents outpace approval rituals; shift to continuous machine-readable policy |
 | 2026-11-03 | Miro: Individual AI productivity soars, organizational impact stalls | 9,500+ workers: 83% individual gains, only 56% quality improvement; 69% work in private AI sessions |
 | 2026-11-03 | Menlo Ventures: Enterprise AI deployment spend hits $177B | 5.4× YoY growth; coding is largest app category at $34B; agent traffic up 37× |
 | 2026-11-02 | First Page Sage: Claude Code overtakes Copilot at 30.1% market share | Terminal agents (44.7% combined) surpass IDE extensions as dominant interface |
