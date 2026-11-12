@@ -94,6 +94,16 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-11]` [GitHub Octoverse 2026: Commits, Pushes Reach New Highs as Developers Build with Agents](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/) - Developers pushed code to GitHub **17.9 billion times** in the past 12 months — more than 2024 and 2025 combined. **40%+ of pull requests** in September began with an agent's first draft (up from 17% in March), with **110 million agent-started PRs** in September alone. 87% of agent-started PRs modified multiple files vs 79% without agent involvement. Activity bent sharply upward mid-year as agent-based workflows took hold.
+
+  <details><summary>Key findings</summary>
+
+  - 17.9B pushes in 12 months — more than 2024 + 2025 combined
+  - Agent-started PRs: 17% (March) → 40%+ (September); 110M agent-started PRs in September alone
+  - 87% of agent-started PRs modify multiple files (vs 79% non-agent)
+  - Activity inflection coincided with widespread agent adoption mid-2026
+  </details>
+
 - 🟢 `[2026-11]` [arXiv: "Are We Just Applying LLMs?" — Census of 4,790 SE Research Papers (2018–2026)](https://arxiv.org/abs/2611.04206) - Census of **4,790 papers** from ICSE, FSE, and ASE (2018–2026) plus survey of 244 SE researchers. AI accounted for **93.1% of publication growth** since 2022, but expansion in some areas concealed contraction in others. **92.6% of LLM-era papers revisit established SE problems** — the field's tools changed more than its problem boundaries. Researchers report pressure to adopt AI and align research topics with it.
 
   <details><summary>Key findings</summary>
@@ -825,6 +835,17 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2025-01]` [Bain 2025 Technology Report](https://www.bain.com/insights/technology-report-2025/) - 25-30% engineering productivity with full SDLC AI adoption; most orgs see only 5-15%.
 
 ### Productivity Paradoxes & Measurement
+
+- 🟢 `[2026-11]` [Harvard/Jellyfish Nov 2026 Revision: AI Coding Agents Lift PRs 35.7%, Resolved Issues Only 13.7%](https://www.beri.net/article/harvard-jellyfish-study-ai-coding-agents-code-review-bottleneck-output-employment-engineering-org-design) - November 7 revision of Chen & Stratton's Harvard working paper. Across **720,542 engineers at 655 companies** (445M work events, Jan 2021–Aug 2026): agents raised lines of code by **44%**, commits by **36%**, and PRs by **35.7%** — but resolved Jira issues rose only **13.7%** (borderline) and engineering headcount showed **no detectable change**. Agents produced more code than reviewers could approve. ([Paper](https://fion.ac/jellyfish.pdf))
+
+  <details><summary>Key findings (Nov revision vs earlier versions)</summary>
+
+  - Nov revision adds 5 months of agent-era data; most effects are larger than the August version
+  - Assistants: +30.4% LoC, +16.8% commits, +20.9% PRs; agents stack further: +44% LoC, +36% commits, +35.7% PRs
+  - Resolved Jira issues only +13.7% — most extra code never became finished work
+  - Review capacity, not coding speed, is the binding constraint
+  - No significant employment changes attributable to AI detected
+  </details>
 
 - 🟡 `[2026-11]` [Atlassian State of Developer Experience 2026: "AI Makes Developers Faster — It's Also Exposing What's Broken"](https://www.atlassian.com/blog/development/developer-experience-report-2026) - **87% of developers say AI helps them ship faster**, but **72% experience the same or more friction** than before AI. Only **28%** report noticeably less friction. Time savings are *falling*: 68% saved 10+ hrs/week in 2025 vs only **25% in 2026** despite better models. Only **1 in 5 developers** say their organization has a clear AI strategy. Developers with a clear, implemented strategy are **almost twice as likely** to report reduced friction.
 
@@ -1846,6 +1867,17 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Autonomous AI agents that can plan, execute, and iterate on multi-file coding tasks.*
 
+- 🟢 `[2026-11]` [ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Tasks in Unfamiliar Codebases](https://arxiv.org/abs/2611.13246) - Benchmark of **100 expert-authored, multi-file SE tasks** across **87 open-source projects** and **11 languages**. Median task: 148-word ticket, 471-line reference solution. Task-specific graders award partial credit with must-pass blockers. Evaluated 7 frontier models (3,495 scored runs): **Claude Opus 5.5 (67.3%)** and **GPT-6 Astra (63.7%)** lead without significant gap; Fable 5.1 at 46.5%, Gemini 3.8 Flash 40.0%. No task fully solved by every model; on 80 tasks no model earns full credit on all 5 runs. ([Dataset](https://huggingface.co/datasets/ExpertCrowd/ec-swe) | [Leaderboard](https://www.toptal.com/expertcrowd/benchmarks/expertcrowd-swe-benchmark))
+
+  <details><summary>Key findings</summary>
+
+  - 100 tasks selected for difficulty against current frontier models; nearly half include adversarial control patches
+  - Scores span 35 points across models; agents take median 33–166 steps per run with little relation to score
+  - Top group: Opus 5.5 (67.3%), GPT-6 Astra (63.7%); mid-tier: Fable 5.1 (46.5%), Gemini 3.8 Flash (40.0%); lower: Qwen 3.8 Max, DeepSeek V4.1 Flash, Grok 4.6 (32–34%)
+  - 24 tasks released publicly; 76 held out to limit contamination
+  - Designed for unfamiliar codebases — tests real-world agent performance, not benchmark overfitting
+  </details>
+
 - 🟢 `[2026-11]` [arXiv: "How Should Agents See Code?" — Code Representations for Agentic SE](https://arxiv.org/abs/2611.07286) - Studies **five code-representation workflows** (ASTs, call graphs, module dependencies, doc-enriched search, hybrid) as a design variable for coding agents. Tests Claude Code with Haiku 4.5 across four tasks: fault localization (LinuxFLBench), code generation/repair (SWE-bench Pro), test generation (SWT-bench), and security patching (SecBench). Key finding: how agents *see* repositories — not just raw files and shell commands — significantly changes retrieval behavior, task success, token use, and latency.
 
 
@@ -2180,6 +2212,20 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 *AI-assisted code review, quality gates, and automated feedback.*
 
 - [CodeRabbit](https://coderabbit.ai) - AI code review for pull requests.
+
+- 🟢 `[2026-11]` [Google DeepMind: AlphaProof Code — Formal Verification of Signal's Cryptographic Protocol](https://deepmind.google/blog/introducing-alphaproof-code/) - Multi-LLM agentic framework that formally verified key security properties of **Signal's libsignal implementation** at the machine-code level — the first time AI has been used to formally verify a widely deployed cryptographic protocol at this depth. Human experts collaborated with AI to write specifications; Gemini Carbon agents generated **6+ million lines of Lean proofs**. Verified PQXDH handshake and Triple Ratchet (forward secrecy, authentication, post-compromise security). Agents flagged just **1% of the codebase** for human review. ([Technical report](https://google-deepmind.github.io/code-verification/))
+
+  <details><summary>Key findings</summary>
+
+  - First AI-assisted formal verification of a widely deployed cryptographic protocol
+  - Multi-agent framework: humans define what to prove, Gemini Carbon agents execute proofs
+  - 6+ million lines of Lean proof code generated
+  - Agents re-discovered two previously fixed real bugs when reintroduced into isolated code
+  - Only 1% of codebase needed human review — massive time savings over manual verification
+  - Verified: forward secrecy, authentication, post-compromise security, handshake secrecy
+  </details>
+
+- 🔵 `[2026-11]` [Entire Launches Trails — AI-Native Git Forge by Former GitHub CEO](https://www.developer-tech.com/news/ai-coding-agents-git-workflows-code-reviews/) - Founded by ex-GitHub CEO Thomas Dohmke. Replaces conventional pull request workflows with **Trails** — automated AI review evaluations that score code changes before merging. Configured review agents (code quality, security, pattern detection) run independently in isolated cloud environments. Displays evaluation scores and unresolved findings rather than chronological comment threads. Uses Claude Code and OpenAI Codex for evaluations. Responds to GitHub Octoverse finding that **40%+ of PRs now start with agent-drafted code**. Backed by Faros AI data showing median review time **5× higher** in high-AI-adoption periods. ([Blog](https://entire.com/blog/the-git-forge-for-agent-human-collaboration))
 
 - 🟢 `[2026-10]` [Isong et al.: "From Code Author to Code Reviewer" — Meta-Review of 58 Empirical Studies](https://journal-isi.org/index.php/isi/article/view/1826) - Systematic review of **58 empirical studies** (2024–early 2026) on Copilot, ChatGPT, Claude, and Gemini. Key finding: developers are shifting from code production to code review — **>50% of AI-generated code is discarded** after evaluation. **45.6-point gap** between self-reported and objectively measured productivity. AI-generated code showed exploitable vulnerabilities at **40–50% rates**. Experienced engineers see an "AI Boost" while juniors face **"AI Drag"** — structured mentorship reduces the gap.
 
@@ -2813,6 +2859,17 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *The emerging category of work between inner-loop coding and outer-loop delivery.*
 
+- 🟢 `[2026-11]` [arXiv: "From Delegation to Action Approval" — Developer Practices with AI Coding Agents](https://arxiv.org/abs/2611.10058) - Survey of **203 developers** on how they collaborate with AI coding agents. Key finding: careful code review **does not extend to action approval** — **61%** of developers who carefully reviewed most/all generated code still routinely approved at least one type of agent action (shell commands, file reads) without close review. Developers aware of security incidents approved *more* often, not less. Autonomy varied **more between developers than between activities**. When asked what would grant more autonomy, >50% wanted agents that are **bounded, observable, or reversible** — not just reliable.
+
+  <details><summary>Key findings</summary>
+
+  - 61% of careful code reviewers still approve agent actions without close review
+  - Security/privacy awareness correlated with *more* routine approvals, not fewer
+  - Autonomy preferences varied more by individual developer than by task type
+  - Supervising agents is mentally demanding even when workload feels lighter
+  - Developers want bounded, observable, reversible agents — not just reliable ones
+  </details>
+
 - 🟠 `[2026-06]` [Echometer: AI in Agile Software Development — Paradigm Shift](https://echometerapp.com/en/ki-in-agiler-softwareentwicklung) - Review of multiple 2026 preprints describes the move from manual code production as a scarce resource toward **orchestration, verification, and accountable oversight** of abundantly generated code. Frames this as the defining paradigm shift for engineering roles in the AI era.
 
 - 🔵 `[2026-04]` [From Vibe to Agentic: The 2026 Maturation of AI-Driven Development](https://medium.com/technologai/from-vibe-to-agentic-the-2026-maturation-of-ai-driven-development-1bfb0844b5a6) - Traces the evolution from Karpathy's "vibe coding" (Feb 2025) to "agentic engineering" (Feb 2026). Gartner: 40% of enterprise apps to include task-specific agents by end of 2026 (up from <5% in 2025). Claude Opus 4.6 leads SWE-Bench at 80.8%. Anthropic: engineers use AI for ~60% of work but fully delegate only 0-20%.
@@ -3122,6 +3179,18 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Models for assessing organizational AI-SDLC maturity.*
 
+- 🔵 `[2026-11]` [Thoughtworks Technology Radar Vol. 35: Agent Sandboxing Moves to Adopt](https://www.thoughtworks.com/radar) - November 4, 2026. **117 blips, 87 new entries.** Agent sandboxing moved from Trial to **Adopt** — every agent (not just coding agents) should run in isolated environments. Introduces the concept of **"human-in-the-loop theater"** — when agent volume outpaces review capacity, approvals become rubber-stamps. Formalizes **harness engineering** ("Agent = Model + Harness"). OpenSpec (spec-driven development) moves to Trial. Risk-tiered human oversight proposed: high-impact changes get real review, low-risk get automated gates. ([Analysis](https://byteiota.com/thoughtworks-radar-vol35-ai-agents/))
+
+  <details><summary>Key movements</summary>
+
+  - **Adopt:** Agent sandboxing (all agents, not just coding), mise (tool version + env management)
+  - **Trial:** Risk-tiered human oversight, OpenSpec (spec-driven development), maintainability sensors
+  - **Assess:** Agent-native architecture patterns
+  - Key concept: "Human-in-the-loop theater" — oversight exists in name only when agent volume overwhelms review
+  - Harness engineering formalized: memory, context, feedback loops, guardrails, quality gates
+  - CTO Rachel Laycock: "The question shifted from how fast agents write code to whether anyone can trust, review, and afford what they produce"
+  </details>
+
 - 🟠 `[2026-11]` [Allytics: "Govern the AI-Native SDLC Before It Sprawls"](https://allyticstechperspectives.com/executive-briefing-govern-the-ai-native-sdlc-before-it-sprawls/) - Executive briefing arguing software governance models built on human chain-of-custody are **fraying as agents draft stories into code, generate tests, and prepare deployments faster than existing approval rituals can absorb**. Proposes that governance must shift from gating ceremonies to continuous, machine-readable policy enforcement embedded in the agent loop.
 
 
@@ -3192,8 +3261,9 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI-generated code share (committed) | **42%**, but **96% don't fully trust** it | Sonar 2026 (1,100+ devs) |
 | AI tool daily usage intensity | **73%** daily; **~1/3 spend 4+ hrs/day** | Stack Overflow 2026 |
 | SW dev job postings (US) | **+15%** since Feb 2025 despite AI | CNBC / BLS |
-| Code review time post-AI agents | **+49%**; changes requested nearly **2×** | Harvard/Jellyfish (300M events) |
-| Features shipped post-AI agents | **No significant increase** | Harvard/Jellyfish (300M events) |
+| Code output post-AI agents | **+44% LoC, +35.7% PRs** but resolved issues only **+13.7%** | Harvard/Jellyfish Nov 2026 (720K engineers, 655 firms) |
+| Features shipped post-AI agents | **No significant increase**; review capacity is binding constraint | Harvard/Jellyfish Nov 2026 (445M events) |
+| Agent-started PRs on GitHub | **40%+** in Sept 2026 (up from 17% in March); **110M** in one month | GitHub Octoverse 2026 |
 | Weekly AI coding agent use | **90%** of professional developers | JetBrains 2026 / Uvik |
 | Release-cycle expectations vs reality | **148% expected, 20-27% actual** | Bain Tech Report 2026 |
 | Concurrent workstreams per dev | **+47%** | Bain Tech Report 2026 |
@@ -3453,6 +3523,13 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-11-10 | Google DeepMind AlphaProof Code formally verifies Signal's cryptographic protocol | First AI-assisted formal verification of a widely deployed protocol; 6M+ lines of Lean proof; multi-LLM agentic framework |
+| 2026-11-09 | ExpertCrowd-SWE: 100 expert-authored coding tasks across 87 OSS projects | Opus 5.5 (67.3%) and GPT-6 Astra (63.7%) lead; no task fully solved by every model; real-world difficulty benchmark |
+| 2026-11-09 | Entire launches Trails — AI-native Git forge by ex-GitHub CEO Dohmke | Replaces PR workflows with automated AI review evaluations; responds to 40%+ agent-started PRs |
+| 2026-11-07 | Harvard/Jellyfish Nov revision: 720K engineers, 655 companies | Agents +44% LoC, +35.7% PRs, but only +13.7% resolved issues; review capacity is binding constraint |
+| 2026-11-06 | GitHub Octoverse 2026: 17.9B pushes, 40%+ PRs agent-started | More pushes than 2024+2025 combined; 110M agent-started PRs in September alone |
+| 2026-11-06 | arXiv: "From Delegation to Action Approval" — 203 developers surveyed | 61% approve agent actions without close review even when reviewing code carefully |
+| 2026-11-04 | Thoughtworks Technology Radar Vol. 35: agent sandboxing moves to Adopt | "Human-in-the-loop theater" named; harness engineering formalized; OpenSpec moves to Trial |
 | 2026-11-06 | Forrester Wave: Agentic Development Security Tools, Q4 2026 | First analyst evaluation of ADS as distinct market; 12 vendors, 29 criteria; Snyk & Endor Labs named Leaders |
 | 2026-11-05 | arXiv: "How Should Agents See Code?" — code representations for agentic SE | Map-based repo views (ASTs, call graphs, hybrid) significantly change agent success, token use, and latency |
 | 2026-11-05 | DevOps.com / ETR-Futurum: 93% of AI coding tool users report measurable gains | Strongest signal of tangible AI coding ROI; examines DevOps pipeline integration |
