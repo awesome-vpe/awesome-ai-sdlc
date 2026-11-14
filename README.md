@@ -94,6 +94,18 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-11]` [Sonar State of Code Survey 2027: AI Hit 65% of Committed Code a Year Early](https://www.sonarsource.com/blog/state-of-code-developer-survey-report-2027/) - Survey of **1,026 developers** globally. AI now generates or significantly assists **65% of committed code** — a level developers didn't expect until 2027 (up from 42% last year). **76% of teams** now use AI coding tools for business-critical or mission-critical services (up from 58%). Review bottleneck growing: **53%** of devs spend more time reviewing code than writing it (vs 18% pre-AI), and **76%** agree "we generate AI code faster than we can verify it." ([PR Newswire](https://www.prnewswire.com/news-releases/sonar-survey-ai-makes-code-abundant-but-code-confidence-remains-scarce-302936034.html))
+
+  <details><summary>Key findings</summary>
+
+  - 65% of committed code is AI-generated/assisted (up from 42%, arrived a year ahead of developer predictions)
+  - 76% use AI for business-critical/mission-critical services (up from 58%)
+  - 53% spend more time reviewing than writing (vs 18% pre-AI)
+  - 76% agree code is generated faster than it can be verified
+  </details>
+
+- 🟢 `[2026-11]` [arXiv: LLMs Reshaping SE Research — Concentration & Model Monoculture Risks](https://arxiv.org/abs/2611.15797) - Analysis of all **1,918 ICSE 2019–2026 papers** shows China and US dominate **74% of LLM-based SE publications**. Extreme institutional concentration: just 5 institutions in China and 7 in the US produce >50% of their nations' LLM SE output. Industry involvement is higher in LLM-based work (**23.4% vs 16.9%** for non-LLM papers). Raises concerns about geographic monoculture in SE research.
+
 - 🟡 `[2026-11]` [GitHub Octoverse 2026: Commits, Pushes Reach New Highs as Developers Build with Agents](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/) - Developers pushed code to GitHub **17.9 billion times** in the past 12 months — more than 2024 and 2025 combined. **40%+ of pull requests** in September began with an agent's first draft (up from 17% in March), with **110 million agent-started PRs** in September alone. 87% of agent-started PRs modified multiple files vs 79% without agent involvement. Activity bent sharply upward mid-year as agent-based workflows took hold.
 
   <details><summary>Key findings</summary>
@@ -836,6 +848,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Productivity Paradoxes & Measurement
 
+- 🔵 `[2026-11]` [LeadDev: "Stop Measuring Developer Productivity" — Measure Friction Cost Instead](https://daily.dev/posts/stop-measuring-developer-productivity-lqdyxyyk1) - Argues for replacing output metrics with **friction cost**: frequency × time-lost × devs-affected. Key insight: if AI cuts coding time 40% but CI/CD stays slow, **delivery doesn't speed up** — the bottleneck just moves. Proposes identifying and eliminating the actual constraints rather than optimizing what AI already accelerated.
+
+- 🔵 `[2026-11]` [AI Competence: "Real-World AI Evidence" Framework — 5-Level Hierarchy for Evaluating AI Productivity Claims](https://aicompetence.org/real-world-ai-evidence/) - Practical guide for evaluating AI productivity claims. Proposes a **5-level evidence hierarchy**: benchmark → controlled → pilot → field → replicated. Warns most "30% productivity" claims are benchmark-level, not field-proven. Useful framework for engineering leaders assessing vendor claims and internal AI ROI.
+
 - 🟢 `[2026-11]` [Harvard/Jellyfish Nov 2026 Revision: AI Coding Agents Lift PRs 35.7%, Resolved Issues Only 13.7%](https://www.beri.net/article/harvard-jellyfish-study-ai-coding-agents-code-review-bottleneck-output-employment-engineering-org-design) - November 7 revision of Chen & Stratton's Harvard working paper. Across **720,542 engineers at 655 companies** (445M work events, Jan 2021–Aug 2026): agents raised lines of code by **44%**, commits by **36%**, and PRs by **35.7%** — but resolved Jira issues rose only **13.7%** (borderline) and engineering headcount showed **no detectable change**. Agents produced more code than reviewers could approve. ([Paper](https://fion.ac/jellyfish.pdf))
 
   <details><summary>Key findings (Nov revision vs earlier versions)</summary>
@@ -1431,6 +1447,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Organizational Impact
 
+- 🟡 `[2026-11]` [Microsoft: Nadella Envisions 20M AI Agents as Company Offers 60K Employees Voluntary Exit](https://www.windowslatest.com/2026/11/09/microsofts-ceo-imagines-20-million-ai-agents-doing-the-work-as-the-company-offers-60000-employees-an-exit/) - Satya Nadella described a future with **"2 million or 20 million agents"** in a loop with 200K employees. Microsoft simultaneously offered voluntary exits to **~60,000 workers (~25% of workforce)**. Company says AI isn't behind the buyouts, but the juxtaposition signals how leadership is framing the agent-workforce relationship at scale.
+
+- 🟡 `[2026-11]` [McKinsey: "What Top Companies Do Differently With AI Coding"](https://www.youtube.com/watch?v=21tuT-e4NVo) - Martin Harrysson & Prakhar Dixit share findings on how leading companies deploy AI agents in software development. Focus on **organizational enablement over tool selection** — top performers invest in workflow redesign, context engineering, and measurement frameworks rather than chasing the latest model or IDE plugin.
+
 - 🟡 `[2026-10]` [AI Code Assistants Market Forecast: $68.71B by 2036 (21.5% CAGR)](https://www.globenewswire.com/news-release/2026/10/30/3392471/28124/en/ai-code-assistants-market-global-forecast-to-2036-agentic-coding-and-legacy-modernization-fuel-21-5-cagr-creating-a-usd-68-71-billion-opportunity.html) - Market research report projects AI code assistants revenue rising to **$68.71 billion by 2036** at 21.5% CAGR. **Agentic coding tools forecast highest CAGR** as they handle multi-step repository tasks (features, bug fixes, refactoring). Legacy modernization identified as a major growth driver alongside greenfield development.
 
 - 🟡 `[2026-10]` [Karat 2026-2027 AI Workforce Transformation Report](https://karat.com/will-ai-replace-software-engineers/) - Survey of tech leaders: **90% maintaining or growing engineering headcount** (Jevons paradox in action). But **67% report longer time-to-market** and **44% report more coding errors**. 82% report increased feature volume. Hiring shifting toward senior ICs; entry-level demand declining.
@@ -1866,6 +1886,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 ### Agentic Coding
 
 *Autonomous AI agents that can plan, execute, and iterate on multi-file coding tasks.*
+
+- 🟢 `[2026-11]` [arXiv: "Does Confusing Code Confuse LLMs?" — Atoms of Confusion in AI Code Understanding](https://arxiv.org/abs/2611.15575) - Pilot study testing whether **C++ "atoms of confusion"** — minimal code patterns known to impair human comprehension — similarly affect LLM code understanding across maintenance tasks. Explores whether human cognitive biases in code reading transfer to language models, with implications for AI-assisted code review and generation quality.
 
 - 🟢 `[2026-11]` [ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Tasks in Unfamiliar Codebases](https://arxiv.org/abs/2611.13246) - Benchmark of **100 expert-authored, multi-file SE tasks** across **87 open-source projects** and **11 languages**. Median task: 148-word ticket, 471-line reference solution. Task-specific graders award partial credit with must-pass blockers. Evaluated 7 frontier models (3,495 scored runs): **Claude Opus 5.5 (67.3%)** and **GPT-6 Astra (63.7%)** lead without significant gap; Fable 5.1 at 46.5%, Gemini 3.8 Flash 40.0%. No task fully solved by every model; on 80 tasks no model earns full credit on all 5 runs. ([Dataset](https://huggingface.co/datasets/ExpertCrowd/ec-swe) | [Leaderboard](https://www.toptal.com/expertcrowd/benchmarks/expertcrowd-swe-benchmark))
 
@@ -2473,6 +2495,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *AI-assisted CI/CD pipeline generation, optimization, and troubleshooting.*
 
+- 🔵 `[2026-11]` [HackerNoon: CI Infrastructure Evolving for AI-Generated Code Volume](https://hackernoon.com/avreas-faster-runners-for-github-actions-reflect-how-ai-coding-is-changing-ci) - Reports on faster GitHub Actions runners (Avrea benchmarked fastest on ARM) as AI coding agents ship more code, requiring **CI pipelines to handle higher throughput**. Signal that infrastructure is adapting to agent-era code volume — the next bottleneck after review capacity.
+
 - 🟢 `[2026-03]` [Sustainable Code Generation Using LLMs: Systematic Literature Review](https://arxiv.org/html/2603.00989) - Examines energy consumption and efficiency of LLM-generated code. Many studies claim efficiency gains but lack empirical energy analysis.
 
 - 🟢 `[2026-02]` [DeCEAT: Decoding Carbon Emissions for AI-driven Software Testing](https://arxiv.org/html/2602.18012v1) - Measures carbon footprint of AI-driven testing across LLMs and SLMs. First systematic analysis of environmental cost of GenAI in testing workflows.
@@ -2932,6 +2956,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Challenges of AI-accelerated development meeting slow enterprise adoption cycles.*
 
+- 🟡 `[2026-11]` [Revolut Cuts AI Coding Costs 90% With Self-Hosted Open-Weights Model](https://longsha.substack.com/p/genai-weekly-week-of-nov-9th-2026) - Moved **~2,000 engineers** off Claude Code/Codex to a Chinese open-weights model, slashing costs **~90%**. Signal that large orgs are internalizing AI coding infra — trading vendor convenience for cost control and data sovereignty. Challenges the assumption that frontier model APIs are the only viable path for enterprise-scale agentic coding.
+
 - 🟠 `[2025-12]` [Databricks Architecture: Control Plane / Data Plane Separation](https://www.databricks.com/) - Gold standard for banks: vendor control plane + customer VPC compute.
 
 - 🔵 `[2025-11]` [Medium: Bridging On-Prem B2B Delivery Gap](https://medium.com/) - Version sprawl (6-12 versions), CAB cycles, compliance revalidation, telemetry scarcity.
@@ -3179,6 +3205,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Models for assessing organizational AI-SDLC maturity.*
 
+- 🟢 `[2026-11]` [Springer: Gated Governance Framework for Responsible AI in SDLC](https://link.springer.com/article/10.1007/s11219-026-09801-3) - New paper argues GenAI integration into SE has **outpaced governance mechanisms**, creating systemic risks to code quality, security, and institutional trust. Proposes a quality-centric gated governance framework with stage gates for AI-generated artifacts throughout the development lifecycle.
+
+- 🟠 `[2026-11]` [Happiestminds: Decision Models as AI Governance Layer](https://www.happiestminds.com/blogs/decision-models-the-control-layer-for-governed-ai-engineering/) - Proposes typed decision models (boolean/choice/score with confidence) as a **control layer for AI engineering workflows**. Model decides; workflow enforces thresholds and escalation. Practical pattern for embedding governance into agent loops without slowing delivery.
+
 - 🔵 `[2026-11]` [Thoughtworks Technology Radar Vol. 35: Agent Sandboxing Moves to Adopt](https://www.thoughtworks.com/radar) - November 4, 2026. **117 blips, 87 new entries.** Agent sandboxing moved from Trial to **Adopt** — every agent (not just coding agents) should run in isolated environments. Introduces the concept of **"human-in-the-loop theater"** — when agent volume outpaces review capacity, approvals become rubber-stamps. Formalizes **harness engineering** ("Agent = Model + Harness"). OpenSpec (spec-driven development) moves to Trial. Risk-tiered human oversight proposed: high-impact changes get real review, low-risk get automated gates. ([Analysis](https://byteiota.com/thoughtworks-radar-vol35-ai-agents/))
 
   <details><summary>Key movements</summary>
@@ -3258,7 +3288,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | AI security decisions (without rules) | **47% wrong**; drops to **17%** with agentic rules | Arnica benchmark (6 models) |
 | PRs merging with no review | **Up 31.3%**; median review time **+441.5%** | Faros / QA.tech |
 | Commits vs releases vs adoption | **+180% commits → +30% releases → 0% adoption** | NBER (100K+ devs) / freeCodeCamp |
-| AI-generated code share (committed) | **42%**, but **96% don't fully trust** it | Sonar 2026 (1,100+ devs) |
+| AI-generated code share (committed) | **65%** (up from 42%; arrived a year early) | Sonar 2027 survey (1,026 devs) |
 | AI tool daily usage intensity | **73%** daily; **~1/3 spend 4+ hrs/day** | Stack Overflow 2026 |
 | SW dev job postings (US) | **+15%** since Feb 2025 despite AI | CNBC / BLS |
 | Code output post-AI agents | **+44% LoC, +35.7% PRs** but resolved issues only **+13.7%** | Harvard/Jellyfish Nov 2026 (720K engineers, 655 firms) |
@@ -3523,6 +3553,11 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-11-13 | Sonar: AI-generated code hits 65% of commits (a year ahead of predictions) | Up from 42%; 76% agree code generated faster than verified; review bottleneck deepens |
+| 2026-11-13 | arXiv: LLM SE research concentrated in US + China (74% of ICSE papers) | Institutional monoculture risk; 5+7 institutions produce >50% of nations' LLM SE output |
+| 2026-11-13 | Springer: Gated governance framework for responsible AI in SDLC | GenAI integration outpacing governance; proposes stage-gated quality controls |
+| 2026-11-09 | Microsoft: Nadella envisions 20M AI agents; 60K voluntary exits offered | Agents-to-employees ratio framing; ~25% of workforce offered voluntary exit |
+| 2026-11-09 | Revolut moves 2K engineers off frontier APIs to self-hosted open-weights | ~90% cost reduction; signal of enterprise AI infra internalization |
 | 2026-11-10 | Google DeepMind AlphaProof Code formally verifies Signal's cryptographic protocol | First AI-assisted formal verification of a widely deployed protocol; 6M+ lines of Lean proof; multi-LLM agentic framework |
 | 2026-11-09 | ExpertCrowd-SWE: 100 expert-authored coding tasks across 87 OSS projects | Opus 5.5 (67.3%) and GPT-6 Astra (63.7%) lead; no task fully solved by every model; real-world difficulty benchmark |
 | 2026-11-09 | Entire launches Trails — AI-native Git forge by ex-GitHub CEO Dohmke | Replaces PR workflows with automated AI review evaluations; responds to 40%+ agent-started PRs |
