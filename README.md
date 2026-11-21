@@ -94,6 +94,26 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### State of AI in Software Engineering
 
+- 🟡 `[2026-11]` [Atlassian AI SDLC Index: First Continuous Dashboard of AI's Impact Across the Development Lifecycle](https://www.atlassian.com/blog/ai-sdlc-index) - Live dashboard (updated Nov 18, 2026) drawing on **627 companies** (Jan–Oct 2026 DX data). Bug fixes are the **#1 AI use case** (20.2%), followed by documentation (10.5%), code review (10.6%), and refactors (10.3%). Developer experience improved in documentation (+12.7pp), production debugging (+8.7pp), and deep work (+4.4pp) — but **change confidence (-1pp), local iteration speed (-2.7pp), and incident handling (-2.9pp) declined**. PRs reviewed per human reviewer rose as AI-authored code share grew. First major platform vendor to publish a continuously updated AI-SDLC measurement index.
+
+  <details><summary>Key findings</summary>
+
+  - Bug fixes (20.2%) are the dominant AI use case; new features only 4.2%
+  - Documentation favorability improved +12.7pp (47.7% → 60.4%) year-over-year
+  - Change confidence and incident handling declined despite AI gains elsewhere
+  - Production debugging and cross-team collaboration are highest-impact, lowest-favorability drivers
+  </details>
+
+- 🟡 `[2026-11]` [Appian: "Aloneware" Crisis — Standalone AI Coding Tools Create Maintenance Drain](https://www.prnewswire.com/news-releases/global-survey-uncovers-an-aloneware-crisis-isolated-ai-development-threatens-enterprise-stability-and-adds-maintenance-costs-302947123.html) - Survey of **851 enterprise leaders**. Two-thirds say standalone AI coding assistants produce **"aloneware"** — software that's difficult to support, understand, and maintain. **71%** report more time spent on testing, integration, and deployment despite faster initial coding. **82%** allocate ≥10% of innovation budgets to maintaining isolated AI builds; **68%** report unexpected post-launch security/compliance costs. Coined term captures the gap between individual code generation speed and organizational software sustainability.
+
+  <details><summary>Key findings</summary>
+
+  - 2/3 of leaders say standalone AI tools produce "aloneware" (hard to support, maintain, integrate)
+  - 71% spend more time on downstream work despite faster initial coding
+  - 82% divert ≥10% of innovation budget to maintaining isolated AI builds
+  - 68% face unexpected post-launch security/compliance remediation costs
+  </details>
+
 - 🟡 `[2026-11]` [Sonar State of Code Survey 2027: AI Hit 65% of Committed Code a Year Early](https://www.sonarsource.com/blog/state-of-code-developer-survey-report-2027/) - Survey of **1,026 developers** globally. AI now generates or significantly assists **65% of committed code** — a level developers didn't expect until 2027 (up from 42% last year). **76% of teams** now use AI coding tools for business-critical or mission-critical services (up from 58%). Review bottleneck growing: **53%** of devs spend more time reviewing code than writing it (vs 18% pre-AI), and **76%** agree "we generate AI code faster than we can verify it." ([PR Newswire](https://www.prnewswire.com/news-releases/sonar-survey-ai-makes-code-abundant-but-code-confidence-remains-scarce-302936034.html))
 
   <details><summary>Key findings</summary>
@@ -847,6 +867,26 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 - 🟡 `[2025-01]` [Bain 2025 Technology Report](https://www.bain.com/insights/technology-report-2025/) - 25-30% engineering productivity with full SDLC AI adoption; most orgs see only 5-15%.
 
 ### Productivity Paradoxes & Measurement
+
+- 🟢 `[2026-11]` [NBER: "Writing Code vs. Shipping Code" — Productivity Gains Shrink from Commits to Releases](https://www.nber.org/papers/w35275) - Demirer, Musolff & Yang (MIT/Wharton) analyze **500,000+ GitHub developers** with AI usage telemetry (issued May 2026, revised Sep 2026). Autocomplete tools: **+30% commits**. Interactive agents: **+180% commits**. Autonomous agents: **+240% commits** — but only **+80% projects** and **+30% releases**. The authors call this a **weak-link effect**: AI accelerates one stage while requirements, testing, review, and release management remain bottlenecks. First large-scale econometric evidence that commit-level productivity metrics dramatically overstate end-to-end delivery gains. ([Analysis](https://blog.rudrakasturi.com/ai-coding-agents-productivity-gap-commits-projects-releases-nber/) | [Commentary](https://gautamparab.com/writing/fifty-six-percent-longer-to-merge/))
+
+  <details><summary>Key findings</summary>
+
+  - Autocomplete: +30% commits; interactive agents: +180%; autonomous agents: +240%
+  - Autonomous agent gains shrink to +80% projects and +30% actual releases
+  - "Weak-link effect": AI speeds coding but delivery still bottlenecked by review, testing, integration
+  - First rigorous evidence that commit-level metrics dramatically overstate shipping gains
+  </details>
+
+- 🟡 `[2026-11]` [OpenAI: "Research Acceleration: The Jagged Frontier" — Internal Agent Telemetry](https://openai.com/index/research-acceleration-jagged-frontier/) - OpenAI publishes internal data (Nov 18, 2026) on coding agents in its own R&D. Zero-intervention success on 2–4hr tasks: **23% → 46%** (Mar–Oct 2026); 4–8hr tasks: **13% → 35%**. Median daily agent spend hit **~$2,400** (+62% vs September); 90th percentile reached **$23,000/day**. Agent workdays per researcher rose from **0.5 to 5.7**. Success highly uneven: **79% on training-run monitoring** but **25% on inference/serving code** — the "jagged frontier." API-equivalent agent spend reached **~2× researcher non-equity compensation**. Framed as RSI transparency disclosure alongside frontier safety policy. ([ExplainX analysis](https://explainx.ai/blog/openai-research-acceleration-jagged-frontier-november-2026))
+
+  <details><summary>Key findings</summary>
+
+  - 2–4hr task automation: 23% → 46% in 7 months; 4–8hr: 13% → 35%
+  - Median daily spend $2,400; 90th percentile $23,000 — agent cost ≈ 2× researcher non-equity pay
+  - Jagged frontier: 79% success on monitoring vs 25% on serving code
+  - Safety & Alignment workweeks up 77% Jan–Sep 2026
+  </details>
 
 - 🔵 `[2026-11]` [LeadDev: "Stop Measuring Developer Productivity" — Measure Friction Cost Instead](https://daily.dev/posts/stop-measuring-developer-productivity-lqdyxyyk1) - Argues for replacing output metrics with **friction cost**: frequency × time-lost × devs-affected. Key insight: if AI cuts coding time 40% but CI/CD stays slow, **delivery doesn't speed up** — the bottleneck just moves. Proposes identifying and eliminating the actual constraints rather than optimizing what AI already accelerated.
 
@@ -1887,6 +1927,10 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 *Autonomous AI agents that can plan, execute, and iterate on multi-file coding tasks.*
 
+- 🟢 `[2026-11]` [arXiv: SWE-CoWork — Benchmarking Coding Agents as Digital Employees in Organizations](https://arxiv.org/abs/2611.20218) - New benchmark of **101 development assignments across 101 real repositories, 11 languages, and 12 application domains**. Tests whether agents can function as organizational team members — tracking requirements across conversations, collaborating with colleagues, and verifying their own output. Frontier models that excel at isolated patches **struggle with sustained requirement tracking and cross-colleague collaboration**. First benchmark explicitly measuring organizational fitness rather than standalone coding ability.
+
+- 🟢 `[2026-11]` [arXiv: "Integrating AI Coding Agents Into Scientific Research" — PROOF Ladder for AI-Assisted Experiments](https://arxiv.org/abs/2611.23334) - Proposes a **six-level PROOF scale** (Provenance, Reproducibility, Openness, Oversight, Falsifiability) for classifying AI-assisted numerical experiments. Level 1: locally version-controlled, human-verified results. Level 6: publicly archived files with prompt transcripts, independent agent regeneration, and cryptographic attestation. Introduces **vaibify**, an open-source tool that sandboxes agents in Docker while researchers monitor file changes via GUI. Practical framework for scientific software teams adopting AI coding agents. ([Software](https://github.com/RoryBarnes/vaibify))
+
 - 🟢 `[2026-11]` [arXiv: "Does Confusing Code Confuse LLMs?" — Atoms of Confusion in AI Code Understanding](https://arxiv.org/abs/2611.15575) - Pilot study testing whether **C++ "atoms of confusion"** — minimal code patterns known to impair human comprehension — similarly affect LLM code understanding across maintenance tasks. Explores whether human cognitive biases in code reading transfer to language models, with implications for AI-assisted code review and generation quality.
 
 - 🟢 `[2026-11]` [ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Tasks in Unfamiliar Codebases](https://arxiv.org/abs/2611.13246) - Benchmark of **100 expert-authored, multi-file SE tasks** across **87 open-source projects** and **11 languages**. Median task: 148-word ticket, 471-line reference solution. Task-specific graders award partial credit with must-pass blockers. Evaluated 7 frontier models (3,495 scored runs): **Claude Opus 5.5 (67.3%)** and **GPT-6 Astra (63.7%)** lead without significant gap; Fable 5.1 at 46.5%, Gemini 3.8 Flash 40.0%. No task fully solved by every model; on 80 tasks no model earns full credit on all 5 runs. ([Dataset](https://huggingface.co/datasets/ExpertCrowd/ec-swe) | [Leaderboard](https://www.toptal.com/expertcrowd/benchmarks/expertcrowd-swe-benchmark))
@@ -2157,6 +2201,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 ### Agentic Coding Failure Modes
 
 *Novel failure patterns unique to AI-assisted development that didn't exist before.*
+
+- 🟢 `[2026-11]` [arXiv: Reliable Mining of Heterogeneous AI Coding-Agent Data — Simpson's Paradox in Agent PRs](https://arxiv.org/abs/2611.20297) - Analysis of **71,677 pull requests from 6 coding agents** reveals that pooling operational data across agents, repos, and workflows can **reverse descriptive and predictive conclusions** (Simpson's paradox). PRs with co-authorship trailers show 55.6% merge rate vs 77.5% without — but removing the dominant agent **flips the gap by +45.5 percentage points**. Context-aware feature cascade improves merge prediction AUC from 0.774 to 0.832. Critical warning for engineering leaders: **naive aggregation of AI coding metrics can produce exactly wrong conclusions**.
 
 - 🟠 `[2026-09]` [Barke: "Agents as Software — A Programming Languages Agenda for Agent Reliability"](https://arxiv.org/abs/2609.32198) - Accepted at **Onward! (SPLASH 2026)**. Argues that AI agents increasingly resemble software systems (tools, memory, policies, delegation, real consequences) yet their "program" is scattered across prompts, tools, memories, workflows, and traces — making behavior difficult to inspect. Proposes recasting agents as **programmable artifacts** whose behavior can be specified over traces and state, checked before deployment, monitored during execution, and repaired from observed failures. Goal: not deterministic agents, but enough structure for **reasoning, control, and repair**.
 
@@ -2783,6 +2829,8 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 
 ### Skill Formation & Learning
 
+- 🟢 `[2026-11]` [arXiv: "Is This Code Mine?" — Student Ownership When AI Agents Write Spec and Code](https://arxiv.org/abs/2611.21501) - Study of **18 student pairs** building applications under Spec-Driven Development with AI coding agents. Agents wrote **69% of specifications** meant to keep students in control — sometimes from a few-word prompt. Students claim ownership of **half the ideas but only a fifth of the code**, and most **couldn't explain or modify** the code without the agent. The three teams that met the 100K-line target did so with generated code students didn't understand. First empirical evidence that AI agents undermine the learning mechanism Spec-Driven Development was designed to preserve.
+
 - 🔵 `[2026-10]` [InfoQ: "The Ladder Is Missing Rungs" — AI Supervision Paradox](https://www.infoq.com/presentations/ai-software-engineering-pipeline/) - Alasdair Allan presents empirical research from METR and Anthropic on the **"supervision paradox"**: AI tools disrupt junior skill development, risk institutional context loss, and threaten the engineering talent pipeline. Redwood Research analysis shows Anthropic's "90% AI-written code" claim **drops to ~50% when counting only committed code**; Google ~25%, Microsoft ~30%.
 
 - 🟢 `[2026-10]` [AAAI/AIES 2026: "Who Will Become the Next Senior?"](https://ojs.aaai.org/index.php/AIES/article/view/43353) - Yu & Moon argue GenAI is absorbing not just junior tasks but **the developmental pathway** through which juniors become seniors. AI handles the "learning-by-doing" work that builds expertise. Calls for **deliberate institutional design** across classrooms and workplaces to preserve skill formation pathways.
@@ -3287,7 +3335,7 @@ Most awesome lists organize by tool category. This one organizes by **SDLC phase
 | Agent hours vs human hours | **6:1** (at Anthropic) | Anthropic employment study |
 | AI security decisions (without rules) | **47% wrong**; drops to **17%** with agentic rules | Arnica benchmark (6 models) |
 | PRs merging with no review | **Up 31.3%**; median review time **+441.5%** | Faros / QA.tech |
-| Commits vs releases vs adoption | **+180% commits → +30% releases → 0% adoption** | NBER (100K+ devs) / freeCodeCamp |
+| Commits vs releases (autonomous agents) | **+240% commits → +80% projects → +30% releases** | NBER (500K+ devs, revised Sep 2026) |
 | AI-generated code share (committed) | **65%** (up from 42%; arrived a year early) | Sonar 2027 survey (1,026 devs) |
 | AI tool daily usage intensity | **73%** daily; **~1/3 spend 4+ hrs/day** | Stack Overflow 2026 |
 | SW dev job postings (US) | **+15%** since Feb 2025 despite AI | CNBC / BLS |
@@ -3553,6 +3601,14 @@ A chronological view of key inflection points in the AI-SDLC transformation.
 
 | Date | Event | Impact |
 |------|-------|--------|
+| 2026-11-20 | Appian "Aloneware" survey: 2/3 of leaders say AI coding tools create unmaintainable software | 71% spend more time downstream despite faster coding; 82% divert ≥10% of innovation budgets to maintaining isolated AI builds |
+| 2026-11-18 | Atlassian AI SDLC Index: first continuously updated AI-SDLC dashboard (627 companies) | Bug fixes #1 AI use case (20.2%); change confidence and incident handling declining despite productivity gains |
+| 2026-11-18 | OpenAI: coding agents automate 46% of 2–4hr research tasks (up from 23%) | Jagged frontier — 79% success on monitoring, 25% on serving; median agent spend $2,400/day |
+| 2026-11-19 | NBER: autonomous agents +240% commits but only +30% releases (500K devs) | First econometric evidence that commit metrics dramatically overstate delivery gains |
+| 2026-11-15 | arXiv: Simpson's paradox in AI coding agent PR data (71K PRs, 6 agents) | Naive metric aggregation across agents reverses conclusions; context-aware models required |
+| 2026-11-15 | arXiv: SWE-CoWork benchmark — agents as organizational team members (101 repos) | Frontier models struggle with sustained requirement tracking and cross-colleague collaboration |
+| 2026-11-15 | arXiv: student ownership study — agents wrote 69% of specs in Spec-Driven Dev | Students couldn't explain or modify agent-written code; learning mechanism undermined |
+| 2026-11-16 | arXiv: PROOF Ladder for AI-assisted scientific experiments | Six-level provenance/reproducibility scale for AI coding in research; Docker sandboxing + cryptographic attestation |
 | 2026-11-13 | Sonar: AI-generated code hits 65% of commits (a year ahead of predictions) | Up from 42%; 76% agree code generated faster than verified; review bottleneck deepens |
 | 2026-11-13 | arXiv: LLM SE research concentrated in US + China (74% of ICSE papers) | Institutional monoculture risk; 5+7 institutions produce >50% of nations' LLM SE output |
 | 2026-11-13 | Springer: Gated governance framework for responsible AI in SDLC | GenAI integration outpacing governance; proposes stage-gated quality controls |
